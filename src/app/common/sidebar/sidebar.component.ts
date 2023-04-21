@@ -20,7 +20,7 @@ export class SidebarComponent {
       { separator: true },
       { text: 'Tree List', icon: 'k-i-menu' },
       { separator: true },
-      { text: 'Six', icon: 'k-i-col-resize' },
+      { text: 'Tooltips', icon: 'k-i-col-resize' },
       { separator: true },
       { text: 'Seven', icon: 'k-i-align-justify' },
       { separator: true },
