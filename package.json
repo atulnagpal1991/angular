@@ -26,6 +26,7 @@
     "@progress/kendo-angular-label": "^11.6.0",
     "@progress/kendo-angular-layout": "^11.6.0",
     "@progress/kendo-angular-progressbar": "11.6.0",
+    "@progress/kendo-angular-treelist": "^11.6.0",
     "@progress/kendo-angular-treeview": "^11.6.0",
     "@progress/kendo-angular-utils": "^11.6.0",
     "@progress/kendo-licensing": "^1.0.2",
@@ -33,6 +34,7 @@
     "@progress/kendo-theme-default": "^6.2.0",
     "bootstrap": "^5.2.3",
     "rxjs": "~7.8.0",
+    "save": "^2.9.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
