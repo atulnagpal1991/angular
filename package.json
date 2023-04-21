@@ -1,5 +1,5 @@
 {
-  "name": "my-first-project",
+  "name": "angular-components",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,8 +23,11 @@
     "@progress/kendo-angular-common": "11.6.0",
     "@progress/kendo-angular-icons": "11.6.0",
     "@progress/kendo-angular-l10n": "11.6.0",
+    "@progress/kendo-angular-label": "^11.6.0",
     "@progress/kendo-angular-layout": "^11.6.0",
     "@progress/kendo-angular-progressbar": "11.6.0",
+    "@progress/kendo-angular-treeview": "^11.6.0",
+    "@progress/kendo-angular-utils": "^11.6.0",
     "@progress/kendo-licensing": "^1.0.2",
     "@progress/kendo-svg-icons": "^1.0.0",
     "@progress/kendo-theme-default": "^6.2.0",

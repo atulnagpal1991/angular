@@ -11,6 +11,14 @@ import { ButtonsComponent } from './common/layout/buttons/buttons.component';
 import { ButtonsModule } from "@progress/kendo-angular-buttons";
 import { DragDropComponent } from './common/layout/drag-drop/drag-drop.component';
 import { FilteringComponent } from './common/layout/filtering/filtering.component';
+import { LoadMoreComponent } from './common/layout/load-more/load-more.component';
+import { UtilsModule } from "@progress/kendo-angular-utils";
+
+import { TreeViewModule } from "@progress/kendo-angular-treeview";
+import { LabelModule } from "@progress/kendo-angular-label";
+import { InputsModule } from "@progress/kendo-angular-inputs";
+import { FormsModule } from "@angular/forms";
+
 
 
 
@@ -21,14 +29,20 @@ import { FilteringComponent } from './common/layout/filtering/filtering.componen
     SidebarComponent,
     ButtonsComponent,
     DragDropComponent,
-    FilteringComponent
+    FilteringComponent,
+    LoadMoreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
     BrowserAnimationsModule,
-    ButtonsModule
+    ButtonsModule,
+    UtilsModule,
+    TreeViewModule,
+    LabelModule,
+    InputsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

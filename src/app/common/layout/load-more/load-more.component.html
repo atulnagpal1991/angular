@@ -1,2 +1,10 @@
-<p>load-more works!</p>
-
+<kendo-treeview
+      [nodes]="nodes"
+      textField="text"
+      kendoTreeViewExpandable
+      kendoTreeViewHierarchyBinding
+      childrenField="items"
+      kendoTreeViewLoadMore
+      [pageSize]="10"
+    >
+    </kendo-treeview>
