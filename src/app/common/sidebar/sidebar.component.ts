@@ -18,7 +18,7 @@ export class SidebarComponent {
       { separator: true },
       { text: 'Load More', icon: 'k-i-cells-merge-vertically' },
       { separator: true },
-      { text: 'Five', icon: 'k-i-menu' },
+      { text: 'Tree List', icon: 'k-i-menu' },
       { separator: true },
       { text: 'Six', icon: 'k-i-col-resize' },
       { separator: true },
