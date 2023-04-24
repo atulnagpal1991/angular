@@ -19,8 +19,12 @@ import { InputsModule } from "@progress/kendo-angular-inputs";
 import { FormsModule } from "@angular/forms";
 import { TreeListComponent } from './common/layout/tree-list/tree-list.component';
 import { TreeListModule } from "@progress/kendo-angular-treelist";
-
-
+import { TooltipComponent } from './common/layout/tooltip/tooltip.component';
+import { TooltipsModule } from "@progress/kendo-angular-tooltip";
+import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+import { PopoverComponent } from './common/layout/popover/popover.component';
+import { NotificationComponent } from './common/layout/notification/notification.component';
+import { NotificationModule } from "@progress/kendo-angular-notification";
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { TreeListModule } from "@progress/kendo-angular-treelist";
     DragDropComponent,
     FilteringComponent,
     LoadMoreComponent,
-    TreeListComponent
+    TreeListComponent,
+    TooltipComponent,
+    PopoverComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,10 @@ import { TreeListModule } from "@progress/kendo-angular-treelist";
     LabelModule,
     InputsModule,
     FormsModule,
-    TreeListModule
+    TreeListModule,
+    TooltipsModule,
+    DateInputsModule,
+    NotificationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
