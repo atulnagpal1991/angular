@@ -1,0 +1,9 @@
+<kendo-pdf-export #pdf paperSize="A4" margin="2cm">
+    <div class="mb-5">PDf content here</div> 
+  </kendo-pdf-export>
+
+  <div class="example-config">
+    <button kendoButton (click)="pdf.saveAs('my_document.pdf')">
+      Export As PDF...
+    </button>
+  </div>

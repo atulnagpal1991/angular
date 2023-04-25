@@ -25,9 +25,12 @@
 <div class="content" id="notification" *ngIf="selectedItem === 'Notification'">
     <app-notification></app-notification>
 </div>
-<div class="content" id="Nine" *ngIf="selectedItem === 'Nine'">
-    <h1> Nine</h1>
+<div class="content" id="pagination" *ngIf="selectedItem === 'Pagination'">
+    <app-pagination></app-pagination>
 </div>
-<div class="content" id="Ten" *ngIf="selectedItem === 'Ten'">
-    <h1> Ten</h1>
+<div class="content" id="pdfExport" *ngIf="selectedItem === 'PDF Export'">
+    <app-pdf-export></app-pdf-export>
+</div>
+<div class="content" id="stepper" *ngIf="selectedItem === 'Stepper'">
+    <app-stepper></app-stepper>
 </div>

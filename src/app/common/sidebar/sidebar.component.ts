@@ -9,26 +9,30 @@ import { DrawerSelectEvent } from '@progress/kendo-angular-layout';
 export class SidebarComponent {
   public selected = 'Buttons';
 
-  public items: Array<{text: string, icon: string, selected?: boolean} | {separator: boolean}> = [
-      { text: 'Buttons', icon: 'k-i-user', selected: true },
+  public items: Array<{text: string, selected?: boolean} | {separator: boolean}> = [
+      { text: 'Buttons', selected: true },
       { separator: true },
-      { text: 'Drag Drop', icon: 'k-i-image' },
+      { text: 'Drag Drop' },
       { separator: true },
-      { text: 'Filtering', icon: 'k-i-insert-top' },
+      { text: 'Filtering' },
       { separator: true },
-      { text: 'Load More', icon: 'k-i-cells-merge-vertically' },
+      { text: 'Load More' },
       { separator: true },
-      { text: 'Tree List', icon: 'k-i-menu' },
+      { text: 'Tree List' },
       { separator: true },
-      { text: 'Tooltips', icon: 'k-i-col-resize' },
+      { text: 'Tooltips' },
       { separator: true },
-      { text: 'Popover', icon: 'k-i-align-justify' },
+      { text: 'Popover' },
       { separator: true },
-      { text: 'Notification', icon: 'k-i-list-ordered' },
+      { text: 'Notification'},
       { separator: true },
-      { text: 'Nine', icon: 'k-i-thumbnails-up' },
+      { text: 'Pagination' },
       { separator: true },
-      { text: 'Ten', icon: 'k-i-grid' }
+      { text: 'PDF Export' },  
+      { separator: true },
+      { text: 'Stepper' },  
+      { separator: true },
+      
   ];
 
   public onSelect(ev: DrawerSelectEvent): void {

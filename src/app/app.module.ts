@@ -25,6 +25,17 @@ import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
 import { PopoverComponent } from './common/layout/popover/popover.component';
 import { NotificationComponent } from './common/layout/notification/notification.component';
 import { NotificationModule } from "@progress/kendo-angular-notification";
+import { PaginationComponent } from './common/layout/pagination/pagination.component';
+import { PagerModule } from "@progress/kendo-angular-pager";
+import { StepperComponent } from './common/layout/stepper/stepper.component';
+import { PdfExportComponent } from './common/layout/pdf-export/pdf-export.component';
+import { PDFExportModule } from "@progress/kendo-angular-pdf-export";
+import { IntlModule } from "@progress/kendo-angular-intl";
+import { NumericTextBoxModule } from "@progress/kendo-angular-inputs";
+import { IconsModule } from "@progress/kendo-angular-icons";
+import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
+
+
 
 @NgModule({
   declarations: [
@@ -38,12 +49,21 @@ import { NotificationModule } from "@progress/kendo-angular-notification";
     TreeListComponent,
     TooltipComponent,
     PopoverComponent,
-    NotificationComponent
+    NotificationComponent,
+    PaginationComponent,
+    StepperComponent,
+    PdfExportComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    IconsModule,
+    PDFExportModule,
+    DropDownsModule,
+    IntlModule,
+    NumericTextBoxModule,
     LayoutModule,
+    PagerModule,
     BrowserAnimationsModule,
     ButtonsModule,
     UtilsModule,
