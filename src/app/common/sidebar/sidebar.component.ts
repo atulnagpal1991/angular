@@ -32,6 +32,14 @@ export class SidebarComponent {
       { separator: true },
       { text: 'Stepper' },  
       { separator: true },
+      { text: 'Dialogs' },  
+      { separator: true },
+      { text: 'Stepper' },  
+      { separator: true },
+      { text: 'Stepper' },  
+      { separator: true },
+
+      
       
   ];
 

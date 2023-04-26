@@ -34,6 +34,8 @@ import { IntlModule } from "@progress/kendo-angular-intl";
 import { NumericTextBoxModule } from "@progress/kendo-angular-inputs";
 import { IconsModule } from "@progress/kendo-angular-icons";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
+import { DialogsComponent } from './common/layout/dialogs/dialogs.component';
+import { DialogsModule } from "@progress/kendo-angular-dialog";
 
 
 
@@ -52,13 +54,15 @@ import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
     NotificationComponent,
     PaginationComponent,
     StepperComponent,
-    PdfExportComponent
+    PdfExportComponent,
+    DialogsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IconsModule,
     PDFExportModule,
+    DialogsModule,
     DropDownsModule,
     IntlModule,
     NumericTextBoxModule,
