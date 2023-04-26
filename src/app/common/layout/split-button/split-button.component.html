@@ -1,0 +1,37 @@
+<p>split-button works!</p>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+      <p>Default Button</p>
+      <kendo-splitbutton
+        (buttonClick)="onPaste()"
+        [data]="data"
+        icon="clipboard"
+      >
+        Paste
+      </kendo-splitbutton>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+      <p>Flat Button</p>
+      <kendo-splitbutton
+        (buttonClick)="onPaste()"
+        [data]="data"
+        icon="clipboard"
+        fillMode="flat"
+      >
+        Paste
+      </kendo-splitbutton>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+      <p>Outline Button</p>
+      <kendo-splitbutton
+        (buttonClick)="onPaste()"
+        [data]="data"
+        icon="clipboard"
+        fillMode="outline"
+      >
+        Paste
+      </kendo-splitbutton>
+    </div>
+  </div>

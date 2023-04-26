@@ -34,9 +34,9 @@ export class SidebarComponent {
       { separator: true },
       { text: 'Dialogs' },  
       { separator: true },
-      { text: 'Stepper' },  
+      { text: 'Split Button' },  
       { separator: true },
-      { text: 'Stepper' },  
+      { text: 'Drop Down Button' },  
       { separator: true },
 
       

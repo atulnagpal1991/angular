@@ -36,6 +36,8 @@ import { IconsModule } from "@progress/kendo-angular-icons";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { DialogsComponent } from './common/layout/dialogs/dialogs.component';
 import { DialogsModule } from "@progress/kendo-angular-dialog";
+import { SplitButtonComponent } from './common/layout/split-button/split-button.component';
+import { DropDownButtonComponent } from './common/layout/drop-down-button/drop-down-button.component';
 
 
 
@@ -55,7 +57,9 @@ import { DialogsModule } from "@progress/kendo-angular-dialog";
     PaginationComponent,
     StepperComponent,
     PdfExportComponent,
-    DialogsComponent
+    DialogsComponent,
+    SplitButtonComponent,
+    DropDownButtonComponent
   ],
   imports: [
     BrowserModule,
