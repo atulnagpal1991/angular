@@ -1,0 +1,12 @@
+<kendo-listbox
+    kendoListBoxDataBinding
+    [data]="europeanCountries"
+    [connectedWith]="asia"
+>
+</kendo-listbox>
+<kendo-listbox
+    #asia
+    [data]="asianCountries"
+    [toolbar]="false"
+>
+</kendo-listbox>

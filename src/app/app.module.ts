@@ -38,7 +38,21 @@ import { DialogsComponent } from './common/layout/dialogs/dialogs.component';
 import { DialogsModule } from "@progress/kendo-angular-dialog";
 import { SplitButtonComponent } from './common/layout/split-button/split-button.component';
 import { DropDownButtonComponent } from './common/layout/drop-down-button/drop-down-button.component';
-
+import { DataGridComponent } from './common/layout/data-grid/data-grid.component';
+import { ListBoxComponent } from './common/layout/list-box/list-box.component';
+import { ExcelExportComponent } from './common/layout/excel-export/excel-export.component';
+import { AngularChatComponent } from './common/layout/angular-chat/angular-chat.component';
+import { ListViewComponent } from './common/layout/list-view/list-view.component';
+import { EditorComponent } from './common/layout/editor/editor.component';
+import { AngularSchedulerComponent } from './common/layout/angular-scheduler/angular-scheduler.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { ListBoxModule } from '@progress/kendo-angular-listbox';
+import { ExcelExportModule } from "@progress/kendo-angular-excel-export";
+import { ChatModule } from '@progress/kendo-angular-conversational-ui';
+import { EditorModule } from "@progress/kendo-angular-editor";
+import { SchedulerModule } from "@progress/kendo-angular-scheduler";
+import { ListViewModule } from "@progress/kendo-angular-listview";
+import { DestinationCardComponent } from './common/layout/list-view/destination-card/destination-card.component';
 
 
 @NgModule({
@@ -59,7 +73,15 @@ import { DropDownButtonComponent } from './common/layout/drop-down-button/drop-d
     PdfExportComponent,
     DialogsComponent,
     SplitButtonComponent,
-    DropDownButtonComponent
+    DropDownButtonComponent,
+    DataGridComponent,
+    ListBoxComponent,
+    ExcelExportComponent,
+    AngularChatComponent,
+    ListViewComponent,
+    EditorComponent,
+    AngularSchedulerComponent,
+    DestinationCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +104,14 @@ import { DropDownButtonComponent } from './common/layout/drop-down-button/drop-d
     TreeListModule,
     TooltipsModule,
     DateInputsModule,
-    NotificationModule
+    NotificationModule,
+    GridModule,
+    ListBoxModule,
+    ExcelExportModule,
+    ChatModule,
+    EditorModule,
+    SchedulerModule,
+    ListViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

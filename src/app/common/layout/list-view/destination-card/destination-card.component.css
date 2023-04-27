@@ -1,0 +1,24 @@
+.destination-card {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 205px;
+    overflow: visible;
+}
+
+.destination-card-body {
+    padding: 8px 0;
+}
+
+.destination-card .title {
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.destination-card .subtitle {
+    font-size: 11px;
+}
+
