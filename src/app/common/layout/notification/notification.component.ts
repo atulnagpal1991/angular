@@ -23,4 +23,50 @@ export class NotificationComponent {
       closable: true,
     });
   }
+  
+  code = `
+  import { Component } from '@angular/core';
+import { NotificationService } from '@progress/kendo-angular-notification';
+
+@Component({
+    selector: 'my-app',
+    template: "
+       <button kendoButton (click)="show()">Save data</button>
+    "
+})
+export class AppComponent {
+    constructor(
+        private notificationService: NotificationService
+    ) {}
+
+    public show(): void {
+        this.notificationService.show({
+            content: 'Your data has been saved. Time for tea!',
+            cssClass: 'button-notification',
+            animation: { type: 'slide', duration: 400 },
+            position: { horizontal: 'center', vertical: 'bottom' },
+            type: { style: 'success', icon: true },
+            closable: true
+        });
+    }
+}
+`
+
+
+code1 = `
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotificationModule } from '@progress/kendo-angular-notification';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+    bootstrap:    [AppComponent],
+    declarations: [AppComponent],
+    imports:      [BrowserModule, BrowserAnimationsModule, NotificationModule, ButtonsModule]
+})
+export class AppModule { }
+`
 }

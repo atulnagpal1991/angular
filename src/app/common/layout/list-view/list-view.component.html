@@ -15,9 +15,6 @@
                     <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
                         <app-destination-card [destination]="dataItem"></app-destination-card>
                     </ng-template>
-                    <ng-template kendoListViewFooterTemplate>
-                        <div class="footer-note">Source: wwww.european.destinations</div>
-                    </ng-template>
                 </kendo-listview>
             </ng-template>
         </kendo-tabstrip-tab>
@@ -29,7 +26,7 @@
                             <ng-template kendoTabContent>
                                 <div class="content">
                                     <pre>
-                              <!-- <code>{{code}}</code> -->
+                              <code>{{code}}</code>
                           </pre>
                                 </div>
                             </ng-template>
@@ -38,7 +35,25 @@
                             <ng-template kendoTabContent>
                                 <div class="content">
                                     <pre>
-                              <!-- <code>{{code1}}</code> -->
+                              <code>{{code1}}</code>
+                          </pre>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                        <kendo-tabstrip-tab title="destination.component.ts">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
+                              <code>{{code2}}</code>
+                          </pre>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                        <kendo-tabstrip-tab title="destinations.ts">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
+                              <code>{{code3}}</code>
                           </pre>
                                 </div>
                             </ng-template>
