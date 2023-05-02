@@ -2,13 +2,36 @@
 <div class="description">
   <h6 class="sub-heading">sub-heading</h6>
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged.</p>
 </div>
 
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary" [style.marginLeft.px]="200">
+          Show Waffles Recipe
+        </button>
+
+        <kendo-popover #myPopover [width]="300" position="bottom">
+          <ng-template kendoPopoverTitleTemplate>
+            <div class="popover-title">Pumpkin Waffles</div>
+          </ng-template>
+
+          <ng-template kendoPopoverBodyTemplate>
+            <img class="picture" [src]="wafflesImg" />
+            <div>{{ wafflesRecipe }}</div>
+          </ng-template>
+
+          <ng-template kendoPopoverActionsTemplate>
+            <button kendoButton fillMode="flat" themeColor="primary">
+              <!-- <span class="k-icon k-i-heart-outline"></span> -->
+              Footer
+            </button>
+          </ng-template>
+        </kendo-popover>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -38,31 +61,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<button
-      kendoPopoverAnchor
-      [popover]="myPopover"
-      kendoButton
-      themeColor="primary"
-      [style.marginLeft.px]="200"
-    >
-      Show Waffles Recipe
-    </button>
-
-    <kendo-popover #myPopover [width]="300" position="bottom">
-      <ng-template kendoPopoverTitleTemplate>
-        <div class="popover-title">Pumpkin Waffles</div>
-      </ng-template>
-
-      <ng-template kendoPopoverBodyTemplate>
-        <img class="picture" [src]="wafflesImg" />
-        <div>{{ wafflesRecipe }}</div>
-      </ng-template>
-
-      <ng-template kendoPopoverActionsTemplate>
-        <button kendoButton fillMode="flat" themeColor="primary">
-          <!-- <span class="k-icon k-i-heart-outline"></span> -->
-          Footer
-        </button>
-      </ng-template>
-    </kendo-popover>

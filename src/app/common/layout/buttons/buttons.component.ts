@@ -10,6 +10,7 @@ export class ButtonsComponent {
   public onTabSelect(e: SelectEvent): void {
     console.log(e);
   }
+  public current = 1;
 
   public imageUrl =
   "https://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png";

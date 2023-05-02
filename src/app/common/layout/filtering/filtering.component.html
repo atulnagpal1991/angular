@@ -9,7 +9,11 @@
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <kendo-treeview kendoTreeViewHierarchyBinding [filterable]="true" [nodes]="data" childrenField="items"
+          textField="text">
+        </kendo-treeview>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -39,6 +43,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<kendo-treeview kendoTreeViewHierarchyBinding [filterable]="true" [nodes]="data" childrenField="items" textField="text">
-</kendo-treeview>

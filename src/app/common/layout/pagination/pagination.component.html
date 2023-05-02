@@ -2,13 +2,17 @@
 <div class="description">
   <h6 class="sub-heading">sub-heading</h6>
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged.</p>
 </div>
 
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event)">
+        </kendo-datapager>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -38,11 +42,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<kendo-datapager
-      [total]="50"
-      [pageSize]="pageSize"
-      [skip]="skip"
-      (pageChange)="onPageChange($event)"
-    >
-    </kendo-datapager>

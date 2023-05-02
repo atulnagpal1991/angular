@@ -9,7 +9,11 @@
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <div kendoTooltip>
+          <button kendoButton title="Saves the current document">Save</button>
+        </div>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -38,8 +42,4 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
-</div>
-
-<div kendoTooltip>
-  <button kendoButton title="Saves the current document">Save</button>
 </div>

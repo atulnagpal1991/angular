@@ -9,7 +9,15 @@
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
+          parentIdField="managerId">
+          <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
+          </kendo-treelist-column>
+          <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
+          <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
+        </kendo-treelist>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -39,11 +47,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
-  parentIdField="managerId">
-  <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
-  </kendo-treelist-column>
-  <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
-  <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
-</kendo-treelist>

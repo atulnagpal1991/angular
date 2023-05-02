@@ -9,7 +9,12 @@
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <kendo-listbox kendoListBoxDataBinding [data]="europeanCountries" [connectedWith]="asia">
+        </kendo-listbox>
+        <kendo-listbox #asia [data]="asianCountries" [toolbar]="false">
+        </kendo-listbox>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -39,8 +44,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<kendo-listbox kendoListBoxDataBinding [data]="europeanCountries" [connectedWith]="asia">
-</kendo-listbox>
-<kendo-listbox #asia [data]="asianCountries" [toolbar]="false">
-</kendo-listbox>

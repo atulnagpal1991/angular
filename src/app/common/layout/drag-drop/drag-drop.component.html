@@ -8,7 +8,27 @@
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <div class="example-wrapper">
+          <div class="example-col">
+            <h5>Drag the Button around</h5>
+            <div class="container">
+              <div *ngFor="let dropTarget of dropTargets" kendoDropTarget (dragEnter)="handleDragEnter(dropTarget)"
+                (drop)="handleDrop(dropTarget)" (dragLeave)="handleDragLeave()" [ngClass]="{
+            'my-drop': true,
+            entered: enteredBox === dropTarget && enteredBox !== currentBox
+          }">
+                <button kendoButton kendoDragTarget *ngIf="currentBox === dropTarget" (press)="handlePress()"
+                  (release)="resetText()" (dragEnd)="resetText()" themeColor="primary">
+                  <span class="k-icon k-i-move k-icon-md"></span>
+                  {{ btnText }}
+                </button>
+                {{ currentBox !== dropTarget ? "Drop Here" : "" }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -37,23 +57,4 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
-</div>
-<div class="example-wrapper">
-  <div class="example-col">
-    <h5>Drag the Button around</h5>
-    <div class="container">
-      <div *ngFor="let dropTarget of dropTargets" kendoDropTarget (dragEnter)="handleDragEnter(dropTarget)"
-        (drop)="handleDrop(dropTarget)" (dragLeave)="handleDragLeave()" [ngClass]="{
-            'my-drop': true,
-            entered: enteredBox === dropTarget && enteredBox !== currentBox
-          }">
-        <button kendoButton kendoDragTarget *ngIf="currentBox === dropTarget" (press)="handlePress()"
-          (release)="resetText()" (dragEnd)="resetText()" themeColor="primary">
-          <span class="k-icon k-i-move k-icon-md"></span>
-          {{ btnText }}
-        </button>
-        {{ currentBox !== dropTarget ? "Drop Here" : "" }}
-      </div>
-    </div>
-  </div>
 </div>

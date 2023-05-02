@@ -2,13 +2,37 @@
 <div class="description">
   <h6 class="sub-heading">sub-heading</h6>
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged.</p>
 </div>
 
 <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
-      preview
+      <ng-template kendoTabContent>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+            <p>Default Button</p>
+            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard">
+              Paste
+            </kendo-splitbutton>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+            <p>Flat Button</p>
+            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="flat">
+              Paste
+            </kendo-splitbutton>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+            <p>Outline Button</p>
+            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="outline">
+              Paste
+            </kendo-splitbutton>
+          </div>
+        </div>
+      </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
       <ng-template kendoTabContent>
@@ -38,40 +62,3 @@
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
 </div>
-
-<div class="row">
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Default Button</p>
-      <kendo-splitbutton
-        (buttonClick)="onPaste()"
-        [data]="data"
-        icon="clipboard"
-      >
-        Paste
-      </kendo-splitbutton>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Flat Button</p>
-      <kendo-splitbutton
-        (buttonClick)="onPaste()"
-        [data]="data"
-        icon="clipboard"
-        fillMode="flat"
-      >
-        Paste
-      </kendo-splitbutton>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Outline Button</p>
-      <kendo-splitbutton
-        (buttonClick)="onPaste()"
-        [data]="data"
-        icon="clipboard"
-        fillMode="outline"
-      >
-        Paste
-      </kendo-splitbutton>
-    </div>
-  </div>

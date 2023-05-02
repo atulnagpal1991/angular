@@ -8,44 +8,44 @@
 
 <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-      <kendo-tabstrip-tab title="Preview" [selected]="true">
-        preview
-      </kendo-tabstrip-tab>
-      <kendo-tabstrip-tab title="View Source">
-        <ng-template kendoTabContent>
-          <div>
-            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-                <ng-template kendoTabContent>
-                  <div class="content">
-                    <pre>
+        <kendo-tabstrip-tab title="Preview" [selected]="true">
+            <ng-template kendoTabContent>
+            <kendo-listview [kendoListViewBinding]="destinations" [pageable]="pagerSettings" [pageSize]="pageSize"
+                containerClass="listview-content">
+                <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+                    <app-destination-card [destination]="dataItem"></app-destination-card>
+                </ng-template>
+                <ng-template kendoListViewFooterTemplate>
+                    <div class="footer-note">Source: wwww.european.destinations</div>
+                </ng-template>
+            </kendo-listview>
+            </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab title="View Source">
+            <ng-template kendoTabContent>
+                <div>
+                    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+                        <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
                               <!-- <code>{{code}}</code> -->
                           </pre>
-                  </div>
-                </ng-template>
-              </kendo-tabstrip-tab>
-              <kendo-tabstrip-tab title="app.module.ts">
-                <ng-template kendoTabContent>
-                  <div class="content">
-                    <pre>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                        <kendo-tabstrip-tab title="app.module.ts">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
                               <!-- <code>{{code1}}</code> -->
                           </pre>
-                  </div>
-                </ng-template>
-              </kendo-tabstrip-tab>
-            </kendo-tabstrip>
-          </div>
-        </ng-template>
-      </kendo-tabstrip-tab>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                    </kendo-tabstrip>
+                </div>
+            </ng-template>
+        </kendo-tabstrip-tab>
     </kendo-tabstrip>
-  </div>
-
-<kendo-listview [kendoListViewBinding]="destinations" [pageable]="pagerSettings" [pageSize]="pageSize"
-    containerClass="listview-content">
-    <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
-        <app-destination-card [destination]="dataItem"></app-destination-card>
-    </ng-template>
-    <ng-template kendoListViewFooterTemplate>
-        <div class="footer-note">Source: wwww.european.destinations</div>
-    </ng-template>
-</kendo-listview>
+</div>
