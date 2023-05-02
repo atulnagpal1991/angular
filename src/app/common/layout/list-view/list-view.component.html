@@ -10,15 +10,15 @@
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
         <kendo-tabstrip-tab title="Preview" [selected]="true">
             <ng-template kendoTabContent>
-            <kendo-listview [kendoListViewBinding]="destinations" [pageable]="pagerSettings" [pageSize]="pageSize"
-                containerClass="listview-content">
-                <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
-                    <app-destination-card [destination]="dataItem"></app-destination-card>
-                </ng-template>
-                <ng-template kendoListViewFooterTemplate>
-                    <div class="footer-note">Source: wwww.european.destinations</div>
-                </ng-template>
-            </kendo-listview>
+                <kendo-listview [kendoListViewBinding]="destinations" [pageable]="pagerSettings" [pageSize]="pageSize"
+                    containerClass="listview-content">
+                    <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+                        <app-destination-card [destination]="dataItem"></app-destination-card>
+                    </ng-template>
+                    <ng-template kendoListViewFooterTemplate>
+                        <div class="footer-note">Source: wwww.european.destinations</div>
+                    </ng-template>
+                </kendo-listview>
             </ng-template>
         </kendo-tabstrip-tab>
         <kendo-tabstrip-tab title="View Source">

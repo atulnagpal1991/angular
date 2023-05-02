@@ -19,31 +19,31 @@
                 </kendo-grid>
             </ng-template>
         </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-        <ng-template kendoTabContent>
-            <div>
-                <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-                    <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-                        <ng-template kendoTabContent>
-                            <div class="content">
-                                <pre>
+        <kendo-tabstrip-tab title="View Source">
+            <ng-template kendoTabContent>
+                <div>
+                    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+                        <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
                               <!-- <code>{{code}}</code> -->
                           </pre>
-                            </div>
-                        </ng-template>
-                    </kendo-tabstrip-tab>
-                    <kendo-tabstrip-tab title="app.module.ts">
-                        <ng-template kendoTabContent>
-                            <div class="content">
-                                <pre>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                        <kendo-tabstrip-tab title="app.module.ts">
+                            <ng-template kendoTabContent>
+                                <div class="content">
+                                    <pre>
                               <!-- <code>{{code1}}</code> -->
                           </pre>
-                            </div>
-                        </ng-template>
-                    </kendo-tabstrip-tab>
-                </kendo-tabstrip>
-            </div>
-        </ng-template>
-    </kendo-tabstrip-tab>
+                                </div>
+                            </ng-template>
+                        </kendo-tabstrip-tab>
+                    </kendo-tabstrip>
+                </div>
+            </ng-template>
+        </kendo-tabstrip-tab>
     </kendo-tabstrip>
 </div>
