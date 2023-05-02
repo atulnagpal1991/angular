@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-dialogs',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dialogs.component.css']
 })
 export class DialogsComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public opened = true;
 
   public close(status: string): void {

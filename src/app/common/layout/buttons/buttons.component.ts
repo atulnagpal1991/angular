@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-buttons',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./buttons.component.css']
 })
 export class ButtonsComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
 
   public imageUrl =
   "https://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png";

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-split-button',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./split-button.component.css']
 })
 export class SplitButtonComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public data = [
     {
       text: "Keep Text Only",

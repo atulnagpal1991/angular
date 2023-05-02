@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-popover',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./popover.component.css']
 })
 export class PopoverComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public wafflesImg =
   "https://www.telerik.com/kendo-angular-ui-develop/components/layout/card/assets/waffles.jpg";
 

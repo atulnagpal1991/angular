@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NotificationService } from "@progress/kendo-angular-notification";
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-notification',
@@ -7,6 +8,9 @@ import { NotificationService } from "@progress/kendo-angular-notification";
   styleUrls: ['./notification.component.css']
 })
 export class NotificationComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   constructor(private notificationService: NotificationService) {}
 
   public show(): void {

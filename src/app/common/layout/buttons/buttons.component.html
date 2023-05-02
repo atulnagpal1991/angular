@@ -2,62 +2,84 @@
 <div class="description">
   <h6 class="sub-heading">sub-heading</h6>
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged.</p>
+</div>
+
+<div class="wrapper">
+  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+    <kendo-tabstrip-tab title="Preview" [selected]="true">
+      preview
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab title="View Source">
+      <ng-template kendoTabContent>
+        <div>
+          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+              <ng-template kendoTabContent>
+                <div class="content">
+                  <pre>
+                            <!-- <code>{{code}}</code> -->
+                        </pre>
+                </div>
+              </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="app.module.ts">
+              <ng-template kendoTabContent>
+                <div class="content">
+                  <pre>
+                            <!-- <code>{{code1}}</code> -->
+                        </pre>
+                </div>
+              </ng-template>
+            </kendo-tabstrip-tab>
+          </kendo-tabstrip>
+        </div>
+      </ng-template>
+    </kendo-tabstrip-tab>
+  </kendo-tabstrip>
 </div>
 
 <div class="example-wrapper">
-    <div class="example-col">
-      <p>Button</p>
-      <button class="me-3" kendoButton (click)="onButtonClick()">Default</button>
-      <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
-        Primary
-      </button>
-      <button class="me-3" kendoButton (click)="onButtonClick()" [disabled]="true">
-        Disabled
-      </button>
-    </div>
-    <div class="example-col">
-      <p>ButtonGroup</p>
-      <kendo-buttongroup>
-        <button kendoButton [toggleable]="true">Option A</button>
-        <button kendoButton [toggleable]="true">Option B</button>
-        <button kendoButton [toggleable]="true">Option C</button>
-      </kendo-buttongroup>
-    </div>
-    <div class="example-col">
-      <p>DropDownButton</p>
-      <kendo-dropdownbutton
-        [data]="dropDownButtonItems"
-        icon="gear"
-        title="User Settings"
-        (itemClick)="onSplitButtonItemClick($event)"
-      >
-        User Settings
-      </kendo-dropdownbutton>
-    </div>
-    <div class="example-col">
-      <p>SplitButton</p>
-      <kendo-splitbutton
-        [data]="splitButtonItems"
-        icon="clipboard"
-        title="Paste"
-        (itemClick)="onSplitButtonItemClick($event)"
-        (buttonClick)="onSplitButtonClick()"
-      >
-        Paste
-      </kendo-splitbutton>
-    </div>
-    <div class="example-col">
-      <p>Chip</p>
-      <kendo-chip-list selection="multiple">
-        <kendo-chip
-          *ngFor="let chip of chips"
-          [label]="chip.label"
-          [iconClass]="chip.iconClass"
-        ></kendo-chip>
-      </kendo-chip-list>
-    </div>
-    <!-- <div class="example-col">
+  <div class="example-col">
+    <p>Button</p>
+    <button class="me-3" kendoButton (click)="onButtonClick()">Default</button>
+    <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
+      Primary
+    </button>
+    <button class="me-3" kendoButton (click)="onButtonClick()" [disabled]="true">
+      Disabled
+    </button>
+  </div>
+  <div class="example-col">
+    <p>ButtonGroup</p>
+    <kendo-buttongroup>
+      <button kendoButton [toggleable]="true">Option A</button>
+      <button kendoButton [toggleable]="true">Option B</button>
+      <button kendoButton [toggleable]="true">Option C</button>
+    </kendo-buttongroup>
+  </div>
+  <div class="example-col">
+    <p>DropDownButton</p>
+    <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" title="User Settings"
+      (itemClick)="onSplitButtonItemClick($event)">
+      User Settings
+    </kendo-dropdownbutton>
+  </div>
+  <div class="example-col">
+    <p>SplitButton</p>
+    <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" title="Paste"
+      (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+      Paste
+    </kendo-splitbutton>
+  </div>
+  <div class="example-col">
+    <p>Chip</p>
+    <kendo-chip-list selection="multiple">
+      <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [iconClass]="chip.iconClass"></kendo-chip>
+    </kendo-chip-list>
+  </div>
+  <!-- <div class="example-col">
       <kendo-floatingactionbutton
         icon="plus"
         text="Add New"
@@ -71,4 +93,4 @@
       <kendo-floatingactionbutton icon="share" [dialItems]="fabItems">
       </kendo-floatingactionbutton>
     </div> -->
-  </div>
+</div>

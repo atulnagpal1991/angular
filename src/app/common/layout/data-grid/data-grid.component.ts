@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { Product } from "./model";
+import { SelectEvent } from "@progress/kendo-angular-layout";
 @Component({
   selector: 'app-data-grid',
   templateUrl: './data-grid.component.html',
   styleUrls: ['./data-grid.component.css']
 })
 export class DataGridComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public gridData: Product[] = [
     {
       ProductID: 1,

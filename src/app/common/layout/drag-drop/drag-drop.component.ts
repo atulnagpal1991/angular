@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-drag-drop',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./drag-drop.component.css']
 })
 export class DragDropComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public dropTargets = ["A", "B"];
   public currentBox = "A";
   public enteredBox = "A";

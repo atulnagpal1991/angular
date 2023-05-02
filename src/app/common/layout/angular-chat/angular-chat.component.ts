@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 import {
   Message,
   User,
@@ -11,6 +12,9 @@ import {
   styleUrls: ['./angular-chat.component.css']
 })
 export class AngularChatComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public user: User = { id: 1 };
 
   public bot: User = { id: 0 };

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-list-box',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-box.component.css']
 })
 export class ListBoxComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public europeanCountries: string[] = [ 'Germany', 'France', 'Austria', 'Belgium', 'Denmark', 'Netherlands'];
   public asianCountries: string[] = [ 'China', 'India', 'Indonesia', 'Nepal', 'Thailand', 'Yemen' ];
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PageChangeEvent } from "@progress/kendo-angular-pager";
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-pagination',
@@ -7,6 +8,9 @@ import { PageChangeEvent } from "@progress/kendo-angular-pager";
   styleUrls: ['./pagination.component.css']
 })
 export class PaginationComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public skip = 0;
   public pageSize = 10;
 

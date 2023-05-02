@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-drop-down-button',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./drop-down-button.component.css']
 })
 export class DropDownButtonComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   data = [
     {
       text: "My Profile",

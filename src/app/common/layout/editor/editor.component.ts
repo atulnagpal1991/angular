@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-editor',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./editor.component.css']
 })
 export class EditorComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public value = `
   <p>
       The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.<br />

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-filtering',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./filtering.component.css']
 })
 export class FilteringComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
   public data: any[] = [
     {
       text: "Furniture",
