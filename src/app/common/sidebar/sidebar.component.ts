@@ -49,7 +49,9 @@ export class SidebarComponent {
       { text: 'Scheduler' },  
       { separator: true },      
       { text: 'List View' },  
-      { separator: true },
+      { separator: true },    
+      // { text: 'Drop Down Button' },  
+      // { separator: true },
 
       
       
