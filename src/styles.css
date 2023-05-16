@@ -28,7 +28,11 @@ app-stepper {
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 2px;
 }
 
 kendo-tabstrip {
@@ -59,6 +63,34 @@ h2>span {
 
 
 .main-heading {
-    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
     margin-bottom: 50px;
+}
+
+
+.description {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.description p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.k-drawer-separator {
+    background-color: transparent
+}
+
+.k-drawer-push .k-drawer {
+    background-color: #0053D6;
+    color: #fff;
+}
+
+.k-drawer-item.k-selected {
+    background-color: #176CF1!important;
+    color: #FFDB13!important;
+
 }

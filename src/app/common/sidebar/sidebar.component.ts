@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DrawerSelectEvent } from '@progress/kendo-angular-layout';
+import { DrawerPosition } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-sidebar',
@@ -57,7 +58,11 @@ export class SidebarComponent {
       
   ];
 
+  public position: DrawerPosition = "start";
   public onSelect(ev: DrawerSelectEvent): void {
       this.selected = ev.item.text;
+  }
+  public onPositionChange(checked: boolean): void {
+    this.position = checked ? "start" : "end";
   }
 }

@@ -1,5 +1,12 @@
+.main-bg {
+    background-color: blue;
+    padding: 10px;
+}
+
 .content {
     padding: 20px;
+    background: #DFF3FF;
+    border-radius: 15px;
 }
 .header {
     padding: 20px 20px 0 20px;
