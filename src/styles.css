@@ -181,6 +181,13 @@ a.btn:hover {
     border-radius: 10px;
 }
 
+.description .sub-heading {
+  font-size: 16px;
+  text-transform: initial;
+  letter-spacing: initial;
+  font-weight: initial;
+}
+
 .description p {
     margin-top: 20px;
     margin-bottom: 0px;
@@ -229,7 +236,7 @@ a.btn:hover {
     margin-bottom: 0;
 }
 
-.k-item span {
+kendo-tabstrip .k-item span {
     color: #0053D6!important;
     font-size: 14px;
     font-weight: 700;
@@ -238,7 +245,14 @@ a.btn:hover {
 
 kendo-tabstrip kendo-tabstrip .k-item span {
     text-transform: lowercase;
+}
 
+kendo-tabstrip .example-wrapper p {
+  margin: 0;
+}
+
+kendo-tabstrip  .example-col {
+  margin-bottom: 20px;
 }
 
 .k-item.k-active span {
