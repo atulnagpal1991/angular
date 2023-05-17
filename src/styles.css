@@ -1,3 +1,158 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #000000;
+    padding: 6px;
+    max-height: calc(100vh - 12px);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+  }
+
+.logo {
+    position: absolute;
+    width: 260px;
+    z-index: 999;
+    background-color: #0053D6;
+    padding: 32px;
+}
+
+.logo .info {
+    background-color: #4FC553;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: -32px;
+    padding: 6px 32px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.logo .info:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 15px solid #0053d6;
+    border-bottom: 18px solid transparent;
+    border-top: 18px solid transparent;
+    right: 0;
+}
+
+.main-container  {
+    display: block;
+    background-color: #0053D6;
+    border-radius: 15px;
+    padding: 10px 10px 10px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;    
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 1px;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.description p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.k-drawer-push .k-drawer {
+    background-color: #0053D6;
+    color: #fff;
+    max-height: calc(100vh - 182px);
+    flex-basis: 260px!important;
+    border: none;
+    margin-top: 150px;
+    margin-right: 10px;
+}
+
+.k-drawer-push .k-drawer .k-drawer-wrapper {
+    width: 100%!important;
+}
+
+.k-drawer-item.k-selected, .k-drawer-item:hover  {
+    background-color: #176CF1!important;
+    color: #FFDB13!important;
+    border-radius: 0 20px 20px 0;
+    width: calc(100% - 20px);
+}
+
+.k-drawer-item {
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.k-i-tab {
+    background-image: url(assets/images/fullscreen-exit-fill.png);
+    width: 22px;
+    height: 22px!important;
+}
+
+.k-drawer-item.k-selected .k-i-tab {
+    background-image: url(assets/images/fullscreen-fill.png);
+}
+
+.k-item.k-state-default, .k-content.k-active, .k-tabstrip-top > .k-tabstrip-items-wrapper  {
+    border: none!important;
+    box-shadow: none!important;
+    margin-bottom: 0;
+}
+
+.k-item span {
+    color: #0053D6!important;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+kendo-tabstrip kendo-tabstrip .k-item span {
+    text-transform: lowercase;
+
+}
+
+.k-item.k-active span {
+    color: #1E1E1E;
+    border-bottom: 3px solid #4FC553;
+}
+
+
 .k-listview-header,
 .k-listview-content {
     padding: 20px 0;
@@ -26,26 +181,19 @@ app-stepper {
     width: 100%;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;    
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 2px;
-}
-
 kendo-tabstrip {
     width: 380px;
 }
 
 .content {
     padding: 30px;
+    background: #DFF3FF;
+    border-radius: 20px;
+    height: calc(100vh - 30px);
+    overflow: auto;
 }
-
 img {
-    width: 120px;
-    height: 120px;
+    max-width: 100%;
 }
 
 h2 {
@@ -60,37 +208,3 @@ h2>span {
 }
 
 
-
-
-.main-heading {
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
-
-
-.description {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.description p {
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.k-drawer-separator {
-    background-color: transparent
-}
-
-.k-drawer-push .k-drawer {
-    background-color: #0053D6;
-    color: #fff;
-}
-
-.k-drawer-item.k-selected {
-    background-color: #176CF1!important;
-    color: #FFDB13!important;
-
-}
