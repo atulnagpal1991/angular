@@ -234,7 +234,7 @@ a.btn:hover {
 .k-item.k-state-default, .k-content.k-active, .k-tabstrip-top > .k-tabstrip-items-wrapper  {
     border: none!important;
     box-shadow: none!important;
-    margin-bottom: 0;
+    margin-bottom: 0!important;
 }
 
 kendo-tabstrip .k-item span {
