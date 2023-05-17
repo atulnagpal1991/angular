@@ -1,3 +1,85 @@
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Black.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-ExtraBold.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Bold.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-SemiBold.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Medium.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Regular.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Light.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-ExtraLight.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('assets/lexendDeca/LexendDeca-Thin.woff2') format('woff2'),
+      url('assets/lexendDeca/LexendDeca-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: #000000;
@@ -5,6 +87,18 @@ body {
     max-height: calc(100vh - 12px);
 }
 
+* {
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #0053d6 !important;
+}
+
+a.btn:hover {
+  color: #fff!important;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -31,7 +125,7 @@ body {
 .logo {
     position: absolute;
     width: 260px;
-    z-index: 999;
+    z-index: 99;
     background-color: #0053D6;
     padding: 32px;
 }
@@ -185,13 +279,14 @@ kendo-tabstrip {
     width: 380px;
 }
 
-.content {
+.content-section {
     padding: 30px;
     background: #DFF3FF;
     border-radius: 20px;
     height: calc(100vh - 30px);
     overflow: auto;
 }
+
 img {
     max-width: 100%;
 }
@@ -208,3 +303,173 @@ h2>span {
 }
 
 
+
+/* header css start */
+  .navbar-brand img {
+    opacity: 1!important;
+  }
+  
+  .main-header .navbar-toggler {
+    box-shadow: none;
+  }
+  
+  .main-header .dropdown-toggle::after {
+    content: none;
+  }
+  
+  .main-header .menu-show .menu-close {
+    position: relative;
+    z-index: 999;
+  }
+  
+  .main-header .menu-show.active .menu-open {
+    display: none;
+  }
+  
+  .main-header .menu-show .menu-close {
+    display: none;
+  }
+  
+  .main-header .menu-show.active .menu-close {
+    display: block;
+  }
+  
+  .menu-show {
+    cursor: pointer;
+  }
+  
+  .full-menu {
+    /* display: none; */
+    width: 100%;
+    position: fixed;
+    background-color: #0053d6;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 100px;
+    opacity: .995;
+    overflow: auto;
+    z-index: 99;
+    left: 100%;
+    transition-duration: .5s;
+  }
+  
+  .menu-show.active~.full-menu {
+    /* display: block; */
+    left: 0;
+  }
+  
+  .full-menu h3 {
+    position: relative;
+    font-weight: 200;
+    line-height: 2;
+    color: #2d2d2d;
+    margin-bottom: 0;
+  }
+  
+  .full-menu h3 a, .full-menu h3 span, .full-menu h6, .full-menu .social-link a {
+    color: #fff;
+  }
+  
+  .full-menu h3 .sub-menu {
+    display: flex;
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    align-items: center;
+  }
+  
+  .full-menu h3 .sub-menu .line {
+    border-bottom: 1px solid #fff;
+    min-width: 50px;
+    margin-left: 24px;
+    margin-right: 50px;
+  }
+  
+  .full-menu h3 .sub-menu a {
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 50px;
+  }
+  
+  .full-menu h3 .sub-menu a:hover, .full-menu h3 a:hover, .full-menu .social-link a:hover  {
+    color: #458dff!important;
+  }
+  
+  .social-link {
+    margin-top: 40px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #000;
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    color: #0053d6;
+  }
+  
+  .navbar-nav .btn {
+    padding: 14px 28px;
+    min-width: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+  }
+  
+  
+  /* header css end */
+
+  
+.dropdown-menu.show {
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 11%) !important;
+  border: none;
+}
+
+.dropdown-menu.show .dropdown-item {
+  padding: 20px 40px;
+}
+
+.dropdown-menu li {
+  margin-top: 0;
+}
+
+.dropdown-item:active:hover  {
+  color: #fff!important;
+}
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #f8f9fa;
+}
+
+h3,
+.h3 {
+  font-size: 34px; /* 34 - 34 - 34 - 32 - 30 - 28  */
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: 20px; /* 20 - 20 - 20 - 20 - 20 - 20  */
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.full-menu a {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.email-css a:before {
+  content: "hello@rivercitycorp.in";
+}
