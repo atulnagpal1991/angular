@@ -173,13 +173,13 @@ a.btn:hover {
 .main-heading {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .description {
     background: #fff;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .description .sub-heading {
@@ -298,8 +298,11 @@ kendo-tabstrip {
     padding: 30px;
     background: #DFF3FF;
     border-radius: 20px;
-    height: calc(100vh - 30px);
-    overflow: auto;
+}
+
+.scroll-content {
+  height: calc(100vh - 180px);
+  overflow: auto;
 }
 
 img {
