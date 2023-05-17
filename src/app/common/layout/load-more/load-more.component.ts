@@ -15,7 +15,7 @@ export class LoadMoreComponent {
 
   
   code = `
-  import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { generateHierarchicalData } from './data-generator';
 
 @Component({

@@ -166,6 +166,7 @@ a.btn:hover {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
+    min-height: 500px;
     margin-top: 1px;
 }
 
@@ -460,7 +461,7 @@ h2>span {
 }
 
 
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-menu.show .dropdown-item:hover, .dropdown-menu.show .dropdown-item:focus {
   background-color: #f8f9fa;
 }
 
@@ -479,11 +480,32 @@ h6,
 }
 
 
-.full-menu a {
+.social-link a {
   font-size: 20px;
   font-weight: 300;
 }
 
 .email-css a:before {
   content: "hello@rivercitycorp.in";
+}
+
+example-wrapper,
+.example-col {
+    vertical-align: top;
+}
+
+.pedro {
+    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg");
+}
+
+.thomas {
+    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/RICSU.jpg");
+}
+
+.christina {
+    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/BERGS.jpg");
+}
+
+.paula {
+    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/RATTC.jpg");
 }
