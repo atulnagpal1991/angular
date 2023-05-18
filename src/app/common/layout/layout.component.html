@@ -94,73 +94,75 @@
         </div>
 
     </div>
-    <div class="scroll-content">
-      <div class="content" id="buttons" *ngIf="selectedItem === 'Buttons'">
-          <app-buttons></app-buttons>
-      </div>
-      <div class="content" id="dragDrop" *ngIf="selectedItem === 'Drag Drop'">
-          <app-drag-drop></app-drag-drop>
-      </div>
-      <div class="content" id="filtering" *ngIf="selectedItem === 'Filtering'">
-          <app-filtering></app-filtering>
-      </div>
-      <div class="content" id="loadMore" *ngIf="selectedItem === 'Load More'">
-          <app-load-more></app-load-more>
-      </div>
-      <div class="content" id="treeList" *ngIf="selectedItem === 'Tree List'">
-          <app-tree-list></app-tree-list>
-      </div>
-      <div class="content" id="tooltips" *ngIf="selectedItem === 'Tooltips'">
-          <app-tooltip></app-tooltip>
-      </div>
-      <div class="content" id="popover" *ngIf="selectedItem === 'Popover'">
-          <app-popover></app-popover>
-      </div>
-      <div class="content" id="notification" *ngIf="selectedItem === 'Notification'">
-          <app-notification></app-notification>
-      </div>
-      <div class="content" id="pagination" *ngIf="selectedItem === 'Pagination'">
-          <app-pagination></app-pagination>
-      </div>
-      <div class="content" id="pdfExport" *ngIf="selectedItem === 'PDF Export'">
-          <app-pdf-export></app-pdf-export>
-      </div>
-      <div class="content" id="stepper" *ngIf="selectedItem === 'Stepper'">
-          <app-stepper></app-stepper>
-      </div>
-      <div class="content" id="dialogs" *ngIf="selectedItem === 'Dialogs'">
-          <app-dialogs></app-dialogs>
-      </div>
-      <div class="content" id="splitButton" *ngIf="selectedItem === 'Split Button'">
-          <app-split-button></app-split-button>
-      </div>
-      <div class="content" id="dropDownButton" *ngIf="selectedItem === 'Drop Down Button'">
-          <app-drop-down-button></app-drop-down-button>
-      </div>
-      <div class="content" id="chat" *ngIf="selectedItem === 'Chat'">
-          <app-angular-chat></app-angular-chat>
-      </div>
-      <div class="content" id="scheduler" *ngIf="selectedItem === 'Scheduler'">
-          <app-angular-scheduler></app-angular-scheduler>
-      </div>
+    <div class="right-section">
+      <div class="scroll-content">
+        <div class="content" id="buttons" *ngIf="selectedItem === 'Buttons'">
+            <app-buttons></app-buttons>
+        </div>
+        <div class="content" id="dragDrop" *ngIf="selectedItem === 'Drag Drop'">
+            <app-drag-drop></app-drag-drop>
+        </div>
+        <div class="content" id="filtering" *ngIf="selectedItem === 'Filtering'">
+            <app-filtering></app-filtering>
+        </div>
+        <div class="content" id="loadMore" *ngIf="selectedItem === 'Load More'">
+            <app-load-more></app-load-more>
+        </div>
+        <div class="content" id="treeList" *ngIf="selectedItem === 'Tree List'">
+            <app-tree-list></app-tree-list>
+        </div>
+        <div class="content" id="tooltips" *ngIf="selectedItem === 'Tooltips'">
+            <app-tooltip></app-tooltip>
+        </div>
+        <div class="content" id="popover" *ngIf="selectedItem === 'Popover'">
+            <app-popover></app-popover>
+        </div>
+        <div class="content" id="notification" *ngIf="selectedItem === 'Notification'">
+            <app-notification></app-notification>
+        </div>
+        <div class="content" id="pagination" *ngIf="selectedItem === 'Pagination'">
+            <app-pagination></app-pagination>
+        </div>
+        <div class="content" id="pdfExport" *ngIf="selectedItem === 'PDF Export'">
+            <app-pdf-export></app-pdf-export>
+        </div>
+        <div class="content" id="stepper" *ngIf="selectedItem === 'Stepper'">
+            <app-stepper></app-stepper>
+        </div>
+        <div class="content" id="dialogs" *ngIf="selectedItem === 'Dialogs'">
+            <app-dialogs></app-dialogs>
+        </div>
+        <div class="content" id="splitButton" *ngIf="selectedItem === 'Split Button'">
+            <app-split-button></app-split-button>
+        </div>
+        <div class="content" id="dropDownButton" *ngIf="selectedItem === 'Drop Down Button'">
+            <app-drop-down-button></app-drop-down-button>
+        </div>
+        <div class="content" id="chat" *ngIf="selectedItem === 'Chat'">
+            <app-angular-chat></app-angular-chat>
+        </div>
+        <div class="content" id="scheduler" *ngIf="selectedItem === 'Scheduler'">
+            <app-angular-scheduler></app-angular-scheduler>
+        </div>
 
-      <div class="content" id="dataGrid" *ngIf="selectedItem === 'Data Grid'">
-          <app-data-grid></app-data-grid>
-      </div>
+        <div class="content" id="dataGrid" *ngIf="selectedItem === 'Data Grid'">
+            <app-data-grid></app-data-grid>
+        </div>
 
-      <div class="content" id="editor" *ngIf="selectedItem === 'Editor'">
-          <app-editor></app-editor>
-      </div>
+        <div class="content" id="editor" *ngIf="selectedItem === 'Editor'">
+            <app-editor></app-editor>
+        </div>
 
-      <div class="content" id="excel-export" *ngIf="selectedItem === 'Excel Export'">
-          <app-excel-export></app-excel-export>
-      </div>
-      <div class="content" id="listBox" *ngIf="selectedItem === 'List Box'">
-          <app-list-box></app-list-box>
-      </div>
+        <div class="content" id="excel-export" *ngIf="selectedItem === 'Excel Export'">
+            <app-excel-export></app-excel-export>
+        </div>
+        <div class="content" id="listBox" *ngIf="selectedItem === 'List Box'">
+            <app-list-box></app-list-box>
+        </div>
 
-      <div class="content" id="listView" *ngIf="selectedItem === 'List View'">
-          <app-list-view></app-list-view>
+        <div class="content" id="listView" *ngIf="selectedItem === 'List View'">
+            <app-list-view></app-list-view>
+        </div>
       </div>
     </div>
 </div>

@@ -165,9 +165,9 @@ a.btn:hover {
     justify-content: center;    
     background: #fff;
     padding: 15px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 0;
     min-height: 500px;
-    margin-top: 1px;
+    border-top: 1px solid #dff3ff;
 }
 
 .main-heading {
@@ -178,12 +178,13 @@ a.btn:hover {
 
 .description {
     background: #fff;
-    padding: 15px;
-    border-radius: 10px 0 0 10px;
+    padding: 5px 15px 15px;
+    border-radius: 0 0 0 10px;
 }
 
 .description .sub-heading {
   font-size: 16px;
+  line-height: 1.5;
   text-transform: initial;
   letter-spacing: initial;
   font-weight: initial;
@@ -248,6 +249,20 @@ kendo-tabstrip kendo-tabstrip .k-item span {
     text-transform: lowercase;
 }
 
+kendo-tabstrip kendo-tabstrip .k-tabstrip-items-wrapper {
+  background-color: #F3F3F3;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+kendo-tabstrip kendo-tabstrip .k-tabstrip-items-wrapper .k-link {
+  padding: 12px 16px;
+}
+
+kendo-tabstrip kendo-tabstrip .k-tabstrip-items-wrapper .k-item {
+  background-color: transparent!important;
+}
+
 kendo-tabstrip .example-wrapper p {
   margin: 0;
 }
@@ -298,6 +313,13 @@ kendo-tabstrip {
     padding: 30px;
     background: #DFF3FF;
     border-radius: 20px;
+}
+
+.right-section {
+  border-radius: 10px;
+  padding: 10px 0;
+  background: #fff;
+  overflow: hidden;
 }
 
 .scroll-content {
@@ -497,6 +519,10 @@ example-wrapper,
     vertical-align: top;
 }
 
+.example-wrapper {
+  margin-top: 20px;
+}
+
 .pedro {
     background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg");
 }
@@ -511,4 +537,26 @@ example-wrapper,
 
 .paula {
     background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/RATTC.jpg");
+}
+
+/* kendo update */
+
+.k-button-solid-primary, .k-button-solid-base.k-selected {
+  border-color: #f75814;
+  color: white;
+  background-color: #f75814;
+}
+
+.k-menu-group .k-item > .k-link:active {
+  background-color: #f75814;
+
+}
+
+.k-button-solid-primary:hover, .k-button-solid-primary.k-hover {
+  border-color: #d4470b;
+  background-color: #d4470b;
+}
+
+.description-parent, .wrapper-parent {
+  background-color: #DFF3FF;
 }
