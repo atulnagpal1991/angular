@@ -165,7 +165,7 @@ a.btn:hover {
     justify-content: center;    
     background: #fff;
     padding: 15px;
-    border-radius: 10px 0 0 0;
+    border-radius: 30px 0 0 0;
     min-height: 500px;
     border-top: 1px solid #dff3ff;
 }
@@ -179,7 +179,7 @@ a.btn:hover {
 .description {
     background: #fff;
     padding: 5px 15px 15px;
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 30px;
 }
 
 .description .sub-heading {
@@ -541,18 +541,17 @@ example-wrapper,
 
 /* kendo update */
 
-.k-button-solid-primary, .k-button-solid-base.k-selected {
+.k-button-solid-primary, .k-button-solid-base.k-selected, .k-stepper .k-step-current .k-step-indicator, .k-stepper .k-step-done .k-step-indicator {
   border-color: #f75814;
   color: white;
   background-color: #f75814;
 }
 
-.k-menu-group .k-item > .k-link:active, .k-list-item.k-selected, .k-selected.k-list-optionlabel, .k-event {
+.k-menu-group .k-item > .k-link:active, .k-list-item.k-selected, .k-selected.k-list-optionlabel, .k-event, .k-stepper .k-step-done:hover .k-step-indicator, .k-stepper .k-step-current:hover .k-step-indicator, .k-progressbar .k-selected {
   background-color: #f75814;
-
 }
 
-.k-button-solid-primary:hover, .k-button-solid-primary.k-hover {
+.k-button-solid-primary:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover {
   border-color: #d4470b;
   background-color: #d4470b;
 }
@@ -563,4 +562,8 @@ example-wrapper,
 
 .k-button-flat-primary {
   color: #f75814;
+}
+
+.k-step-link:hover {
+  color: #f75814!important;
 }

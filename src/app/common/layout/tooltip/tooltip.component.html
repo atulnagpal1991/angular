@@ -10,8 +10,21 @@
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
-        <div kendoTooltip>
-          <button class="m-5" kendoButton title="Saves the current document">On Hover Tooltip</button>
+        <div class="wrapper-tooltip">
+          <div kendoTooltip class="right" position="right">
+            <button kendoButton title="This tooltip is on the right">Right</button>
+          </div>
+          <div kendoTooltip class="bottom" position="bottom">
+            <button kendoButton title="This tooltip is on the bottom">
+              Bottom
+            </button>
+          </div>
+          <div kendoTooltip class="top" position="top">
+            <button kendoButton title="This tooltip is on the top">Top</button>
+          </div>
+          <div kendoTooltip class="left" position="left">
+            <button kendoButton title="This tooltip is on the left">Left</button>
+          </div>
         </div>
       </ng-template>
     </kendo-tabstrip-tab>

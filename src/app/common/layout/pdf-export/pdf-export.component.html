@@ -10,15 +10,32 @@
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
-        <kendo-pdf-export #pdf paperSize="A4" margin="2cm">
-          <div class="mb-5">PDf content here</div>
-        </kendo-pdf-export>
-
         <div class="example-config">
-          <button kendoButton (click)="pdf.saveAs('my_document.pdf')">
+          <button class="my-3 k-button-solid-primary" kendoButton (click)="pdf.saveAs('my_document.pdf')">
             Export As PDF...
           </button>
         </div>
+
+        <kendo-pdf-export #pdf>
+          <div class="mb-5">
+            <img src="assets/images/pdf.png">
+          </div>
+        </kendo-pdf-export>
+        
+        <div class="example-config">
+          <button class="my-3 k-button-solid-primary" kendoButton (click)="pdf.saveAs('my_document.pdf')">
+            Export As PDF...
+          </button>
+        </div>
+
+
+        
+
+
+
+
+
+        
       </ng-template>
     </kendo-tabstrip-tab>
     <kendo-tabstrip-tab title="View Source">
