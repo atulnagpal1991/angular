@@ -1,8 +1,11 @@
-<div class="description">
+<div class="description-parent">
+    <div class="description">
     <h6 class="sub-heading">The Kendo UI for Angular DropDownButton looks like the Button and when clicked, it displays a popup list with action items.</h6>
     <p>The following example demonstrates the DropDownButton in action.</p>
 </div>
-<div class="wrapper">
+</div>
+<div class="wrapper-parent">
+    <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
         <kendo-tabstrip-tab title="Preview" [selected]="true">
             <ng-template kendoTabContent>
@@ -69,4 +72,5 @@
             </ng-template>
         </kendo-tabstrip-tab>
     </kendo-tabstrip>
+</div>
 </div>

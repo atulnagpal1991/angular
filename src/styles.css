@@ -547,7 +547,7 @@ example-wrapper,
   background-color: #f75814;
 }
 
-.k-menu-group .k-item > .k-link:active {
+.k-menu-group .k-item > .k-link:active, .k-list-item.k-selected, .k-selected.k-list-optionlabel, .k-event {
   background-color: #f75814;
 
 }
@@ -559,4 +559,8 @@ example-wrapper,
 
 .description-parent, .wrapper-parent {
   background-color: #DFF3FF;
+}
+
+.k-button-flat-primary {
+  color: #f75814;
 }

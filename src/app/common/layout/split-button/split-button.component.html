@@ -1,9 +1,12 @@
-<div class="description">
+<div class="description-parent">
+  <div class="description">
   <h6 class="sub-heading">The Kendo UI for Angular SplitButton allows the user to execute a default action which is bound to a Button or to choose a predefined action from a drop-down list.</h6>
   <p>The following example demonstrates the SplitButton in action.</p>
 </div>
+</div>
 
-<div class="wrapper">
+<div class="wrapper-parent">
+  <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
@@ -58,4 +61,5 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
+</div>
 </div>

@@ -1,9 +1,12 @@
-<div class="description">
+<div class="description-parent">
+  <div class="description">
   <h6 class="sub-heading">The Angular Notification is a brief message, which provides information about the status of an application process.</h6>
   <p>The Notification service is built from the ground up and specifically for Angular, so that you get a high-performance control which integrates tightly with your application and with the rest of the Angular components.</p>
 </div>
+</div>
 
-<div class="wrapper">
+<div class="wrapper-parent">
+  <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
@@ -37,4 +40,5 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
+</div>
 </div>

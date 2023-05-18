@@ -1,9 +1,12 @@
-<div class="description">
+<div class="description-parent">
+    <div class="description">
     <h6 class="sub-heading">The Kendo UI for Angular ListView component visualizes repeated data content, providing a variety of configuration options.</h6>
     <p>The ListView is built from the ground up and specifically for Angular, so that you get a high-performance control which delivers lightning-fast performance, integrates tightly with your application and with the rest of the Kendo UI for Angular components, and is highly customizable.</p>
 </div>
+</div>
 
-<div class="wrapper">
+<div class="wrapper-parent">
+    <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
         <kendo-tabstrip-tab title="Preview" [selected]="true">
             <ng-template kendoTabContent>
@@ -60,4 +63,5 @@
             </ng-template>
         </kendo-tabstrip-tab>
     </kendo-tabstrip>
+</div>
 </div>

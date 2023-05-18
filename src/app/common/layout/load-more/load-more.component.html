@@ -1,9 +1,12 @@
-<div class="description">
+<div class="description-parent">
+  <div class="description">
   <h6 class="sub-heading">The TreeView enables you to display only a limited number of nodes in each level, when the provided data set is too big.</h6>
   <p>The following example demonstrates how to limit the number of displayed nodes when all the available data is loaded into the TreeView.</p>
 </div>
+</div>
 
-<div class="wrapper">
+<div class="wrapper-parent">
+  <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
@@ -48,4 +51,5 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
+</div>
 </div>

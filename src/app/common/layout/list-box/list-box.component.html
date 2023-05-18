@@ -1,9 +1,12 @@
-<div class="description">
+<div class="description-parent">
+  <div class="description">
   <h6 class="sub-heading">The Kendo UI for Angular ListBox is a component that displays a list of items. It allows for item selection, reordering, and transfer between two or more ListBox components.</h6>
   <p>Angular ListBox Example</p>
 </div>
+</div>
 
-<div class="wrapper">
+<div class="wrapper-parent">
+  <div class="wrapper">
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
@@ -40,4 +43,5 @@
       </ng-template>
     </kendo-tabstrip-tab>
   </kendo-tabstrip>
+</div>
 </div>
