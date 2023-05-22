@@ -22,10 +22,10 @@ export class PdfExportComponent {
     </kendo-pdf-export>
 
     <div class="example-config">
-    <button kendoButton (click)="pdf.saveAs('my_document.pdf')">
-      Save As PDF...
-    </button>
-  </div>
+      <button kendoButton (click)="pdf.saveAs('contact_River_City_Corporation.pdf')">
+        Export As PDF...
+      </button>
+    </div>
   "
 })
 export class AppComponent { }
