@@ -12,24 +12,18 @@ export class EditorComponent {
   }
   public value = `
   <p>
-      The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.<br />
-      In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists.
-      The widget <strong>outputs identical HTML</strong> across all major browsers, follows
-      accessibility standards, and provides API for content manipulation.
+  River City Corporation is a digital design agency that helps advance every facet of its client’s business with digital. We help design, build, and grow experience-driven digital products and platforms at speed and scale.
   </p>
   <div style="display: inline-block; width: 39%;">
-      <p>Features include:</p>
+      <p>Services include:</p>
       <ul>
-          <li>Text formatting</li>
-          <li>Bulleted and numbered lists</li>
-          <li>Hyperlinks</li>
-          <li>Cross-browser support</li>
-          <li>Identical HTML output across browsers</li>
-          <li>Inserting and resizing images</li>
+          <li>User Experience</li>
+          <li>Front-end Engineering</li>
+          <li>Quality Assurance</li>
       </ul>
   </div>
   <div style="display: inline-block; width: 60%; vertical-align: top;">
-      <img src="https://demos.telerik.com/kendo-ui/content/web/editor/tenerife.png" width="100%" style="min-width: 10px; min-height: 10px;" alt="Tenerife" />
+      <img src="https://www.rivercitycorp.in/images/7.png" width="100%" style="min-width: 10px; min-height: 10px;" alt="Tenerife" />
   </div>
 `;
 
@@ -45,26 +39,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     public value = "
-        <p>
-            The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.<br />
-            In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists.
-            The widget <strong>outputs identical HTML</strong> across all major browsers, follows
-            accessibility standards, and provides API for content manipulation.
-        </p>
-        <div style="display: inline-block; width: 39%;">
-            <p>Features include:</p>
-            <ul>
-                <li>Text formatting</li>
-                <li>Bulleted and numbered lists</li>
-                <li>Hyperlinks</li>
-                <li>Cross-browser support</li>
-                <li>Identical HTML output across browsers</li>
-                <li>Inserting and resizing images</li>
-            </ul>
-        </div>
-        <div style="display: inline-block; width: 60%; vertical-align: top;">
-            <img src="https://demos.telerik.com/kendo-ui/content/web/editor/tenerife.png" width="100%" style="min-width: 10px; min-height: 10px;" alt="Tenerife" />
-        </div>
+    <p>
+    River City Corporation is a digital design agency that helps advance every facet of its client’s business with digital. We help design, build, and grow experience-driven digital products and platforms at speed and scale.
+    </p>
+    <div style="display: inline-block; width: 39%;">
+        <p>Services include:</p>
+        <ul>
+            <li>User Experience</li>
+            <li>Front-end Engineering</li>
+            <li>Quality Assurance</li>
+        </ul>
+    </div>
+    <div style="display: inline-block; width: 60%; vertical-align: top;">
+        <img src="https://www.rivercitycorp.in/images/7.png" width="100%" style="min-width: 10px; min-height: 10px;" alt="Tenerife" />
+    </div>
     ";
 }
 `

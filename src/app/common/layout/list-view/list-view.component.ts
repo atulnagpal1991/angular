@@ -169,121 +169,145 @@ export class DestinationComponent {
 
 code3 = `
 export const destinations = [
-  {
-      'Title': 'BRUSSELS, BELGIUM',
-      'Description': 'Chocolate, beer, music and surrealism.',
-      'ImageUrl': 'brussels-180x150.png'
-  },
-  {
-      'Title': 'PORTO, PORTUGAL',
-      'Description': 'Taste it, drink it, eat it, love it. Bem-vindo ao Porto!',
-      'ImageUrl': 'porto-180x150.png'
-  },
-  {
-      'Title': 'MALAGA, SPAIN',
-      'Description': 'Enjoy the perfect climat.',
-      'ImageUrl': 'malaga-180x150.png'
-  },
-  {
-      'Title': 'BUDAPEST, HUNGARY',
-      'Description': 'One of the most exciting cities in the world.',
-      'ImageUrl': 'budapest-180x150.png'
-  },
-  {
-      'Title': 'BRATISLAVA, SLOVAKIA',
-      'Description': 'A modern city on the Danube.',
-      'ImageUrl': 'bratislava-180x150.png'
-  },
-  {
-      'Title': 'FLORENCE, ITALY',
-      'Description': 'Love and culture are everywhere!',
-      'ImageUrl': 'florence-180x150.png'
-  },
-  {
-      'Title': 'POZNAN, POLAND',
-      'Description': 'A unique heritage with rich cultural offer.',
-      'ImageUrl': 'poznan-180x150.png'
-  },
-  {
-      'Title': 'ATHENS, GREECE',
-      'Description': 'The biggest open-air museum in Europe.',
-      'ImageUrl': 'athens-180x150.png'
-  },
-  {
-      'Title': 'SOFIA, BULGARIA',
-      'Description': 'One of Europes oldest cities.',
-      'ImageUrl': 'sofia-180x150.png'
-  },
-  {
-      'Title': 'BORDEAUX, FRANCE',
-      'Description': 'Discover exciting new facets of its character.',
-      'ImageUrl': 'bordeaux-180x150.png'
-  },
-  {
-      'Title': 'GENEVA, SWITZERLAND',
-      'Description': 'One of the most welcoming cities in Europe.',
-      'ImageUrl': 'geneva-180x150.png'
-  },
-  {
-      'Title': 'RIGA, LATVIA',
-      'Description': 'At the crossroads of various nations and cultures.',
-      'ImageUrl': 'riga-180x150.png'
-  },
-  {
-      'Title': 'SEVILLE, SPAIN',
-      'Description': 'Seville. Any time of year…',
-      'ImageUrl': 'seville-180x150.png'
-  },
-  {
-      'Title': 'COLMAR, FRANCE',
-      'Description': 'A condensed version of the Alsace region.',
-      'ImageUrl': 'colmar-180x150.png'
-  },
-  {
-      'Title': 'VIENNA, AUSTRIA',
-      'Description': 'The Giant Ferris Wheel is awaiting you.',
-      'ImageUrl': 'vienna-180x150.png'
-  },
-  {
-      'Title': 'MONTPELLIER, FRANCE',
-      'Description': 'Smart, Mediterranean, attractive, welcoming and festive.',
-      'ImageUrl': 'montpellier-180x150.png'
-  },
-  {
-      'Title': 'VALENCIA, SPAIN',
-      'Description': 'Sun, culture, history and future. ',
-      'ImageUrl': 'valencia-180x150.png'
-  },
-  {
-      'Title': 'BARCELONA, SPAIN',
-      'Description': 'Barcelona never sleeps.',
-      'ImageUrl': 'barcelona-180x150.png'
-  },
-  {
-      'Title': 'MILAN, ITALY',
-      'Description': 'The hub of Italian culture',
-      'ImageUrl': 'milan-180x150.png'
-  },
-  {
-      'Title': 'GDANSK, POLAND',
-      'Description': 'You will be amazed by the beauty of Gdansk.',
-      'ImageUrl': 'gdansk-180x150.png'
-  },
-  {
-      'Title': 'ROME, ITALY',
-      'Description': 'Treat yourself to a stay in the Eternal City.',
-      'ImageUrl': 'rome-180x150.png'
-  },
-  {
-      'Title': 'EDINBURGH, SCOTLAND',
-      'Description': 'Shopping, dining & architectural splendour.',
-      'ImageUrl': 'edinburgh-180x150.png'
-  },
-  {
-      'Title': 'LISBON, PORTUGAL',
-      'Description': 'The pure pleasure of being in one of the best cities in the world.',
-      'ImageUrl': 'lisbon-180x150.png'
-  }
+    {
+        'Title': 'Angular',
+        'Description': 'We offer Angular development services to build responsive.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'NodeJS',
+        'Description': 'Build and scale your web and mobile solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'ReactJS and React Native',
+        'Description': 'We infuse speed and agility in your mobile apps.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Responsive Design',
+        'Description': 'We design and build website solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Dot Net',
+        'Description': 'We develop robust and scalable .NET solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Ruby on Rails',
+        'Description': 'We develop web applications using Ruby on Rails.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'User Experience Design',
+        'Description': 'Our User Experience Design service helps enhance your product.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Application Interface',
+        'Description': 'Our team of UI designers create visually appealing websites.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Responsive Website Design',
+        'Description': 'We promise your digital domination by making website.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Branding',
+        'Description': 'Our digital experience services help attract and resting your users.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Functional Testing',
+        'Description': 'Our QA testing services remove the operational abnormality.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Automation Testing',
+        'Description': 'We use high-end automation testing tools.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Mobile App Testing',
+        'Description': 'We apply our testing services to wireframes and their published app.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Performance Testing',
+        'Description': 'Our performance testing expertise helps validate a digital products.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },{
+        'Title': 'Angular',
+        'Description': 'We offer Angular development services to build responsive.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'NodeJS',
+        'Description': 'Build and scale your web and mobile solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'ReactJS and React Native',
+        'Description': 'We infuse speed and agility in your mobile apps.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Responsive Design',
+        'Description': 'We design and build website solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Dot Net',
+        'Description': 'We develop robust and scalable .NET solutions.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Ruby on Rails',
+        'Description': 'We develop web applications using Ruby on Rails.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'User Experience Design',
+        'Description': 'Our User Experience Design service helps enhance your product.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Application Interface',
+        'Description': 'Our team of UI designers create visually appealing websites.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Responsive Website Design',
+        'Description': 'We promise your digital domination by making website.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Branding',
+        'Description': 'Our digital experience services help attract and resting your users.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Functional Testing',
+        'Description': 'Our QA testing services remove the operational abnormality.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Automation Testing',
+        'Description': 'We use high-end automation testing tools.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Mobile App Testing',
+        'Description': 'We apply our testing services to wireframes and their published app.',
+        'ImageUrl': 'portfolio-img.jpg'
+    },
+    {
+        'Title': 'Performance Testing',
+        'Description': 'Our performance testing expertise helps validate a digital products.',
+        'ImageUrl': 'portfolio-img.jpg'
+    }
 ];
 `
 }

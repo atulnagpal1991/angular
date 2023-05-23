@@ -15,7 +15,7 @@ export class NotificationComponent {
 
   public show(): void {
     this.notificationService.show({
-      content: "Your data has been saved. Time for tea!",
+      content: "Your data has been saved.",
       cssClass: "button-notification",
       animation: { type: "slide", duration: 400 },
       position: { horizontal: "center", vertical: "bottom" },
@@ -41,7 +41,7 @@ export class AppComponent {
 
     public show(): void {
         this.notificationService.show({
-            content: 'Your data has been saved. Time for tea!',
+            content: 'Your data has been saved.',
             cssClass: 'button-notification',
             animation: { type: 'slide', duration: 400 },
             position: { horizontal: 'center', vertical: 'bottom' },

@@ -13,7 +13,7 @@ export class DataGridComponent {
   public gridData: Product[] = [
     {
       ProductID: 1,
-      ProductName: "Chai",
+      ProductName: "Green tea",
       UnitPrice: 18,
       Category: {
         CategoryID: 1,
@@ -22,7 +22,7 @@ export class DataGridComponent {
     },
     {
       ProductID: 2,
-      ProductName: "Chang",
+      ProductName: "Hot chocolate",
       UnitPrice: 19,
       Category: {
         CategoryID: 1,
@@ -31,11 +31,11 @@ export class DataGridComponent {
     },
     {
       ProductID: 3,
-      ProductName: "Aniseed Syrup",
+      ProductName: "Lemonade",
       UnitPrice: 10,
       Category: {
         CategoryID: 2,
-        CategoryName: "Condiments",
+        CategoryName: "Beverages",
       },
     },
   ];
@@ -58,35 +58,35 @@ import { Product } from './model';
     "
 })
 export class AppComponent {
-    public gridData: Product[] = [
-        {
-            ProductID: 1,
-            ProductName: 'Chai',
-            UnitPrice: 18,
-            Category: {
-                CategoryID: 1,
-                CategoryName: 'Beverages'
-            }
-        },
-        {
-            ProductID: 2,
-            ProductName: 'Chang',
-            UnitPrice: 19,
-            Category: {
-                CategoryID: 1,
-                CategoryName: 'Beverages'
-            }
-        },
-        {
-            ProductID: 3,
-            ProductName: 'Aniseed Syrup',
-            UnitPrice: 10,
-            Category: {
-                CategoryID: 2,
-                CategoryName: 'Condiments'
-            }
-        }
-    ];
+  public gridData: Product[] = [
+    {
+      ProductID: 1,
+      ProductName: "Green tea",
+      UnitPrice: 18,
+      Category: {
+        CategoryID: 1,
+        CategoryName: "Beverages",
+      },
+    },
+    {
+      ProductID: 2,
+      ProductName: "Hot chocolate",
+      UnitPrice: 19,
+      Category: {
+        CategoryID: 1,
+        CategoryName: "Beverages",
+      },
+    },
+    {
+      ProductID: 3,
+      ProductName: "Lemonade",
+      UnitPrice: 10,
+      Category: {
+        CategoryID: 2,
+        CategoryName: "Beverages",
+      },
+    },
+  ];
 }
 `
 

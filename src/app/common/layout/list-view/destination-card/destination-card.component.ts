@@ -14,6 +14,6 @@ export class DestinationCardComponent {
   };
 
   public destinationURL(name: string): string {
-      return 'https://demos.telerik.com/blazor-ui/images/destinations/' + name;
+      return 'https://www.rivercitycorp.in/images/' + name;
   }
 }

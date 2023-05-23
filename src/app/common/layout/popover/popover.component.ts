@@ -11,10 +11,10 @@ export class PopoverComponent {
     console.log(e);
   }
   public wafflesImg =
-  "https://www.telerik.com/kendo-angular-ui-develop/components/layout/card/assets/waffles.jpg";
+  "https://www.rivercitycorp.in/images/7.png";
 
 public wafflesRecipe = `
-      Body Content
+    We are a global UX design studio accelerating creative growth
   `;
 
   
@@ -24,15 +24,24 @@ public wafflesRecipe = `
 @Component({
     selector: 'my-app',
     template: "
-        <button kendoPopoverAnchor [popover]="myPopover" kendoButton
-            [style.marginTop.px]="20">
-                Show Popover
-        </button>
+    <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary" [style.marginLeft.px]="200">
+    Show Popover
+  </button>
 
-        <kendo-popover #myPopover
-            title="Popover Title"
-            body="Popover Body">
-        </kendo-popover>
+  <kendo-popover #myPopover [width]="300" position="bottom">
+    <ng-template kendoPopoverTitleTemplate>
+      <div class="popover-title">River City Corporation</div>
+    </ng-template>
+
+    <ng-template kendoPopoverBodyTemplate>
+      <img class="picture" src="https://www.rivercitycorp.in/images/7.png" />
+      <div>We are a global UX design studio accelerating creative growth</div>
+    </ng-template>
+
+    <ng-template kendoPopoverActionsTemplate>      
+        Our UX Service
+    </ng-template>
+  </kendo-popover>
     "
 })
 export class AppComponent {}

@@ -13,11 +13,11 @@ export class StepperComponent {
   public current = 1;
 
   public steps = [
-    { label: "Personal Info", icon: "user" },
-    { label: "Education", icon: "book" },
-    { label: "Attachments", icon: "paperclip", optional: true },
-    { label: "Preview", icon: "eye" },
-    { label: "Submit", icon: "file-add" },
+    { label: "Step 1", icon: "user" },
+    { label: "Step 2", icon: "book" },
+    { label: "Step 3", icon: "paperclip", optional: true },
+    { label: "Step 4", icon: "eye" },
+    { label: "Step 5", icon: "file-add" },
   ];
 
 
@@ -41,11 +41,11 @@ export class StepperComponent {
       public current = 1;
   
       public steps = [
-          { label: 'Personal Info', icon: 'user' },
-          { label: 'Education', icon: 'book' },
-          { label: 'Attachments', icon: 'paperclip', optional : true },
-          { label: 'Preview', icon: 'eye' },
-          { label: 'Submit', icon: 'file-add' }
+        { label: "Step 1", icon: "user" },
+        { label: "Step 2", icon: "book" },
+        { label: "Step 3", icon: "paperclip", optional: true },
+        { label: "Step 4", icon: "eye" },
+        { label: "Step 5", icon: "file-add" },
       ];
   }
 `

@@ -564,7 +564,7 @@ example-wrapper,
   background-color: #f75814;
 }
 
-.k-button-solid-primary:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover {
+.k-button-solid-primary:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover, .k-event.k-selected {
   border-color: #d4470b;
   background-color: #d4470b;
 }
@@ -579,4 +579,8 @@ example-wrapper,
 
 .k-step-link:hover {
   color: #f75814!important;
+}
+
+.k-drawer-separator {
+  background-color: transparent;
 }

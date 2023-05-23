@@ -11,12 +11,12 @@
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
         <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary" [style.marginLeft.px]="200">
-          Show Waffles Recipe
+          Show Popover
         </button>
 
         <kendo-popover #myPopover [width]="300" position="bottom">
           <ng-template kendoPopoverTitleTemplate>
-            <div class="popover-title">Pumpkin Waffles</div>
+            <div class="popover-title">River City Corporation</div>
           </ng-template>
 
           <ng-template kendoPopoverBodyTemplate>
@@ -25,10 +25,7 @@
           </ng-template>
 
           <ng-template kendoPopoverActionsTemplate>
-            <button kendoButton fillMode="flat" themeColor="primary">
-              <!-- <span class="k-icon k-i-heart-outline"></span> -->
-              Footer
-            </button>
+              Our UX Service
           </ng-template>
         </kendo-popover>
       </ng-template>

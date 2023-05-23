@@ -10,8 +10,8 @@ export class ListBoxComponent {
   public onTabSelect(e: SelectEvent): void {
     console.log(e);
   }
-  public europeanCountries: string[] = [ 'Germany', 'France', 'Austria', 'Belgium', 'Denmark', 'Netherlands'];
-  public asianCountries: string[] = [ 'China', 'India', 'Indonesia', 'Nepal', 'Thailand', 'Yemen' ];
+  public hot: string[] = [ 'Coffee', 'Tea', 'Green tea', 'Chocolate milk', 'Hot chocolate', 'Coconut milk'];
+  public cold: string[] = [ 'Juice', 'Milkshake', 'Water', 'Lemonade', 'Soda', 'Smoothie' ];
   
   code = `
   import { Component } from '@angular/core';
@@ -21,13 +21,13 @@ export class ListBoxComponent {
     template: "
         <kendo-listbox
             kendoListBoxDataBinding
-            [data]="europeanCountries"
+            [data]="hot"
             [connectedWith]="asia"
         >
         </kendo-listbox>
         <kendo-listbox
             #asia
-            [data]="asianCountries"
+            [data]="cold"
             [toolbar]="false"
         >
         </kendo-listbox>
@@ -44,8 +44,8 @@ export class ListBoxComponent {
     "]
 })
 export class AppComponent {
-    public europeanCountries: string[] = [ 'Germany', 'France', 'Austria', 'Belgium', 'Denmark', 'Netherlands'];
-    public asianCountries: string[] = [ 'China', 'India', 'Indonesia', 'Nepal', 'Thailand', 'Yemen' ];
+  public hot: string[] = [ 'Coffee', 'Tea', 'Green tea', 'Chocolate milk', 'Hot chocolate', 'Coconut milk'];
+  public cold: string[] = [ 'Juice', 'Milkshake', 'Water', 'Lemonade', 'Soda', 'Smoothie' ];
 }
 `
 

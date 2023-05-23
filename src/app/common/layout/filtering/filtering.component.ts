@@ -12,26 +12,31 @@ export class FilteringComponent {
   }
   public data: any[] = [
     {
-      text: "Furniture",
+      text: "Drink",
       items: [
-        { text: "Tables & Chairs" },
         {
-          text: "Sofas",
+          text: "Hot drink ",
           items: [
-            { text: "Bean Bag" },
-            { text: "Armchair" },
-            { text: "Modular" },
+            { text: "Coffee" },
+            { text: "Tea" },
+            { text: "Green tea" },
+            { text: "Chocolate milk" },
+            { text: "Hot chocolate" },
           ],
         },
-        { text: "Occasional" },
+        { text: "Coconut milk " },
+        { text: "Juice " },
+        { text: "Milkshake " },
+        { text: "Water " },
       ],
     },
     {
-      text: "Decor",
+      text: "Cold drink ",
       items: [
-        { text: "Bed Linen" },
-        { text: "Curtains & Blinds" },
-        { text: "Carpets" },
+        { text: "Lemonade" },
+        { text: "Soda" },
+        { text: "Smoothie" },
+        { text: "Orange juice" },
       ],
     },
   ];
@@ -59,31 +64,36 @@ export class FilteringComponent {
     "]
 })
 export class AppComponent {
-    public data: any[] = [
+  public data: any[] = [
+    {
+      text: "Drink",
+      items: [
         {
-            text: 'Furniture',
-            items: [
-                { text: 'Tables & Chairs' },
-                {
-                    text: 'Sofas',
-                    items: [
-                        { text: 'Bean Bag' },
-                        { text: 'Armchair' },
-                        { text: 'Modular' }
-                    ]
-                },
-                { text: 'Occasional' }
-            ]
+          text: "Hot drink ",
+          items: [
+            { text: "Coffee" },
+            { text: "Tea" },
+            { text: "Green tea" },
+            { text: "Chocolate milk" },
+            { text: "Hot chocolate" },
+          ],
         },
-        {
-            text: 'Decor',
-            items: [
-                { text: 'Bed Linen' },
-                { text: 'Curtains & Blinds' },
-                { text: 'Carpets' }
-            ]
-        }
-    ];
+        { text: "Coconut milk " },
+        { text: "Juice " },
+        { text: "Milkshake " },
+        { text: "Water " },
+      ],
+    },
+    {
+      text: "Cold drink ",
+      items: [
+        { text: "Lemonade" },
+        { text: "Soda" },
+        { text: "Smoothie" },
+        { text: "Orange juice" },
+      ],
+    },
+  ];
 }
 `
 
