@@ -554,7 +554,7 @@ example-wrapper,
 
 /* kendo update */
 
-.k-button-solid-primary, .k-button-solid-base.k-selected, .k-stepper .k-step-current .k-step-indicator, .k-stepper .k-step-done .k-step-indicator {
+.k-button-solid-primary, .k-chip-solid-base, .k-button-solid-base.k-selected, .k-stepper .k-step-current .k-step-indicator, .k-stepper .k-step-done .k-step-indicator {
   border-color: #f75814;
   color: white;
   background-color: #f75814;
@@ -564,7 +564,7 @@ example-wrapper,
   background-color: #f75814;
 }
 
-.k-button-solid-primary:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover, .k-event.k-selected {
+.k-button-solid-primary:hover, .k-chip-solid-base:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover, .k-event.k-selected, .k-button-outline-primary:hover, .k-button-solid-primary.k-selected {
   border-color: #d4470b;
   background-color: #d4470b;
 }
@@ -583,4 +583,55 @@ example-wrapper,
 
 .k-drawer-separator {
   background-color: transparent;
+}
+
+.k-pager, .k-pager-md .k-pager-numbers-wrap .k-button {
+  border-radius: 6px;
+  border: none;
+}
+
+.k-button-outline-primary {
+  color: #f75814;
+}
+
+.k-listview-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+.custom-grid .destination-card {
+  border: none;
+}
+
+
+.custom-grid .destination-card img {
+  max-height: 200px;
+}
+
+.custom-grid .custom-card {
+  padding: 0;
+}
+
+.custom-grid {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-grid h4.title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.custom-grid h5.subtitle  {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.k-listbox-md.k-listbox {
+  height: 100%;
+}
+
+.k-listbox .k-listbox-actions {
+  justify-content: center;
 }

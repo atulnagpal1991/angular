@@ -19,7 +19,7 @@ export class ListViewComponent {
       pageSizeValues: false,
       buttonCount: 9
   };
-  public pageSize = 10;
+  public pageSize = 30;
 
 
   

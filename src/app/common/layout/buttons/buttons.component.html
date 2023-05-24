@@ -13,7 +13,7 @@
           <div class="example-wrapper">
             <div class="example-col">
               <p>Button</p>
-              <button class="me-3" kendoButton (click)="onButtonClick()">Default</button>
+              <button class="me-3" kendoButton (click)="onButtonClick()" fillMode="outline" themeColor="primary">Default</button>
               <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
                 Primary
               </button>
@@ -22,23 +22,33 @@
               </button>
             </div>
             <div class="example-col">
+              <p>Button with icon</p>
+              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" fillMode="outline" themeColor="primary">Default</button>
+              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" themeColor="primary">
+                Primary
+              </button>
+              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" [disabled]="true">
+                Disabled
+              </button>
+            </div>
+            <div class="example-col">
               <p>ButtonGroup</p>
               <kendo-buttongroup>
-                <button kendoButton [toggleable]="true">Option A</button>
-                <button kendoButton [toggleable]="true">Option B</button>
-                <button kendoButton [toggleable]="true">Option C</button>
+                <button kendoButton themeColor="primary" [toggleable]="true">Option A</button>
+                <button kendoButton themeColor="primary" [toggleable]="true">Option B</button>
+                <button kendoButton themeColor="primary" [toggleable]="true">Option C</button>
               </kendo-buttongroup>
             </div>
             <div class="example-col">
               <p>DropDownButton</p>
               <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" title="User Settings"
-                (itemClick)="onSplitButtonItemClick($event)">
+                (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
                 User Settings
               </kendo-dropdownbutton>
             </div>
             <div class="example-col">
               <p>SplitButton</p>
-              <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" title="Paste"
+              <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" title="Paste" themeColor="primary"
                 (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
                 Paste
               </kendo-splitbutton>

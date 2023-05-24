@@ -10,12 +10,32 @@
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
         <kendo-tabstrip-tab title="Preview" [selected]="true">
             <ng-template kendoTabContent>
-                <kendo-listview [kendoListViewBinding]="destinations" [pageable]="pagerSettings" [pageSize]="pageSize"
-                    containerClass="listview-content">
-                    <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
-                        <app-destination-card [destination]="dataItem"></app-destination-card>
-                    </ng-template>
-                </kendo-listview>
+                <div class=" ">
+                    <kendo-listview [kendoListViewBinding]="destinations" 
+                        containerClass="listview-content">
+                        <ng-template kendoListViewHeaderTemplate>
+                            <div class="custom-grid">
+                                <kendo-card class="destination-card" width="48%">
+                                    <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png" alt="rivercitycorp"/>
+                                    <kendo-card-body class="destination-card-body custom-card">
+                                        <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity</h4>
+                                        <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and Platforms Engineered to Reduce Complexity.</h5>
+                                    </kendo-card-body>
+                                </kendo-card>
+                                <kendo-card class="destination-card" width="48%">
+                                    <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png" alt="rivercitycorp"/>
+                                    <kendo-card-body class="destination-card-body custom-card">
+                                        <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
+                                        <h5 kendoCardSubtitle class="subtitle">We build digital products keeping this principle in mind.</h5>
+                                    </kendo-card-body>
+                                </kendo-card>
+                            </div>
+                          </ng-template>
+                        <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+                            <app-destination-card [destination]="dataItem"></app-destination-card>
+                        </ng-template>
+                    </kendo-listview>
+                </div>
             </ng-template>
         </kendo-tabstrip-tab>
         <kendo-tabstrip-tab title="View Source">
