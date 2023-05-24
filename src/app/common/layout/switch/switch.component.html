@@ -10,11 +10,23 @@
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrap">
-                <kendo-label text="Toggle Switch ">
+            <div class="example-wrapper">                
+                <kendo-label text="Inactive">
+                    <kendo-switch 
+                    onLabel="On"
+                    offLabel="Off"></kendo-switch>
+                  </kendo-label>
+                  <br>
+                  <br>
+                <kendo-label text="Checked">
                     <kendo-switch [(ngModel)]="checked" 
                     onLabel="On"
                     offLabel="Off"></kendo-switch>
+                  </kendo-label>
+                  <br>
+                  <br>
+                  <kendo-label text="Disabled">
+                    <kendo-switch [disabled]="disabled"></kendo-switch>
                   </kendo-label>
               </div>
         </ng-template>

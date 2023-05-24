@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.css']
+  styleUrls: ['./buttons.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ButtonsComponent {
   public onTabSelect(e: SelectEvent): void {

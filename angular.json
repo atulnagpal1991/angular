@@ -25,10 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              {
-                "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss"
-              },
+              // {
+              //   "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss"
+              // },
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/custom.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,10 +92,11 @@
               "src/assets"
             ],
             "styles": [
-              {
-                "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss"
-              },
+              // {
+              //   "input": "node_modules/@progress/kendo-theme-bootstrap/dist/all.scss"
+              // },
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/custom.scss",
               "src/styles.css"
             ],
             "scripts": []

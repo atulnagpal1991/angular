@@ -1,0 +1,29 @@
+$main-color: #f75814;
+
+
+$kendo-color-primary:	$main-color;
+$kendo-theme-colors:	("primary": $main-color, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529);
+$blue:	$main-color;
+$kendo-series-a:	$main-color;
+$kendo-color-primary:	$main-color;
+$kendo-checkbox-checked-bg:	$main-color;
+$kendo-checkbox-checked-bg:	$main-color;
+$kendo-checkbox-checked-border:	$main-color;
+$kendo-checkbox-checked-bg:	$main-color;
+$primary:	$main-color;
+$kendo-selected-bg:	$main-color;
+$kendo-list-item-selected-bg:	$main-color;
+$kendo-link-text:	$main-color;
+$kendo-pager-item-selected-bg:	$main-color;
+$kendo-checkbox-checked-bg:	$main-color;
+$kendo-checkbox-checked-border:	$main-color;
+$kendo-checkbox-focus-checked-border:	$main-color;
+$kendo-radio-checked-bg:	$main-color;
+$kendo-color-primary:	$main-color;
+$kendo-switch-on-track-bg:	$main-color;
+$kendo-treeview-item-selected-bg:	$main-color;
+// $kendo-button-bg: 	$main-color;
+// $kendo-button-hover-bg: $main-color;
+
+
+@import "@progress/kendo-theme-bootstrap/dist/all.scss";

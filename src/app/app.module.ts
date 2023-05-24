@@ -67,6 +67,9 @@ import { BadgeComponent } from './common/layout/badge/badge.component';
 import { ChipComponent } from './common/layout/chip/chip.component';
 import { DateAndTimeComponent } from './common/layout/date-and-time/date-and-time.component';
 import { CheckboxAndRadioComponent } from './common/layout/checkbox-and-radio/checkbox-and-radio.component';
+import { NavigationModule } from "@progress/kendo-angular-navigation";
+import { CommonModule } from "@angular/common";
+
 
 
 @NgModule({
@@ -112,6 +115,8 @@ import { CheckboxAndRadioComponent } from './common/layout/checkbox-and-radio/ch
     CheckboxAndRadioComponent,
   ],
   imports: [
+     NavigationModule,
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     IconsModule,

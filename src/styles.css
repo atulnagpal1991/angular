@@ -536,67 +536,9 @@ example-wrapper,
   margin-top: 20px;
 }
 
-.pedro {
-    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg");
-}
-
-.thomas {
-    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/RICSU.jpg");
-}
-
-.christina {
-    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/BERGS.jpg");
-}
-
-.paula {
-    background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/RATTC.jpg");
-}
-
-/* kendo update */
-
-.k-button-solid-primary, .k-chip-solid-base, .k-button-solid-base.k-selected, .k-stepper .k-step-current .k-step-indicator, .k-stepper .k-step-done .k-step-indicator {
-  border-color: #f75814;
-  color: white;
-  background-color: #f75814;
-}
-
-.k-menu-group .k-item > .k-link:active, .k-list-item.k-selected, .k-selected.k-list-optionlabel, .k-event, .k-stepper .k-step-done:hover .k-step-indicator, .k-stepper .k-step-current:hover .k-step-indicator, .k-progressbar .k-selected {
-  background-color: #f75814;
-}
-
-.k-button-solid-primary:hover, .k-chip-solid-base:hover, .k-button-solid-primary.k-hover, .k-list-item.k-selected:hover, .k-event.k-selected, .k-button-outline-primary:hover, .k-button-solid-primary.k-selected {
-  border-color: #d4470b;
-  background-color: #d4470b;
-}
 
 .description-parent, .wrapper-parent {
   background-color: #DFF3FF;
-}
-
-.k-button-flat-primary {
-  color: #f75814;
-}
-
-.k-step-link:hover {
-  color: #f75814!important;
-}
-
-.k-drawer-separator {
-  background-color: transparent;
-}
-
-.k-pager, .k-pager-md .k-pager-numbers-wrap .k-button {
-  border-radius: 6px;
-  border: none;
-}
-
-.k-button-outline-primary {
-  color: #f75814;
-}
-
-.k-listview-header {
-  border: none;
-  padding-bottom: 0;
 }
 
 .custom-grid .destination-card {
@@ -628,10 +570,39 @@ example-wrapper,
   font-size: 14px;
 }
 
+
+/* kendo update */
+
+.k-stepper .k-step-done .k-step-indicator, .k-stepper .k-step-current .k-step-indicator {
+  color: #fff;
+}
+
+.k-switch-on .k-switch-thumb {
+  background-color: #fff;
+}
+
+.k-drawer-separator {
+  background-color: transparent;
+}
+
+.k-pager, .k-pager-md .k-pager-numbers-wrap .k-button {
+  border-radius: 6px;
+  border: none;
+}
+
+.k-listview-header {
+  border: none;
+  padding-bottom: 0;
+}
+
 .k-listbox-md.k-listbox {
   height: 100%;
 }
 
 .k-listbox .k-listbox-actions {
   justify-content: center;
+}
+
+.inner-tab .k-item span {
+  color: inherit!important;
 }

@@ -1,12 +1,14 @@
-import { Component  } from '@angular/core';
+import { Component, ViewEncapsulation   } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
-  styleUrls: ['./input.component.css']
+  styleUrls: ['./input.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
+
 export class InputComponent {
   public onTabSelect(e: SelectEvent): void {
     console.log(e);

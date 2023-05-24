@@ -1,1 +1,94 @@
-<p>tabs </p>
+<div class="description-parent">
+    <div class="description">
+    <h6 class="sub-heading">Heading</h6>
+    <p>Text</p>
+  </div>
+ </div>
+  
+  <div class="wrapper-parent">
+    <div class="wrapper">
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+            <div class="example-wrapper inner-tab">  
+                <kendo-tabstrip (tabSelect)="onTabSelect($event)">
+                    <kendo-tabstrip-tab title="Paris" [selected]="true" >
+                      <ng-template kendoTabContent>
+                        <div class="content">
+                          <img
+                            src="https://www.telerik.com/kendo-angular-ui-develop/components/layout/assets/tabstrip/rainy.png"
+                          />
+                          <h2>17<span>ºC</span></h2>
+                          <span>Rainy weather in Paris.</span>
+                        </div>
+                      </ng-template>
+                    </kendo-tabstrip-tab>
+                    <kendo-tabstrip-tab title="New York City" [disabled]="true">
+                      <ng-template kendoTabContent>
+                        <div class="content">
+                          <img
+                            src="https://www.telerik.com/kendo-angular-ui-develop/components/layout/assets/tabstrip/cloudy.png"
+                          />
+                          <h2>19<span>ºC</span></h2>
+                          <span>Cloudy weather in New York City.</span>
+                        </div>
+                      </ng-template>
+                    </kendo-tabstrip-tab>
+                    <kendo-tabstrip-tab title="Tallinn">
+                      <ng-template kendoTabContent>
+                        <div class="content">
+                          <img
+                            src="https://www.telerik.com/kendo-angular-ui-develop/components/layout/assets/tabstrip/sunny.png"
+                          />
+                          <h2>23<span>ºC</span></h2>
+                          <span>Sunny weather in Tallinn.</span>
+                        </div>
+                      </ng-template>
+                    </kendo-tabstrip-tab>
+                    <kendo-tabstrip-tab title="London">
+                      <ng-template kendoTabContent>
+                        <div class="content">
+                          <img
+                            src="https://www.telerik.com/kendo-angular-ui-develop/components/layout/assets/tabstrip/rainy.png"
+                          />
+                          <h2>16<span>ºC</span></h2>
+                          <span>Rainy weather in London.</span>
+                        </div>
+                      </ng-template>
+                    </kendo-tabstrip-tab>
+                  </kendo-tabstrip>
+              </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
+                              <!-- <code>{{code}}</code> -->
+                          </pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
+                              <!-- <code>{{code1}}</code> -->
+                          </pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
+  </div>
+
+
+
