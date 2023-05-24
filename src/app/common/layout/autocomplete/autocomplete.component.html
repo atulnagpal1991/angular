@@ -1,7 +1,7 @@
 <div class="description-parent">
     <div class="description">
-    <h6 class="sub-heading">Heading</h6>
-    <p>Text</p>
+    <h6 class="sub-heading">The Kendo UI for Angular AutoComplete is a form component that provides suggestions depending on the typed text.</h6>
+    <p>It is a richer version of the input element and supports data binding, filtering, and templates.</p>
   </div>
  </div>
   
@@ -13,11 +13,11 @@
             <div class="example-wrapper">  
                 Normal   
                 <br>             
-                <kendo-autocomplete [data]="listItems">
-                    <ng-template kendoAutoCompleteItemTemplate let-dataItem>
-                      <span style="color: #00F;">{{ dataItem }}</span>
-                    </ng-template>
-                  </kendo-autocomplete>
+                <kendo-autocomplete [data]="listItems" placeholder="Type here...">
+                  <ng-template kendoAutoCompleteItemTemplate let-dataItem aria-placeholder="test">
+                    <span style="color: #f75814;">{{ dataItem }}</span>
+                  </ng-template>
+                </kendo-autocomplete>
               </div>
         </ng-template>
       </kendo-tabstrip-tab>
