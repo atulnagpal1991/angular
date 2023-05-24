@@ -69,8 +69,10 @@ import { DateAndTimeComponent } from './common/layout/date-and-time/date-and-tim
 import { CheckboxAndRadioComponent } from './common/layout/checkbox-and-radio/checkbox-and-radio.component';
 import { NavigationModule } from "@progress/kendo-angular-navigation";
 import { CommonModule } from "@angular/common";
-
-
+import { ProgressBarModule } from "@progress/kendo-angular-progressbar";
+import { DropDownListModule } from "@progress/kendo-angular-dropdowns";
+import { IndicatorsModule } from "@progress/kendo-angular-indicators";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -116,6 +118,10 @@ import { CommonModule } from "@angular/common";
   ],
   imports: [
      NavigationModule,
+     ProgressBarModule,
+     IndicatorsModule,
+     DropDownListModule,
+     ReactiveFormsModule ,
     CommonModule,
     BrowserModule,
     AppRoutingModule,

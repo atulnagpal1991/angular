@@ -1,1 +1,73 @@
-<p>checkbox-and-radio </p>
+<div class="description-parent">
+    <div class="description">
+        <h6 class="sub-heading">The Kendo UI for Angular RadioButton is a directive which enables you to style input type="radio" elements.</h6>
+        <h6 class="sub-heading">The Kendo UI for Angular CheckBox is a directive which enables you to style input type="checkbox" elements.</h6>
+        <p>Text</p>
+    </div>
+</div>
+
+<div class="wrapper-parent">
+    <div class="wrapper">
+        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+            <kendo-tabstrip-tab title="Preview" [selected]="true">
+                <ng-template kendoTabContent>
+                    <div class="example-wrapper row">
+                        <div class="col">
+                            <h6>Radio</h6>
+                            <kendo-label [for]="male" text="Male"></kendo-label>
+                            <input type="radio" name="gender" value="Male" #male [(ngModel)]="model.gender"
+                                kendoRadioButton />
+                            <br>
+                            <br>
+                            <kendo-label [for]="female" text="Female"></kendo-label>
+                            <input type="radio" name="gender" value="Female" #female [(ngModel)]="model.gender"
+                                kendoRadioButton />
+                            <br>
+                            <br>
+
+                            <kendo-label [for]="other" text="Disabled"></kendo-label>
+                            <input type="radio" name="gender" value="Other" [disabled]="isDisabled" #other
+                                [(ngModel)]="model.gender" kendoRadioButton />
+                        </div>
+                        <div class="col">
+                            <h6>Checkbox</h6>
+                            <kendo-label class="k-checkbox-label" [for]="notification"
+                                text="Allow Notifications"></kendo-label>
+                            <input type="checkbox" #notification kendoCheckBox />
+                            <br>
+                            <br>
+                            <kendo-label class="k-checkbox-label" [for]="notification" text="Disabled"></kendo-label>
+                            <input type="checkbox" #notification kendoCheckBox [disabled]="isDisabled" />
+                        </div>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="View Source">
+                <ng-template kendoTabContent>
+                    <div>
+                        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+                            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
+                              <!-- <code>{{code}}</code> -->
+                          </pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                            <kendo-tabstrip-tab title="app.module.ts">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
+                              <!-- <code>{{code1}}</code> -->
+                          </pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                        </kendo-tabstrip>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+        </kendo-tabstrip>
+    </div>
+</div>

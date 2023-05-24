@@ -1,1 +1,93 @@
-<p>badge </p>
+<div class="description-parent">
+    <div class="description">
+        <h6 class="sub-heading">Heading</h6>
+        <p>Text</p>
+    </div>
+</div>
+
+<div class="wrapper-parent">
+    <div class="wrapper">
+        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+            <kendo-tabstrip-tab title="Preview" [selected]="true">
+                <ng-template kendoTabContent>
+                    <div class="example-wrapper">
+                        <div class="example">
+                            <h5>With Badge Container</h5>
+                            <div class="wrap">                      
+                              <kendo-badge-container>
+                                Available
+                                <kendo-badge themeColor="success" rounded="full"></kendo-badge>
+                              </kendo-badge-container>
+                      
+                              <kendo-badge-container>
+                                <kendo-icon name="copy"></kendo-icon>
+                                <kendo-badge [align]="badgeAlign" themeColor="dark">11</kendo-badge>
+                              </kendo-badge-container>
+                      
+                              <kendo-badge-container>
+                                <kendo-icon name="cart"></kendo-icon>
+                                <kendo-badge>4</kendo-badge>
+                              </kendo-badge-container>
+                      
+                              <kendo-badge-container>
+                                Sent Items
+                                <kendo-badge themeColor="tertiary">3</kendo-badge>
+                              </kendo-badge-container>
+                            </div>
+                            <br>
+                            <!-- <h5>Without Badge Container</h5>
+                            <div class="wrap">
+                      
+                              <span class="updates">
+                                Offline
+                                <kendo-badge themeColor="primary" rounded="large"></kendo-badge>
+                              </span>
+                      
+                              <span class="files">
+                                <kendo-icon name="copy"></kendo-icon>
+                                <kendo-badge [align]="badgeAlign" themeColor="dark">11</kendo-badge>
+                              </span>
+                      
+                              <span class="shopping-cart">
+                                <kendo-icon name="cart"></kendo-icon>
+                                <kendo-badge>4</kendo-badge>
+                              </span>
+                      
+                              <span class="sent-items">
+                                Sent Items
+                                <kendo-badge themeColor="tertiary">34</kendo-badge>
+                              </span>
+                            </div> -->
+                          </div>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="View Source">
+                <ng-template kendoTabContent>
+                    <div>
+                        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+                            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
+                              <!-- <code>{{code}}</code> -->
+                          </pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                            <kendo-tabstrip-tab title="app.module.ts">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
+                              <!-- <code>{{code1}}</code> -->
+                          </pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                        </kendo-tabstrip>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+        </kendo-tabstrip>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.example>div {
+    margin-bottom: 40px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 480px;
+}
+
+.k-i-copy,
+.k-i-cart {
+    font-size: 32px;
+}
+
+.mail,
+.shopping-cart,
+.updates,
+.files,
+.sent-items {
+    position: relative;
+    overflow: visible;
+}
