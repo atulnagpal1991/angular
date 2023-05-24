@@ -53,6 +53,20 @@ import { EditorModule } from "@progress/kendo-angular-editor";
 import { SchedulerModule } from "@progress/kendo-angular-scheduler";
 import { ListViewModule } from "@progress/kendo-angular-listview";
 import { DestinationCardComponent } from './common/layout/list-view/destination-card/destination-card.component';
+import { InputComponent } from './common/layout/input/input.component';
+import { SwitchComponent } from './common/layout/switch/switch.component';
+import { SliderComponent } from './common/layout/slider/slider.component';
+import { SelectComponent } from './common/layout/select/select.component';
+import { AutocompleteComponent } from './common/layout/autocomplete/autocomplete.component';
+import { BreadcrumbsComponent } from './common/layout/breadcrumbs/breadcrumbs.component';
+import { TabsComponent } from './common/layout/tabs/tabs.component';
+import { AlertComponent } from './common/layout/alert/alert.component';
+import { AccordionComponent } from './common/layout/accordion/accordion.component';
+import { ProgressComponent } from './common/layout/progress/progress.component';
+import { BadgeComponent } from './common/layout/badge/badge.component';
+import { ChipComponent } from './common/layout/chip/chip.component';
+import { DateAndTimeComponent } from './common/layout/date-and-time/date-and-time.component';
+import { CheckboxAndRadioComponent } from './common/layout/checkbox-and-radio/checkbox-and-radio.component';
 
 
 @NgModule({
@@ -82,6 +96,20 @@ import { DestinationCardComponent } from './common/layout/list-view/destination-
     EditorComponent,
     AngularSchedulerComponent,
     DestinationCardComponent,
+    InputComponent,
+    SwitchComponent,
+    SliderComponent,
+    SelectComponent,
+    AutocompleteComponent,
+    BreadcrumbsComponent,
+    TabsComponent,
+    AlertComponent,
+    AccordionComponent,
+    ProgressComponent,
+    BadgeComponent,
+    ChipComponent,
+    DateAndTimeComponent,
+    CheckboxAndRadioComponent,
   ],
   imports: [
     BrowserModule,

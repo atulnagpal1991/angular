@@ -75,9 +75,7 @@ export class SidebarComponent {
       { separator: true },   
       { text: 'Chip', icon: "tab" },  
       { separator: true },   
-      { text: 'Date/Time', icon: "tab" },  
-      { separator: true },   
-      { text: 'Accordion', icon: "tab" },  
+      { text: 'Date and Time', icon: "tab" },  
       { separator: true },      
       { text: 'Checkbox and Radio', icon: "tab" },  
       { separator: true }
