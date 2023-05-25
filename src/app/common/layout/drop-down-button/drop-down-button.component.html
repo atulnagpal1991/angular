@@ -12,35 +12,27 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
                         <p>Default Button</p>
-                        <p class="k-block">
-                            <kendo-dropdownbutton [data]="data">
-                                User Settings
-                            </kendo-dropdownbutton>
-                        </p>
+                        <kendo-dropdownbutton [data]="data">
+                            User Settings
+                        </kendo-dropdownbutton>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
                         <p>Primary Button</p>
-                        <p class="k-block">
                             <kendo-dropdownbutton [data]="data" themeColor="primary">
                                 User Settings
                             </kendo-dropdownbutton>
-                        </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
                         <p>Outline Button</p>
-                        <p class="k-block">
-                            <kendo-dropdownbutton [data]="data" fillMode="outline">
+                            <kendo-dropdownbutton [data]="data" fillMode="outline" themeColor="primary" >
                                 User Settings
                             </kendo-dropdownbutton>
-                        </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
                         <p>Flat Button</p>
-                        <p class="k-block">
-                            <kendo-dropdownbutton [data]="data" fillMode="flat">
+                            <kendo-dropdownbutton [data]="data" [disabled]="true">
                                 User Settings
                             </kendo-dropdownbutton>
-                        </p>
                     </div>
                 </div>
             </ng-template>

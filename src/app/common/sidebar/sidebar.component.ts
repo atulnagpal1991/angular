@@ -12,6 +12,8 @@ export class SidebarComponent {
 
   public items: Array<{text: string; icon: string; selected?: boolean} | {separator: boolean}> = [
       { text: 'Buttons', icon: "tab", selected: true },
+      { separator: true }, 
+      { text: 'Drop Down Button', icon: "tab" },
       { separator: true },
       { text: 'Drag Drop', icon: "tab" },
       { separator: true },
@@ -78,7 +80,7 @@ export class SidebarComponent {
       { text: 'Date and Time', icon: "tab" },  
       { separator: true },      
       { text: 'Checkbox and Radio', icon: "tab" },  
-      { separator: true }
+      { separator: true },    
 
       
       

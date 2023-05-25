@@ -1,8 +1,13 @@
 <div class="description-parent">
   <div class="description">
-    <h6 class="sub-heading">Angular Buttons provide a clickable UI functionality which can be set to display arbitrary content.</h6>
-    <p>They include a variety of button types and styles that have extensive configuration options. This flexibility allows you to quickly and easily create the exact button you need to fit your specific requirements for functionality and appearance.</p>
-    <p>The Buttons are built from the ground up and specifically for Angular, so that you get high-performance button controls which integrate tightly with your application and with the rest of the Kendo UI for Angular components.</p>  
+    <h6 class="sub-heading">Angular Buttons provide a clickable UI functionality which can be set to display arbitrary
+      content.</h6>
+    <p>They include a variety of button types and styles that have extensive configuration options. This flexibility
+      allows you to quickly and easily create the exact button you need to fit your specific requirements for
+      functionality and appearance.</p>
+    <p>The Buttons are built from the ground up and specifically for Angular, so that you get high-performance button
+      controls which integrate tightly with your application and with the rest of the Kendo UI for Angular components.
+    </p>
   </div>
 </div>
 <div class="wrapper-parent">
@@ -11,54 +16,157 @@
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
           <div class="example-wrapper">
-            <div class="example-col">
-              <p>Button</p>
-              <button class="me-3" kendoButton (click)="onButtonClick()" fillMode="outline" themeColor="primary">Default</button>
-              <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
-                Primary
-              </button>
-              <button class="me-3" kendoButton (click)="onButtonClick()" [disabled]="true">
-                Disabled
-              </button>
+            <div class="example-col row">
+              <h5>Button</h5>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Default</p>
+                <button class="me-3" kendoButton (click)="onButtonClick()">Default</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Primary</p>
+                <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
+                  Primary
+                </button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Outline</p>
+                <button class="me-3" kendoButton (click)="onButtonClick()" fillMode="outline"
+                  themeColor="primary">Default</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Disabled</p>
+                <button class="me-3" kendoButton (click)="onButtonClick()" [disabled]="true">
+                  Disabled
+                </button>
+              </div>
             </div>
-            <div class="example-col">
-              <p>Button with icon</p>
-              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" fillMode="outline" themeColor="primary">Default</button>
-              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" themeColor="primary">
-                Primary
-              </button>
-              <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" [disabled]="true">
-                Disabled
-              </button>
+
+            <div class="example-col row">
+              <h5>Button with icon</h5>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Default</p>
+                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()">Default</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Primary</p>
+                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" themeColor="primary">
+                  Primary
+                </button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Outline</p>
+                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" fillMode="outline"
+                  themeColor="primary">Outline</button>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Disabled</p>
+                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" [disabled]="true">
+                  Disabled
+                </button>
+              </div>
             </div>
-            <div class="example-col">
-              <p>ButtonGroup</p>
-              <kendo-buttongroup>
-                <button kendoButton themeColor="primary" [toggleable]="true">Option A</button>
-                <button kendoButton themeColor="primary" [toggleable]="true">Option B</button>
-                <button kendoButton themeColor="primary" [toggleable]="true">Option C</button>
-              </kendo-buttongroup>
+            <div class="example-col row">
+              <h5>DropDownButton</h5>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Default</p>
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)">
+                  Default
+                </kendo-dropdownbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Primary</p>
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
+                  Primary
+                </kendo-dropdownbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Outline</p>
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" themeColor="primary" fillMode="outline">
+                  Outline
+                </kendo-dropdownbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Disabled</p>
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" [disabled]="true">
+                  Disabled
+                </kendo-dropdownbutton>
+              </div>
+
             </div>
-            <div class="example-col">
-              <p>DropDownButton</p>
-              <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" title="User Settings"
-                (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
-                User Settings
-              </kendo-dropdownbutton>
+            <div class="example-col row">
+              <h5>SplitButton</h5>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Default</p>
+                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard"
+                  (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+                  Default
+                </kendo-splitbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Primary</p>
+                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary"
+                  (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+                  Primary
+                </kendo-splitbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Outline</p>
+                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary" fillMode="outline" (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+                  Outline
+                </kendo-splitbutton>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Disabled</p>
+                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" [disabled]="true"
+                  (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+                  Disabled
+                </kendo-splitbutton>
+              </div>
             </div>
-            <div class="example-col">
-              <p>SplitButton</p>
-              <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" title="Paste" themeColor="primary"
-                (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
-                Paste
-              </kendo-splitbutton>
+
+            <div class="example-col row">
+              <h5>ButtonGroup</h5>
+
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Default</p>
+                <kendo-buttongroup>
+                  <button kendoButton [toggleable]="true">Option A</button>
+                  <button kendoButton [toggleable]="true">Option B</button>
+                  <button kendoButton [toggleable]="true">Option C</button>
+                </kendo-buttongroup>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Primary</p>
+                <kendo-buttongroup>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Option A</button>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Option B</button>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Option C</button>
+                </kendo-buttongroup>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Outline</p>
+                <kendo-buttongroup>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option A</button>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option B</button>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option C</button>
+                </kendo-buttongroup>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                <p>Disabled</p>
+                <kendo-buttongroup>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Option A</button>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Option B</button>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Option C</button>
+                </kendo-buttongroup>
+              </div>
+
             </div>
-            <div class="example-col">
+            <!-- <div class="example-col">
               <p>Chip</p>
               <kendo-chip-list selection="multiple">
                 <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [iconClass]="chip.iconClass"></kendo-chip>
               </kendo-chip-list>
-            </div>
+            </div> -->
             <!-- <div class="example-col">
               <kendo-floatingactionbutton
                 icon="plus"
