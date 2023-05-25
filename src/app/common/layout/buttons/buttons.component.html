@@ -69,25 +69,29 @@
               <h5>DropDownButton</h5>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                 <p>Default</p>
-                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)">
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
+                  (itemClick)="onSplitButtonItemClick($event)">
                   Default
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                 <p>Primary</p>
-                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
+                  (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
                   Primary
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                 <p>Outline</p>
-                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" themeColor="primary" fillMode="outline">
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
+                  (itemClick)="onSplitButtonItemClick($event)" themeColor="primary" fillMode="outline">
                   Outline
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                 <p>Disabled</p>
-                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear" (itemClick)="onSplitButtonItemClick($event)" [disabled]="true">
+                <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
+                  (itemClick)="onSplitButtonItemClick($event)" [disabled]="true">
                   Disabled
                 </kendo-dropdownbutton>
               </div>
@@ -111,7 +115,8 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                 <p>Outline</p>
-                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary" fillMode="outline" (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
+                <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary" fillMode="outline"
+                  (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
                   Outline
                 </kendo-splitbutton>
               </div>
@@ -161,12 +166,13 @@
               </div>
 
             </div>
-            <!-- <div class="example-col">
+            <div class="example-col">
               <p>Chip</p>
               <kendo-chip-list selection="multiple">
-                <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [iconClass]="chip.iconClass"></kendo-chip>
+                <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [removable]="chip.removable"
+                  [removeIcon]="chip.removeIcon" [iconClass]="chip.iconClass" (remove)="onRemove($event)"></kendo-chip>
               </kendo-chip-list>
-            </div> -->
+            </div>
             <!-- <div class="example-col">
               <kendo-floatingactionbutton
                 icon="plus"

@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ChipRemoveEvent } from "@progress/kendo-angular-buttons";
 import { SelectEvent } from "@progress/kendo-angular-layout";
 
 @Component({
@@ -65,20 +66,37 @@ public chips = [
   {
     label: "Pedro Afonso",
     iconClass: "k-chip-avatar pedro",
+    selected: false,
+    removable: true,
+    removeIcon: " ",
   },
   {
     label: "Thomas Hardy",
     iconClass: "k-chip-avatar thomas",
+    selected: false,
+    removable: true,
+    removeIcon: "k-icon k-i-trash",
   },
   {
     label: "Christina Berg",
     iconClass: "k-chip-avatar christina",
+    selected: false,
+    removable: true,
+    removeIcon: "k-icon k-i-x-outline",
   },
   {
     label: "Paula Wilson",
     iconClass: "k-chip-avatar paula",
+    selected: false,
+    removable: true,
+    removeIcon: "k-icon k-i-x",
   },
 ];
+
+public onRemove(e: ChipRemoveEvent): void {
+  const index = this.chips.findIndex((c) => c.label === e.sender.label);
+  this.chips.splice(index, 1);
+}
 
 public onFabClick(): void {
   console.log("Added");
