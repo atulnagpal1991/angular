@@ -1,7 +1,10 @@
 <div class="description-parent">
     <div class="description">
-        <h6 class="sub-heading">The Kendo UI for Angular Inputs are fields for allowing the input of data based on specific and predefined formats.</h6>
-        <p>They include a variety of input types and styles that have extensive configuration options. This flexibility allows you to quickly and easily create the exact input you need to fit your specific requirements for functionality and appearance.</p>
+        <h6 class="sub-heading">The Kendo UI for Angular Inputs are fields for allowing the input of data based on
+            specific and predefined formats.</h6>
+        <p>They include a variety of input types and styles that have extensive configuration options. This flexibility
+            allows you to quickly and easily create the exact input you need to fit your specific requirements for
+            functionality and appearance.</p>
     </div>
 </div>
 
@@ -11,19 +14,66 @@
             <kendo-tabstrip-tab title="Preview" [selected]="true">
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
-                        <kendo-floatinglabel text="Enter First Name">
-                            <input kendoTextBox name="firstName" />
-                        </kendo-floatinglabel>
-                        <br>
+                        <div class="example-col row">
+                            <h5>Input</h5>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Default</p>
+                                <kendo-floatinglabel text="Enter First Name">
+                                    <input kendoTextBox name="firstName" />
+                                </kendo-floatinglabel>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Filled</p>
+                                <kendo-floatinglabel text="Enter First Name">
+                                    <input kendoTextBox name="firstName" value="Jhon" />
+                                </kendo-floatinglabel>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Disabled</p>
+                                <kendo-floatinglabel text="Enter First Name" >
+                                    <input kendoTextBox name="firstName" [disabled]="true" />
+                                </kendo-floatinglabel>
+                            </div>
+                        </div>
+                        
+                        <div class="example-col row">
+                            <h5>Input with icon</h5>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Default</p>
+                                <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+                                    <kendo-textbox>
+                                        <ng-template kendoTextBoxPrefixTemplate>
+                                            <span class="k-icon k-i-email"></span>
+                                            <kendo-textbox-separator></kendo-textbox-separator>
+                                        </ng-template>
+                                    </kendo-textbox>
+                                </kendo-floatinglabel>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Filled</p>
+                                <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+                                    <kendo-textbox value="john@gmail.com">
+                                        <ng-template kendoTextBoxPrefixTemplate>
+                                            <span class="k-icon k-i-email"></span>
+                                            <kendo-textbox-separator></kendo-textbox-separator>
+                                        </ng-template>
+                                    </kendo-textbox>
+                                </kendo-floatinglabel>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Disabled</p>
+                                <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+                                    <kendo-textbox  [disabled]="true" >
+                                        <ng-template kendoTextBoxPrefixTemplate>
+                                            <span class="k-icon k-i-email"></span>
+                                            <kendo-textbox-separator></kendo-textbox-separator>
+                                        </ng-template>
+                                    </kendo-textbox>
+                                </kendo-floatinglabel>
+                            </div>
+                        </div>
 
-                        <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
-                            <kendo-textbox >
-                                <ng-template kendoTextBoxPrefixTemplate>
-                                    <span class="k-icon k-i-email"></span>
-                                    <kendo-textbox-separator></kendo-textbox-separator>
-                                </ng-template>
-                            </kendo-textbox>
-                        </kendo-floatinglabel>
+                        
                     </div>
                 </ng-template>
             </kendo-tabstrip-tab>

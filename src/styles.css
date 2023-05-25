@@ -573,7 +573,7 @@ example-wrapper,
 
 /* kendo update */
 
-.k-stepper .k-step-done .k-step-indicator, .k-stepper .k-step-current .k-step-indicator {
+.k-stepper .k-step-done .k-step-indicator, .k-stepper .k-step-current .k-step-indicator, .k-chat .k-alt .k-bubble {
   color: #fff;
 }
 
@@ -607,3 +607,6 @@ example-wrapper,
   color: inherit!important;
 }
 
+ .k-input-solid {
+  color: #000;
+ }
