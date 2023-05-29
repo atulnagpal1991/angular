@@ -675,6 +675,7 @@ kendo-floatinglabel input[disabled], kendo-floatinglabel .k-disabled {
 .k-switch-md, .k-switch-md .k-switch-track {
   height: 14px;
   width: 36px;
+  border: none;
 }
 
 .k-switch-off:focus .k-switch-track, .k-switch-off.k-focus .k-switch-track, .k-switch-on:focus .k-switch-track, .k-switch-on.k-focus .k-switch-track {
