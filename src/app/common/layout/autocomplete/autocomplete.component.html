@@ -10,14 +10,31 @@
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper">  
-                Normal   
-                <br>             
+            <div class="example-wrapper row">  
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <h5>Normal</h5>
                 <kendo-autocomplete [data]="listItems" placeholder="Type here...">
-                  <ng-template kendoAutoCompleteItemTemplate let-dataItem aria-placeholder="test">
+                  <ng-template kendoAutoCompleteItemTemplate let-dataItem>
                     <span style="color: #f75814;">{{ dataItem }}</span>
                   </ng-template>
                 </kendo-autocomplete>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <h5>Filled</h5>
+                <kendo-autocomplete [data]="listItems" placeholder="Type here..." value="input 1">
+                  <ng-template kendoAutoCompleteItemTemplate let-dataItem>
+                    <span style="color: #f75814;">{{ dataItem }}</span>
+                  </ng-template>
+                </kendo-autocomplete>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <h5>Disabled</h5>
+                <kendo-autocomplete [data]="listItems" placeholder="Type here..." [disabled]="true">
+                  <ng-template kendoAutoCompleteItemTemplate let-dataItem>
+                    <span style="color: #f75814;">{{ dataItem }}</span>
+                  </ng-template>
+                </kendo-autocomplete>
+              </div>          
               </div>
         </ng-template>
       </kendo-tabstrip-tab>

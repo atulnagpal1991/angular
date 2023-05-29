@@ -1,67 +1,68 @@
 <div class="description-parent">
-    <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular PanelBar displays hierarchical data as a multi-level, expandable component.</h6>
-    <p>To describe its items children, the PanelBar enables you to nest them as PanelBarItem components or to set the items property.</p>
+  <div class="description">
+    <h6 class="sub-heading">The Kendo UI for Angular PanelBar displays hierarchical data as a multi-level, expandable
+      component.</h6>
+    <p>To describe its items children, the PanelBar enables you to nest them as PanelBarItem components or to set the
+      items property.</p>
   </div>
- </div>
-  
-  <div class="wrapper-parent">
-    <div class="wrapper">
+</div>
+
+<div class="wrapper-parent">
+  <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper">  
-                <kendo-panelbar>
-                    <kendo-panelbar-item title="My Teammates" [expanded]="true">
-                      <ng-template kendoPanelBarContent>
-                        <div>
-                          <div class="teamMate">
-                            <img [src]="imageUrl('andrew')" alt="Andrew Fuller" />
-                            <span class="mate-info">
-                              <h2>Andrew Fuller</h2>
-                              <p>Team Lead</p>
-                            </span>
-                          </div>
-                          <div class="teamMate">
-                            <img [src]="imageUrl('nancy')" alt="Nancy Leverling" />
-                            <span class="mate-info">
-                              <h2>Nancy Leverling</h2>
-                              <p>Sales Associate</p>
-                            </span>
-                          </div>
-                          <div class="teamMate">
-                            <img [src]="imageUrl('robert')" alt="Robert King" />
-                            <span class="mate-info">
-                              <h2>Robert King</h2>
-                              <p>Business System Analyst</p>
-                            </span>
-                          </div>
-                        </div>
-                      </ng-template>
-                    </kendo-panelbar-item>
-                    <kendo-panelbar-item title="Projects">
-                      <kendo-panelbar-item title="New Business Plan"></kendo-panelbar-item>
-                      <kendo-panelbar-item title="Sales Forecasts">
-                        <kendo-panelbar-item title="Q1 Forecast"></kendo-panelbar-item>
-                        <kendo-panelbar-item title="Q2 Forecast"></kendo-panelbar-item>
-                        <kendo-panelbar-item title="Q3 Forecast"></kendo-panelbar-item>
-                        <kendo-panelbar-item title="Q4 Forecast"></kendo-panelbar-item>
-                      </kendo-panelbar-item>
-                      <kendo-panelbar-item title="Sales Reports"></kendo-panelbar-item>
-                    </kendo-panelbar-item>
-                    <kendo-panelbar-item title="Programs">
-                      <kendo-panelbar-item title="Monday"></kendo-panelbar-item>
-                      <kendo-panelbar-item title="Tuesday"></kendo-panelbar-item>
-                      <kendo-panelbar-item title="Wednesday"></kendo-panelbar-item>
-                      <kendo-panelbar-item title="Thursday"></kendo-panelbar-item>
-                      <kendo-panelbar-item title="Friday"></kendo-panelbar-item>
-                    </kendo-panelbar-item>
-                    <kendo-panelbar-item
-                      title="Communication"
-                      [disabled]="true"
-                    ></kendo-panelbar-item>
-                  </kendo-panelbar>
-              </div>
+          <div class="example-wrapper">
+            <div class="col-6">
+              <kendo-panelbar>
+                <kendo-panelbar-item title="My Teammates" [expanded]="true">
+                  <ng-template kendoPanelBarContent>
+                    <div>
+                      <div class="teamMate">
+                        <img [src]="imageUrl('andrew')" alt="Andrew Fuller" />
+                        <span class="mate-info">
+                          <h2>Andrew Fuller</h2>
+                          <p>Team Lead</p>
+                        </span>
+                      </div>
+                      <div class="teamMate">
+                        <img [src]="imageUrl('nancy')" alt="Nancy Leverling" />
+                        <span class="mate-info">
+                          <h2>Nancy Leverling</h2>
+                          <p>Sales Associate</p>
+                        </span>
+                      </div>
+                      <div class="teamMate">
+                        <img [src]="imageUrl('robert')" alt="Robert King" />
+                        <span class="mate-info">
+                          <h2>Robert King</h2>
+                          <p>Business System Analyst</p>
+                        </span>
+                      </div>
+                    </div>
+                  </ng-template>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item title="Projects">
+                  <kendo-panelbar-item title="New Business Plan"></kendo-panelbar-item>
+                  <kendo-panelbar-item title="Sales Forecasts">
+                    <kendo-panelbar-item title="Q1 Forecast"></kendo-panelbar-item>
+                    <kendo-panelbar-item title="Q2 Forecast"></kendo-panelbar-item>
+                    <kendo-panelbar-item title="Q3 Forecast"></kendo-panelbar-item>
+                    <kendo-panelbar-item title="Q4 Forecast"></kendo-panelbar-item>
+                  </kendo-panelbar-item>
+                  <kendo-panelbar-item title="Sales Reports"></kendo-panelbar-item>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item title="Programs">
+                  <kendo-panelbar-item title="Monday"></kendo-panelbar-item>
+                  <kendo-panelbar-item title="Tuesday"></kendo-panelbar-item>
+                  <kendo-panelbar-item title="Wednesday"></kendo-panelbar-item>
+                  <kendo-panelbar-item title="Thursday"></kendo-panelbar-item>
+                  <kendo-panelbar-item title="Friday"></kendo-panelbar-item>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item title="Communication" [disabled]="true"></kendo-panelbar-item>
+              </kendo-panelbar>
+            </div>
+          </div>
         </ng-template>
       </kendo-tabstrip-tab>
       <kendo-tabstrip-tab title="View Source">
@@ -92,7 +93,4 @@
       </kendo-tabstrip-tab>
     </kendo-tabstrip>
   </div>
-  </div>
-
-
-
+</div>

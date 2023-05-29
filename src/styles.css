@@ -630,14 +630,23 @@ example-wrapper,
   color: #000;
 }
 
-kendo-floatinglabel {
+kendo-floatinglabel, kendo-autocomplete.k-autocomplete {
   margin-top: 20px;
 }
 
-kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox {
+kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox, kendo-autocomplete.k-autocomplete, kendo-dropdownlist.k-dropdownlist  {
   border: none;
   border-bottom: solid 2px rgba(0, 0, 0, 0.42);
   border-radius: 0;
+  background-color: #fff!important;
+}
+
+.k-floating-label-container, kendo-autocomplete.k-autocomplete {
+  width: 90%;
+}
+
+.k-picker-solid:focus-within {
+  border-color: #fbac8a;
 }
 
 kendo-floatinglabel input.k-input.active, kendo-floatinglabel .k-textbox.active {
@@ -646,4 +655,46 @@ kendo-floatinglabel input.k-input.active, kendo-floatinglabel .k-textbox.active 
 
 kendo-floatinglabel input[disabled], kendo-floatinglabel .k-disabled {
   border-color: #e4e7eb!important;
+}
+
+.k-tooltip .k-callout {
+  color: #616161;
+}
+
+.k-tooltip {
+  border-color: #616161;
+  color: white;
+  background-color: #616161;
+}
+
+.k-switch-off .k-switch-thumb, .k-switch-on .k-switch-thumb {
+  background: #FAFAFA;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12)!important;
+}
+
+.k-switch-md, .k-switch-md .k-switch-track {
+  height: 14px;
+  width: 36px;
+}
+
+.k-switch-off:focus .k-switch-track, .k-switch-off.k-focus .k-switch-track, .k-switch-on:focus .k-switch-track, .k-switch-on.k-focus .k-switch-track {
+  outline: none!important;
+}
+
+.k-switch-md.k-switch-on .k-switch-thumb-wrap {
+  left: calc( 100% - 5px );
+}
+
+.k-switch-md.k-switch-off .k-switch-thumb-wrap {
+  left: 5px;
+}
+
+.k-switch-off .k-switch-track {
+  border-color: #adb5bd;
+  background-color: #adb5bd;
+}
+
+.k-switch-md .k-switch-thumb {
+  width: 20px;
+  height: 20px;
 }

@@ -1,34 +1,38 @@
 <div class="description-parent">
-    <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular Switch enables the user to toggle between checked and unchecked states.</h6>
+  <div class="description">
+    <h6 class="sub-heading">The Kendo UI for Angular Switch enables the user to toggle between checked and unchecked
+      states.</h6>
     <p>The following example demonstrates the Switch in action.</p>
   </div>
- </div>
-  
-  <div class="wrapper-parent">
-    <div class="wrapper">
+</div>
+
+<div class="wrapper-parent">
+  <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper">                
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <p>Default</p>
                 <kendo-label text="Inactive">
-                    <kendo-switch 
-                    onLabel="On"
-                    offLabel="Off"></kendo-switch>
-                  </kendo-label>
-                  <br>
-                  <br>
-                <kendo-label text="Checked">
-                    <kendo-switch [(ngModel)]="checked" 
-                    onLabel="On"
-                    offLabel="Off"></kendo-switch>
-                  </kendo-label>
-                  <br>
-                  <br>
-                  <kendo-label text="Disabled">
-                    <kendo-switch [disabled]="disabled"></kendo-switch>
-                  </kendo-label>
+                  <kendo-switch onLabel="On" offLabel="Off"></kendo-switch>
+                </kendo-label>
               </div>
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <p>Checked</p>
+                <kendo-label text="Checked">
+                  <kendo-switch [(ngModel)]="checked" onLabel="On" offLabel="Off"></kendo-switch>
+                </kendo-label>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <p>Disabled</p>
+                <kendo-label text="Disabled">
+                  <kendo-switch [disabled]="disabled"></kendo-switch>
+                </kendo-label>
+              </div>
+            </div>
+          </div>
         </ng-template>
       </kendo-tabstrip-tab>
       <kendo-tabstrip-tab title="View Source">
@@ -59,5 +63,4 @@
       </kendo-tabstrip-tab>
     </kendo-tabstrip>
   </div>
-  </div>
-
+</div>

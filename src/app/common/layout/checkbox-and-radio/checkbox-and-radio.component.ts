@@ -12,10 +12,7 @@ export class CheckboxAndRadioComponent {
     console.log(e);
   }
 
-  public model = {
-    gender: null,
-  };
-
+ 
   public isDisabled = true;
 
 }

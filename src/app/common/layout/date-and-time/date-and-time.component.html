@@ -1,6 +1,7 @@
 <div class="description-parent">
     <div class="description">
-        <h6 class="sub-heading">The Kendo UI for Angular DateTimePicker enables the user to select date and time values.</h6>
+        <h6 class="sub-heading">The Kendo UI for Angular DateTimePicker enables the user to select date and time values.
+        </h6>
         <p>The component combines the Kendo UI DateInput, Calendar, and TimePicker.</p>
         <p>The following example demonstrates the Angular DateTimePicker in action.</p>
     </div>
@@ -12,26 +13,27 @@
             <kendo-tabstrip-tab title="Preview" [selected]="true">
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
-                        Disabled
-                        <br>
-                        <kendo-datetimepicker [disabled]="disabled"> </kendo-datetimepicker>
-                        <br>
-                        <br>
-                        Read-Only
-                        <br>
-                        <kendo-datetimepicker [readonly]="readonly" [(ngModel)]="value"> </kendo-datetimepicker>
-                        <br>
-                        <br>
-                        Normal
-                        <br>
-                        <kendo-datetimepicker [incompleteDateValidation]="true" [(ngModel)]="valueNew"
-                            #dateModel="ngModel" #datetimepicker></kendo-datetimepicker>
-                        <br>
-                        <br>
-                        Disabled Few Dates
-                        <br>
-                        <kendo-datetimepicker [(ngModel)]="disabledDate" [disabledDates]="disabledDates">
-                        </kendo-datetimepicker>
+                        <div class="example-col row">
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Normal</p>
+                                <kendo-datetimepicker [incompleteDateValidation]="true" [(ngModel)]="valueNew"
+                                    #dateModel="ngModel" #datetimepicker></kendo-datetimepicker>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                <p>Read-Only</p>
+                                <kendo-datetimepicker [readonly]="readonly" [(ngModel)]="value"> </kendo-datetimepicker>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                Disabled
+                                <kendo-datetimepicker [disabled]="disabled"> </kendo-datetimepicker>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                                Disabled Few Dates
+                                <kendo-datetimepicker [(ngModel)]="disabledDate" [disabledDates]="disabledDates">
+                                </kendo-datetimepicker>
+                            </div>
+                        </div>
+
                     </div>
                 </ng-template>
             </kendo-tabstrip-tab>

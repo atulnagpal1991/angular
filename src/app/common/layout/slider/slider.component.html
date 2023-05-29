@@ -1,35 +1,29 @@
 <div class="description-parent">
-    <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular Slider enables the user to increase, decrease, and select predefined values by dragging its handle along the track, or by clicking its side arrow buttons.</h6>
+  <div class="description">
+    <h6 class="sub-heading">The Kendo UI for Angular Slider enables the user to increase, decrease, and select
+      predefined values by dragging its handle along the track, or by clicking its side arrow buttons.</h6>
     <p>The following example demonstrates the Slider in action.</p>
   </div>
- </div>
-  
-  <div class="wrapper-parent">
-    <div class="wrapper">
+</div>
+
+<div class="wrapper-parent">
+  <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper">                
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                 <kendo-label text="Active">
-                    <kendo-slider
-                      [tickPlacement]="tickPlacement"
-                      [min]="min"
-                      [max]="max"
-                      [smallStep]="smallStep"
-                      [(ngModel)]="value"
-                    ></kendo-slider>
-                  </kendo-label>
-                  <br>
-                  <br>
-                  <kendo-label text="Disabled">
-                    <kendo-slider
-                    [tickPlacement]="tickPlacement"
-                      [disabled]="true"
-                      [(ngModel)]="value1"
-                    ></kendo-slider>
-                  </kendo-label>
-              </div>
+                  <kendo-slider [tickPlacement]="tickPlacement" [min]="min" [max]="max" [smallStep]="smallStep"
+                    [(ngModel)]="value"></kendo-slider>
+                </kendo-label></div>
+              <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+                <kendo-label text="Disabled">
+                  <kendo-slider [tickPlacement]="tickPlacement" [disabled]="true" [(ngModel)]="value1"></kendo-slider>
+                </kendo-label></div>
+            </div>
+          </div>
         </ng-template>
       </kendo-tabstrip-tab>
       <kendo-tabstrip-tab title="View Source">
@@ -60,5 +54,4 @@
       </kendo-tabstrip-tab>
     </kendo-tabstrip>
   </div>
-  </div>
-
+</div>
