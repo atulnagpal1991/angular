@@ -14,24 +14,24 @@
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
                         <div class="example-col row">
-                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                                 <p>Normal</p>
                                 <kendo-datetimepicker [incompleteDateValidation]="true" [(ngModel)]="valueNew"
                                     #dateModel="ngModel" #datetimepicker></kendo-datetimepicker>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                                 <p>Read-Only</p>
                                 <kendo-datetimepicker [readonly]="readonly" [(ngModel)]="value"> </kendo-datetimepicker>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                            <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                                 Disabled
                                 <kendo-datetimepicker [disabled]="disabled"> </kendo-datetimepicker>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
+                            <!-- <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                                 Disabled Few Dates
                                 <kendo-datetimepicker [(ngModel)]="disabledDate" [disabledDates]="disabledDates">
                                 </kendo-datetimepicker>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

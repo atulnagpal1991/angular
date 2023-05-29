@@ -634,7 +634,7 @@ kendo-floatinglabel, kendo-autocomplete.k-autocomplete {
   margin-top: 20px;
 }
 
-kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox, kendo-autocomplete.k-autocomplete, kendo-dropdownlist.k-dropdownlist  {
+kendo-datetimepicker.k-datetimepicker, kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox, kendo-autocomplete.k-autocomplete, kendo-dropdownlist.k-dropdownlist {
   border: none;
   border-bottom: solid 2px rgba(0, 0, 0, 0.42);
   border-radius: 0;
@@ -705,4 +705,22 @@ kendo-floatinglabel input[disabled], kendo-floatinglabel .k-disabled {
 
 .k-radio:checked, .k-radio.k-checked {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+.example-wrapper kendo-tabstrip .k-tabstrip-items-wrapper {
+  border-radius: 0;
+  padding: 0;
+}
+
+.k-input, .k-input-inner {
+  padding-left: 0!important;
+}
+
+.k-input-inner ~ .k-label, .k-input ~ .k-label, .k-dropdownlist ~ .k-label {
+  left: 0!important;
+}
+
+.icon-input .k-label, .icon-input .k-input-inner {
+  left: calc( 0.75rem + 1px )!important;
 }

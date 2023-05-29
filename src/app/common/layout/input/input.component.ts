@@ -36,5 +36,6 @@ export class InputComponent {
   public listItems: Array<string> = ["Item 1", "Item 2", "Item 3"];
   
   public data: string[] = ["foo", "bar", "baz"];
+  
 
 }

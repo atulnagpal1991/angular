@@ -27,7 +27,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                                 <p>Disabled</p>
-                                <kendo-label [for]="other" text="Disabled"></kendo-label>
+                                <kendo-label [for]="other" text="Other"></kendo-label>
                                 <input type="radio" name="gender" value="Other" [disabled]="isDisabled" #other kendoRadioButton />
                             </div>
                         </div>
@@ -37,21 +37,21 @@
                             <h5>Checkbox</h5>
                             <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                                 <p>Default</p>
-                                <kendo-label class="k-checkbox-label" [for]="notification"
-                                    text="Approved"></kendo-label>
-                                <input type="checkbox" #notification kendoCheckBox />
+                                <kendo-label class="k-checkbox-label" [for]="default"
+                                    text="Default"></kendo-label>
+                                <input type="checkbox" #default kendoCheckBox />
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                                 <p>Selected</p>
-                                <kendo-label class="k-checkbox-label" [for]="notification"
-                                    text="Disapproved"></kendo-label>
-                                <input type="checkbox" #notification kendoCheckBox checked />
+                                <kendo-label class="k-checkbox-label" [for]="selected"
+                                    text="Selected"></kendo-label>
+                                <input type="checkbox" #selected kendoCheckBox checked />
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
                                 <p>Disabled</p>
-                                <kendo-label class="k-checkbox-label" [for]="notification"
+                                <kendo-label class="k-checkbox-label" [for]="disabled"
                                     text="Disabled"></kendo-label>
-                                <input type="checkbox" #notification kendoCheckBox [disabled]="isDisabled" />
+                                <input type="checkbox" #disabled kendoCheckBox [disabled]="isDisabled" />
                             </div>
                         </div>
                     </div>
