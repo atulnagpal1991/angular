@@ -1,16 +1,18 @@
 <div class="description-parent">
-    <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular AutoComplete is a form component that provides suggestions depending on the typed text.</h6>
+  <div class="description">
+    <h6 class="sub-heading">The Kendo UI for Angular AutoComplete is a form component that provides suggestions
+      depending on the typed text.</h6>
     <p>It is a richer version of the input element and supports data binding, filtering, and templates.</p>
   </div>
- </div>
-  
-  <div class="wrapper-parent">
-    <div class="wrapper">
+</div>
+
+<div class="wrapper-parent">
+  <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper row">  
+          <div class="example-wrapper">
+            <div class="example-col row">
               <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
                 <h5>Normal</h5>
                 <kendo-autocomplete [data]="listItems" placeholder="Type here...">
@@ -34,8 +36,9 @@
                     <span style="color: #f75814;">{{ dataItem }}</span>
                   </ng-template>
                 </kendo-autocomplete>
-              </div>          
               </div>
+            </div>
+          </div>
         </ng-template>
       </kendo-tabstrip-tab>
       <kendo-tabstrip-tab title="View Source">
@@ -66,7 +69,4 @@
       </kendo-tabstrip-tab>
     </kendo-tabstrip>
   </div>
-  </div>
-
-
-
+</div>

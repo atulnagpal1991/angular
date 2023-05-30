@@ -9,8 +9,8 @@
   <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
     <kendo-tabstrip-tab title="Preview" [selected]="true">
       <ng-template kendoTabContent>
-        <div class="example-wrapper">
-          <div class="example-col">
+        <div class="example-wrapper">  
+          <div class="example-col row">
             <h5>Drag the Button around</h5>
             <div class="container">
               <div *ngFor="let dropTarget of dropTargets" kendoDropTarget (dragEnter)="handleDragEnter(dropTarget)"

@@ -1,54 +1,62 @@
 <div class="description-parent">
   <div class="description">
-  <h6 class="sub-heading">The Kendo UI for Angular Dialogs communicate specific information to the users, prompt them to take actions, and provide a set of configuration options for customizing their behavior and content.</h6>
-  <p>The Dialogs are built from the ground up and specifically for Angular, so that you get high-performance dialog controls which integrate tightly with your application and with the rest of the Kendo UI for Angular components.</p>
-</div>
+    <h6 class="sub-heading">The Kendo UI for Angular Dialogs communicate specific information to the users, prompt them
+      to take actions, and provide a set of configuration options for customizing their behavior and content.</h6>
+    <p>The Dialogs are built from the ground up and specifically for Angular, so that you get high-performance dialog
+      controls which integrate tightly with your application and with the rest of the Kendo UI for Angular components.
+    </p>
+  </div>
 </div>
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
-        <kendo-dialog title="Please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250" [width]="450">
-          <p style="margin: 30px; text-align: center;">
-            Are you sure you want to continue?
-          </p>
-          <kendo-dialog-actions>
-            <button kendoButton (click)="close('no')">No</button>
-            <button kendoButton (click)="close('yes')" themeColor="primary">
-              Yes
-            </button>
-          </kendo-dialog-actions>
-        </kendo-dialog>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
+              <kendo-dialog title="Please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250"
+                [width]="450">
+                <p style="margin: 30px; text-align: center;">
+                  Are you sure you want to continue?
+                </p>
+                <kendo-dialog-actions>
+                  <button kendoButton (click)="close('no')">No</button>
+                  <button kendoButton (click)="close('yes')" themeColor="primary">
+                    Yes
+                  </button>
+                </kendo-dialog-actions>
+              </kendo-dialog>
+            </div>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

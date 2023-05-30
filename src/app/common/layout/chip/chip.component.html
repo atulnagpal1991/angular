@@ -1,6 +1,7 @@
 <div class="description-parent">
     <div class="description">
-        <h6 class="sub-heading">The Kendo UI for Angular Chip allows users to enter information, make selections, filter content, or trigger actions.</h6>
+        <h6 class="sub-heading">The Kendo UI for Angular Chip allows users to enter information, make selections, filter
+            content, or trigger actions.</h6>
         <p>The following example demonstrates all available appearance options of the Chip in action.</p>
     </div>
 </div>
@@ -11,15 +12,11 @@
             <kendo-tabstrip-tab title="Preview" [selected]="true">
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
-                        <kendo-chip
-                        *ngFor="let chip of chips"
-                        [label]="chip.label"
-                        [selected]="chip.selected"
-                        [removable]="chip.removable"
-                        [removeIcon]="chip.removeIcon"
-                        (remove)="onRemove($event)"
-                      >
-                      </kendo-chip>
+                        <div class="example-col row">
+                            <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [selected]="chip.selected"
+                                [removable]="chip.removable" [removeIcon]="chip.removeIcon" (remove)="onRemove($event)">
+                            </kendo-chip>
+                        </div>
                     </div>
                 </ng-template>
             </kendo-tabstrip-tab>

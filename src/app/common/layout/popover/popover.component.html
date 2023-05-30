@@ -1,61 +1,68 @@
 <div class="description-parent">
   <div class="description">
-  <h6 class="sub-heading">The Popover enables you to display rich content that appears on user interaction with a particular element. It comes with a highly customizable functionality in terms of the targeted elements, content, templates, opening and closing mechanics, and more.</h6>
-  <p>The following example demonstrates a basic popover in action</p>
-</div>
+    <h6 class="sub-heading">The Popover enables you to display rich content that appears on user interaction with a
+      particular element. It comes with a highly customizable functionality in terms of the targeted elements, content,
+      templates, opening and closing mechanics, and more.</h6>
+    <p>The following example demonstrates a basic popover in action</p>
+  </div>
 </div>
 
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary" [style.marginLeft.px]="200">
-          Show Popover
-        </button>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary"
+                [style.marginLeft.px]="200">
+                Show Popover
+              </button>
 
-        <kendo-popover #myPopover [width]="300" position="bottom">
-          <ng-template kendoPopoverTitleTemplate>
-            <div class="popover-title">River City Corporation</div>
-          </ng-template>
+              <kendo-popover #myPopover [width]="300" position="bottom">
+                <ng-template kendoPopoverTitleTemplate>
+                  <div class="popover-title">River City Corporation</div>
+                </ng-template>
 
-          <ng-template kendoPopoverBodyTemplate>
-            <img class="picture" [src]="wafflesImg" />
-            <div>{{ wafflesRecipe }}</div>
-          </ng-template>
+                <ng-template kendoPopoverBodyTemplate>
+                  <img class="picture" [src]="wafflesImg" />
+                  <div>{{ wafflesRecipe }}</div>
+                </ng-template>
 
-          <ng-template kendoPopoverActionsTemplate>
-              Our UX Service
-          </ng-template>
-        </kendo-popover>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                <ng-template kendoPopoverActionsTemplate>
+                  Our UX Service
+                </ng-template>
+              </kendo-popover>
+            </div>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

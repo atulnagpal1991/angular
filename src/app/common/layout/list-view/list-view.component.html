@@ -1,87 +1,96 @@
 <div class="description-parent">
     <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular ListView component visualizes repeated data content, providing a variety of configuration options.</h6>
-    <p>The ListView is built from the ground up and specifically for Angular, so that you get a high-performance control which delivers lightning-fast performance, integrates tightly with your application and with the rest of the Kendo UI for Angular components, and is highly customizable.</p>
-</div>
+        <h6 class="sub-heading">The Kendo UI for Angular ListView component visualizes repeated data content, providing
+            a variety of configuration options.</h6>
+        <p>The ListView is built from the ground up and specifically for Angular, so that you get a high-performance
+            control which delivers lightning-fast performance, integrates tightly with your application and with the
+            rest of the Kendo UI for Angular components, and is highly customizable.</p>
+    </div>
 </div>
 
 <div class="wrapper-parent">
     <div class="wrapper">
-    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-        <kendo-tabstrip-tab title="Preview" [selected]="true">
-            <ng-template kendoTabContent>
-                <div class=" ">
-                    <kendo-listview [kendoListViewBinding]="destinations" 
-                        containerClass="listview-content">
-                        <ng-template kendoListViewHeaderTemplate>
-                            <div class="custom-grid">
-                                <kendo-card class="destination-card" width="48%">
-                                    <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png" alt="rivercitycorp"/>
-                                    <kendo-card-body class="destination-card-body custom-card">
-                                        <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity</h4>
-                                        <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and Platforms Engineered to Reduce Complexity.</h5>
-                                    </kendo-card-body>
-                                </kendo-card>
-                                <kendo-card class="destination-card" width="48%">
-                                    <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png" alt="rivercitycorp"/>
-                                    <kendo-card-body class="destination-card-body custom-card">
-                                        <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
-                                        <h5 kendoCardSubtitle class="subtitle">We build digital products keeping this principle in mind.</h5>
-                                    </kendo-card-body>
-                                </kendo-card>
-                            </div>
-                          </ng-template>
-                        <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
-                            <app-destination-card [destination]="dataItem"></app-destination-card>
-                        </ng-template>
-                    </kendo-listview>
-                </div>
-            </ng-template>
-        </kendo-tabstrip-tab>
-        <kendo-tabstrip-tab title="View Source">
-            <ng-template kendoTabContent>
-                <div>
-                    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-                        <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-                            <ng-template kendoTabContent>
-                                <div class="content">
-                                    <pre>
+        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+            <kendo-tabstrip-tab title="Preview" [selected]="true">
+                <ng-template kendoTabContent>
+                    <div class="example-wrapper">
+                        <div class="example-col row">
+                            <kendo-listview [kendoListViewBinding]="destinations" containerClass="listview-content">
+                                <ng-template kendoListViewHeaderTemplate>
+                                    <div class="custom-grid">
+                                        <kendo-card class="destination-card" width="48%">
+                                            <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png"
+                                                alt="rivercitycorp" />
+                                            <kendo-card-body class="destination-card-body custom-card">
+                                                <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity
+                                                </h4>
+                                                <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and
+                                                    Platforms Engineered to Reduce Complexity.</h5>
+                                            </kendo-card-body>
+                                        </kendo-card>
+                                        <kendo-card class="destination-card" width="48%">
+                                            <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png"
+                                                alt="rivercitycorp" />
+                                            <kendo-card-body class="destination-card-body custom-card">
+                                                <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
+                                                <h5 kendoCardSubtitle class="subtitle">We build digital products keeping
+                                                    this principle in mind.</h5>
+                                            </kendo-card-body>
+                                        </kendo-card>
+                                    </div>
+                                </ng-template>
+                                <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+                                    <app-destination-card [destination]="dataItem"></app-destination-card>
+                                </ng-template>
+                            </kendo-listview>
+                        </div>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+            <kendo-tabstrip-tab title="View Source">
+                <ng-template kendoTabContent>
+                    <div>
+                        <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+                            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
                               <code>{{code}}</code>
                           </pre>
-                                </div>
-                            </ng-template>
-                        </kendo-tabstrip-tab>
-                        <kendo-tabstrip-tab title="app.module.ts">
-                            <ng-template kendoTabContent>
-                                <div class="content">
-                                    <pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                            <kendo-tabstrip-tab title="app.module.ts">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
                               <code>{{code1}}</code>
                           </pre>
-                                </div>
-                            </ng-template>
-                        </kendo-tabstrip-tab>
-                        <kendo-tabstrip-tab title="destination.component.ts">
-                            <ng-template kendoTabContent>
-                                <div class="content">
-                                    <pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                            <kendo-tabstrip-tab title="destination.component.ts">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
                               <code>{{code2}}</code>
                           </pre>
-                                </div>
-                            </ng-template>
-                        </kendo-tabstrip-tab>
-                        <kendo-tabstrip-tab title="destinations.ts">
-                            <ng-template kendoTabContent>
-                                <div class="content">
-                                    <pre>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                            <kendo-tabstrip-tab title="destinations.ts">
+                                <ng-template kendoTabContent>
+                                    <div class="content">
+                                        <pre>
                               <code>{{code3}}</code>
                           </pre>
-                                </div>
-                            </ng-template>
-                        </kendo-tabstrip-tab>
-                    </kendo-tabstrip>
-                </div>
-            </ng-template>
-        </kendo-tabstrip-tab>
-    </kendo-tabstrip>
-</div>
+                                    </div>
+                                </ng-template>
+                            </kendo-tabstrip-tab>
+                        </kendo-tabstrip>
+                    </div>
+                </ng-template>
+            </kendo-tabstrip-tab>
+        </kendo-tabstrip>
+    </div>
 </div>

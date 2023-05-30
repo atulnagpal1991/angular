@@ -1,8 +1,0 @@
-  .wrapper-tooltip {
-    display: flex;
-  }
-
-  .wrapper-tooltip div {
-    display: flex;
-    flex-basis: 25%;
-  }

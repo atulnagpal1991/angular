@@ -1,60 +1,66 @@
 <div class="description-parent">
   <div class="description">
-  <h6 class="sub-heading">The Kendo UI for Angular TreeList displays hierarchical data in a tabular format and comes with an extensive set of built-in features including paging, sorting, filtering, and data binding.</h6>
-  <p>The TreeList is built from the ground up and specifically for Angular, so that you get a high-performance control which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
-</div>
+    <h6 class="sub-heading">The Kendo UI for Angular TreeList displays hierarchical data in a tabular format and comes
+      with an extensive set of built-in features including paging, sorting, filtering, and data binding.</h6>
+    <p>The TreeList is built from the ground up and specifically for Angular, so that you get a high-performance control
+      which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
+  </div>
 </div>
 
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
-          parentIdField="managerId">
-          <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
-          </kendo-treelist-column>
-          <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
-          <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
-        </kendo-treelist>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
+                parentIdField="managerId">
+                <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
+                </kendo-treelist-column>
+                <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
+                <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
+              </kendo-treelist>
+            </div>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            
-            <kendo-tabstrip-tab title="employees.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+
+              <kendo-tabstrip-tab title="employees.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code2}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

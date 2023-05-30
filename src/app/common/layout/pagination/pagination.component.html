@@ -1,45 +1,100 @@
 <div class="description-parent">
   <div class="description">
-  <h6 class="sub-heading">The Kendo UI for Angular Pager component enables you to split a set of data into pages, providing a flexible and intuitive UI.</h6>
-  <p>The Pager is built from the ground up and specifically for Angular, so that you get a high-performance control which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
-</div>
+    <h6 class="sub-heading">The Kendo UI for Angular Pager component enables you to split a set of data into pages,
+      providing a flexible and intuitive UI.</h6>
+    <p>The Pager is built from the ground up and specifically for Angular, so that you get a high-performance control
+      which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
+  </div>
 </div>
 
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event)">
-        </kendo-datapager>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <h5>Basics</h5>
+              <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event)">
+              </kendo-datapager>
+              <h5 class="mt-5">Pager Settings</h5>
+              <kendo-datapager style="width: 100%;" [pageSize]="pageSize" [skip]="skip" [total]="total"
+                (pageChange)="onPageChange($event)">
+                <ng-template kendoDataPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+                  <div class="k-pager-numbers-wrap">
+                    <kendo-datapager-prev-buttons></kendo-datapager-prev-buttons>
+                    <kendo-datapager-numeric-buttons [buttonCount]="buttonCount"></kendo-datapager-numeric-buttons>
+                    <kendo-datapager-next-buttons></kendo-datapager-next-buttons>
+                  </div>
+
+                  <kendo-datapager-input></kendo-datapager-input>
+                  <kendo-datapager-info></kendo-datapager-info>
+                  <kendo-datapager-page-sizes [pageSizes]="sizes"></kendo-datapager-page-sizes>
+                </ng-template>
+              </kendo-datapager>
+              <h5 class="mt-5">Slider</h5>
+              <kendo-datapager style="width: 100%;" [pageSize]="pageSize" [skip]="skip" [total]="total"
+                (pageChange)="onPageChange($event)">
+                <ng-template kendoDataPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+                  <kendo-datapager-prev-buttons style="margin-right: 10px;"></kendo-datapager-prev-buttons>
+                  <kendo-slider [showButtons]="false" tickPlacement="none" [max]="totalPages" [min]="1"
+                    (valueChange)="sliderChange($event)" [value]="currentPage">
+                  </kendo-slider>
+                  <kendo-datapager-next-buttons style="margin-left: 10px;"></kendo-datapager-next-buttons>
+                  Page {{ currentPage }} of {{ totalPages }}
+                  <kendo-datapager-info></kendo-datapager-info>
+                </ng-template>
+              </kendo-datapager>
+              <h5 class="mt-5">Responsive Design</h5>
+              <div class="mt-5">
+                <kendo-slider
+                  style="width: 500px;"
+                  [min]="300"
+                  [max]="1000"
+                  [smallStep]="20"
+                  [largeStep]="5"
+                  [(ngModel)]="width"
+                ></kendo-slider>
+                <span>Current width: {{ width }}px</span>
+              </div>
+              <kendo-datapager
+                [style.width.px]="width"
+                [pageSize]="pageSize"
+                [skip]="skip"
+                [total]="total"
+                (pageChange)="onPageChange($event)"
+              >
+              </kendo-datapager>
+            </div>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

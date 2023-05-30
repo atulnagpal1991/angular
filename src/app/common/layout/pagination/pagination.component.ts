@@ -18,6 +18,18 @@ export class PaginationComponent {
     this.skip = e.skip;
     this.pageSize = e.take;
   }
+
+  public buttonCount = 2;
+  public sizes = [10, 20, 50];
+  public total = 100;
+
+  public sliderChange(pageIndex: number): void {
+    this.skip = (pageIndex - 1) * this.pageSize;
+  }
+
+
+  public width = 1000;
+
   
   code = `
   import { Component } from '@angular/core';

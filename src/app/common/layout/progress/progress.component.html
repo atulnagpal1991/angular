@@ -1,7 +1,9 @@
 <div class="description-parent">
     <div class="description">
         <h6 class="sub-heading">The Kendo UI for Angular ProgressBars display the progress of an ongoing task.</h6>
-        <p>The ProgressBars are built from the ground up and specifically for Angular, so that you get high-performance controls which integrate tightly with your application and with the rest of the Kendo UI for Angular components.</p>
+        <p>The ProgressBars are built from the ground up and specifically for Angular, so that you get high-performance
+            controls which integrate tightly with your application and with the rest of the Kendo UI for Angular
+            components.</p>
     </div>
 </div>
 
@@ -11,13 +13,19 @@
             <kendo-tabstrip-tab title="Preview" [selected]="true">
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
-                        <div class="wrapper-bar">
-                            <p class="component-text">Regular ProgressBar</p>
-                            <kendo-progressbar [value]="value"> </kendo-progressbar>
-                        </div>
-                        <div class="wrapper-bar">
-                            <p class="component-text">Circular ProgressBar</p>
-                            <kendo-circularprogressbar [value]="value"></kendo-circularprogressbar>
+                        <div class="example-col row progressbar">
+                            <div class="col-12 mb-5">
+                                <p>Regular ProgressBar</p>
+                                <kendo-progressbar [value]="value"> </kendo-progressbar>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <p>Circular ProgressBar</p>
+                                <kendo-circularprogressbar [value]="value"></kendo-circularprogressbar>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <p>Vertical ProgressBar</p>
+                                <kendo-progressbar orientation="vertical" [value]="value"></kendo-progressbar>
+                              </div>
                         </div>
                     </div>
                 </ng-template>

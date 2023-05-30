@@ -81,7 +81,7 @@
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Lexend Deca', sans-serif!important;
   background-color: #000000;
   padding: 6px;
   max-height: calc(100vh - 12px);
@@ -634,15 +634,19 @@ kendo-floatinglabel, kendo-autocomplete.k-autocomplete {
   margin-top: 20px;
 }
 
-kendo-datetimepicker.k-datetimepicker, kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox, kendo-autocomplete.k-autocomplete, kendo-dropdownlist.k-dropdownlist {
+/* kendo-datetimepicker.k-datetimepicker, kendo-floatinglabel input.k-input, kendo-floatinglabel .k-textbox, kendo-autocomplete.k-autocomplete, kendo-dropdownlist.k-dropdownlist {
   border: none;
   border-bottom: solid 2px rgba(0, 0, 0, 0.42);
   border-radius: 0;
   background-color: #fff!important;
-}
+} */
 
 .k-floating-label-container, kendo-autocomplete.k-autocomplete {
   width: 90%;
+}
+
+.k-picker-solid {
+  background-color: transparent!important;
 }
 
 .k-picker-solid:focus-within {
@@ -714,7 +718,11 @@ kendo-floatinglabel input[disabled], kendo-floatinglabel .k-disabled {
   padding: 0;
 }
 
-.k-input, .k-input-inner {
+.inner-tab kendo-tabstrip.k-tabstrip {
+  padding: 0;
+}
+
+/* .k-input, .k-input-inner {
   padding-left: 0!important;
 }
 
@@ -724,4 +732,40 @@ kendo-floatinglabel input[disabled], kendo-floatinglabel .k-disabled {
 
 .icon-input .k-label, .icon-input .k-input-inner {
   left: calc( 0.75rem + 1px )!important;
+} */
+
+kendo-popup .k-popup.k-list-container {
+  overflow: hidden;
+}
+
+kendo-popup * {
+  font-size: 14px;
+}
+
+kendo-datetimepicker .k-icon-button {
+  background-color: transparent!important;
+}
+
+.k-datetime-footer {
+  justify-content: flex-end!important;
+}
+
+kendo-popup .k-justify-content-stretch > .k-button {
+  flex: initial!important;
+}
+
+.k-menu-group .k-item > .k-link:active, .k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-panelbar > .k-item > .k-link.k-selected, .k-panelbar > .k-panelbar-header > .k-link.k-selected, .k-panelbar .k-group > .k-item > .k-link.k-selected, .k-panelbar .k-group > .k-panelbar-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-selected, .k-list-item.k-selected, .k-selected.k-list-optionlabel {
+  color: #fff;
+}
+
+.k-progress-status {
+  display: none;
+}
+
+.progressbar .k-progressbar.k-progressbar-vertical {
+  width: 10px;
+}
+
+.progressbar .k-progressbar.k-progressbar-horizontal {
+  height: 10px;
 }

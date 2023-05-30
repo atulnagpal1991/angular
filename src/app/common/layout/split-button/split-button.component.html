@@ -1,65 +1,70 @@
 <div class="description-parent">
   <div class="description">
-  <h6 class="sub-heading">The Kendo UI for Angular SplitButton allows the user to execute a default action which is bound to a Button or to choose a predefined action from a drop-down list.</h6>
-  <p>The following example demonstrates the SplitButton in action.</p>
-</div>
+    <h6 class="sub-heading">The Kendo UI for Angular SplitButton allows the user to execute a default action which is
+      bound to a Button or to choose a predefined action from a drop-down list.</h6>
+    <p>The following example demonstrates the SplitButton in action.</p>
+  </div>
 </div>
 
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Default Button</p>
-            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" themeColor="primary">
-              Paste
-            </kendo-splitbutton>
-          </div>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Default Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" themeColor="primary">
+                  Paste
+                </kendo-splitbutton>
+              </div>
 
-          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Flat Button</p>
-            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="flat" themeColor="primary">
-              Paste
-            </kendo-splitbutton>
-          </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Flat Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="flat"
+                  themeColor="primary">
+                  Paste
+                </kendo-splitbutton>
+              </div>
 
-          <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Outline Button</p>
-            <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="outline" themeColor="primary">
-              Paste
-            </kendo-splitbutton>
+              <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Outline Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="outline"
+                  themeColor="primary">
+                  Paste
+                </kendo-splitbutton>
+              </div>
+            </div>
           </div>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

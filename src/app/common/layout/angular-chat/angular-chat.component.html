@@ -1,47 +1,55 @@
 <div class="description-parent">
   <div class="description">
-    <h6 class="sub-heading">The Kendo UI for Angular Conversational UI bridges the gap between the Web and the next-generation natural language applications.</h6>
-    <p>The Conversational UI package delivers the Kendo UI for Angular Chat component which allows the user to participate in chat sessions with other users or with chat bots.</p>
-    <p>The Chat is built from the ground up and specifically for Angular, so that you get a high-performance control which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
+    <h6 class="sub-heading">The Kendo UI for Angular Conversational UI bridges the gap between the Web and the
+      next-generation natural language applications.</h6>
+    <p>The Conversational UI package delivers the Kendo UI for Angular Chat component which allows the user to
+      participate in chat sessions with other users or with chat bots.</p>
+    <p>The Chat is built from the ground up and specifically for Angular, so that you get a high-performance control
+      which integrates tightly with your application and with the rest of the Kendo UI for Angular components.</p>
   </div>
 </div>
 
 
 <div class="wrapper-parent">
   <div class="wrapper">
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="Preview" [selected]="true">
-      <ng-template kendoTabContent>
-        <kendo-chat [messages]="messages" [user]="user" (sendMessage)="sendMessage($event)" [style.height.px]="250">
-        </kendo-chat>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="View Source">
-      <ng-template kendoTabContent>
-        <div>
-          <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-            <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="Preview" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="example-wrapper">
+            <div class="example-col row">
+              <kendo-chat [messages]="messages" [user]="user" (sendMessage)="sendMessage($event)"
+                [style.height.px]="250">
+              </kendo-chat>
+            </div>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="View Source">
+        <ng-template kendoTabContent>
+          <div>
+            <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-            <kendo-tabstrip-tab title="app.module.ts">
-              <ng-template kendoTabContent>
-                <div class="content">
-                  <pre>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+              <kendo-tabstrip-tab title="app.module.ts">
+                <ng-template kendoTabContent>
+                  <div class="content">
+                    <pre>
                             <code>{{code1}}</code>
                         </pre>
-                </div>
-              </ng-template>
-            </kendo-tabstrip-tab>
-          </kendo-tabstrip>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+                  </div>
+                </ng-template>
+              </kendo-tabstrip-tab>
+            </kendo-tabstrip>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
 </div>

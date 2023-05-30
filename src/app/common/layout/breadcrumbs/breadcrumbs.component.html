@@ -11,10 +11,14 @@
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
             <div class="example-wrapper">  
-                  <kendo-breadcrumb
-                    [items]="items"
-                    (itemClick)="onItemClick($event)"
+              <div class="example-col row">
+                <h5>Breadcrumbs</h5>
+                  <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"
                   ></kendo-breadcrumb>
+
+                  <h5 class="mt-5">Breadcrumbs line</h5>
+                  <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
+                </div>
               </div>
         </ng-template>
       </kendo-tabstrip-tab>

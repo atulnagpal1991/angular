@@ -19,24 +19,24 @@
             <div class="example-col row">
               <h5>Button</h5>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Default</p>
-                <button class="me-3" kendoButton (click)="onButtonClick()">Default</button>
+                <p>Default View</p>
+                <button class="me-3" kendoButton (click)="onButtonClick()">Cancel</button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Primary</p>
+                <p>Primary View</p>
                 <button class="me-3" kendoButton (click)="onButtonClick()" themeColor="primary">
-                  Primary
+                  Submit
                 </button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Outline</p>
+                <p>Outline View</p>
                 <button class="me-3" kendoButton (click)="onButtonClick()" fillMode="outline"
-                  themeColor="primary">Outline</button>
+                  themeColor="primary">Save</button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Disabled</p>
+                <p>Disabled View</p>
                 <button class="me-3" kendoButton (click)="onButtonClick()" [disabled]="true">
-                  Disabled
+                  Contact Us
                 </button>
               </div>
             </div>
@@ -44,55 +44,55 @@
             <div class="example-col row">
               <h5>Button with icon</h5>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Default</p>
-                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()">Default</button>
+                <p>Default View</p>
+                <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()">Cancel</button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Primary</p>
+                <p>Primary View</p>
                 <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" themeColor="primary">
-                  Primary
+                  Submit
                 </button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Outline</p>
+                <p>Outline View</p>
                 <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" fillMode="outline"
-                  themeColor="primary">Outline</button>
+                  themeColor="primary">Save</button>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Disabled</p>
+                <p>Disabled View</p>
                 <button class="me-3" icon="gear" kendoButton (click)="onButtonClick()" [disabled]="true">
-                  Disabled
+                  Contact Us
                 </button>
               </div>
             </div>
             <div class="example-col row">
               <h5>DropDownButton</h5>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Default</p>
+                <p>Default View</p>
                 <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
                   (itemClick)="onSplitButtonItemClick($event)">
-                  Default
+                  Cancel
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Primary</p>
+                <p>Primary View</p>
                 <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
                   (itemClick)="onSplitButtonItemClick($event)" themeColor="primary">
-                  Primary
+                  Submit
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Outline</p>
+                <p>Outline View</p>
                 <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
                   (itemClick)="onSplitButtonItemClick($event)" themeColor="primary" fillMode="outline">
-                  Outline
+                  Save
                 </kendo-dropdownbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Disabled</p>
+                <p>Disabled View</p>
                 <kendo-dropdownbutton [data]="dropDownButtonItems" icon="gear"
                   (itemClick)="onSplitButtonItemClick($event)" [disabled]="true">
-                  Disabled
+                  Contact Us
                 </kendo-dropdownbutton>
               </div>
 
@@ -100,74 +100,73 @@
             <div class="example-col row">
               <h5>SplitButton</h5>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Default</p>
+                <p>Default View</p>
                 <kendo-splitbutton [data]="splitButtonItems" icon="clipboard"
                   (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
-                  Default
+                  Cancel
                 </kendo-splitbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Primary</p>
+                <p>Primary View</p>
                 <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary"
                   (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
-                  Primary
+                  Submit
                 </kendo-splitbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Outline</p>
+                <p>Outline View</p>
                 <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" themeColor="primary" fillMode="outline"
                   (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
-                  Outline
+                  Save
                 </kendo-splitbutton>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Disabled</p>
+                <p>Disabled View</p>
                 <kendo-splitbutton [data]="splitButtonItems" icon="clipboard" [disabled]="true"
                   (itemClick)="onSplitButtonItemClick($event)" (buttonClick)="onSplitButtonClick()">
-                  Disabled
+                  Contact Us
                 </kendo-splitbutton>
               </div>
             </div>
 
             <div class="example-col row">
               <h5>ButtonGroup</h5>
-
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Default</p>
+                <p>Default View</p>
                 <kendo-buttongroup>
-                  <button kendoButton [toggleable]="true">Option A</button>
-                  <button kendoButton [toggleable]="true">Option B</button>
-                  <button kendoButton [toggleable]="true">Option C</button>
+                  <button kendoButton [toggleable]="true">Cancel </button>
+                  <button kendoButton [toggleable]="true">Submit</button>
+                  <button kendoButton [toggleable]="true">Save</button>
                 </kendo-buttongroup>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Primary</p>
+                <p>Primary View</p>
                 <kendo-buttongroup>
-                  <button kendoButton themeColor="primary" [toggleable]="true">Option A</button>
-                  <button kendoButton themeColor="primary" [toggleable]="true">Option B</button>
-                  <button kendoButton themeColor="primary" [toggleable]="true">Option C</button>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Cancel</button>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Submit</button>
+                  <button kendoButton themeColor="primary" [toggleable]="true">Save</button>
                 </kendo-buttongroup>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Outline</p>
+                <p>Outline View</p>
                 <kendo-buttongroup>
-                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option A</button>
-                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option B</button>
-                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Option C</button>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Cancel</button>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Submit</button>
+                  <button kendoButton themeColor="primary" fillMode="outline" [toggleable]="true">Save</button>
                 </kendo-buttongroup>
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-3 mb-3">
-                <p>Disabled</p>
+                <p>Disabled View</p>
                 <kendo-buttongroup>
-                  <button kendoButton [disabled]="true" [toggleable]="true">Option A</button>
-                  <button kendoButton [disabled]="true" [toggleable]="true">Option B</button>
-                  <button kendoButton [disabled]="true" [toggleable]="true">Option C</button>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Cancel</button>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Submit</button>
+                  <button kendoButton [disabled]="true" [toggleable]="true">Save</button>
                 </kendo-buttongroup>
               </div>
 
             </div>
             <div class="example-col">
-              <p>Chip</p>
+              <h5>Chip</h5>
               <kendo-chip-list selection="multiple">
                 <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [removable]="chip.removable"
                   [removeIcon]="chip.removeIcon" [iconClass]="chip.iconClass" (remove)="onRemove($event)"></kendo-chip>
