@@ -13,7 +13,7 @@
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
           <div class="example-wrapper">
-            <div class="example-col row">
+            <div class="example-col">
               <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
               <kendo-dialog title="Please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250"
                 [width]="450">

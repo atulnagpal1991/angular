@@ -28,9 +28,7 @@ export class PaginationComponent {
   }
 
 
-  public width = 1000;
-
-  
+   
   code = `
   import { Component } from '@angular/core';
 import { PageChangeEvent } from '@progress/kendo-angular-pager';

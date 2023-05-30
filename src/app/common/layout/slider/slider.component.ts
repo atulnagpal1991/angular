@@ -14,7 +14,16 @@ export class SliderComponent {
   public tickPlacement = "none";
   public value = 5;
   public value1 = 5;
-  public min = 0;
-  public max = 10;
   public smallStep = 1;
+
+
+
+  public valueHorizontal = 0;
+  public valuesVertical: number[] = [10, 5, 0, 10, 15];
+  public min = -20;
+  public max = 20;
+  public largeStep = 20;
+
+  public showButtons = false;
+
 }

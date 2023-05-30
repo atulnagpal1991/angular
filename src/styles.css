@@ -754,7 +754,7 @@ kendo-popup .k-justify-content-stretch > .k-button {
   flex: initial!important;
 }
 
-.k-menu-group .k-item > .k-link:active, .k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-panelbar > .k-item > .k-link.k-selected, .k-panelbar > .k-panelbar-header > .k-link.k-selected, .k-panelbar .k-group > .k-item > .k-link.k-selected, .k-panelbar .k-group > .k-panelbar-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-selected, .k-list-item.k-selected, .k-selected.k-list-optionlabel {
+.k-menu-group .k-item > .k-link:active, .k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-panelbar > .k-item > .k-link.k-selected, .k-panelbar > .k-panelbar-header > .k-link.k-selected, .k-panelbar .k-group > .k-item > .k-link.k-selected, .k-panelbar .k-group > .k-panelbar-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-item > .k-link.k-selected, .k-panelbar .k-panelbar-group > .k-panelbar-item > .k-link.k-selected, .k-list-item.k-selected, .k-selected.k-list-optionlabel, .k-list-item.k-selected:hover, .k-selected.k-list-optionlabel:hover, .k-list-item.k-selected.k-hover, .k-selected.k-hover.k-list-optionlabel {
   color: #fff;
 }
 
@@ -768,4 +768,8 @@ kendo-popup .k-justify-content-stretch > .k-button {
 
 .progressbar .k-progressbar.k-progressbar-horizontal {
   height: 10px;
+}
+
+kendo-slider.k-slider {
+  width: 90%;
 }

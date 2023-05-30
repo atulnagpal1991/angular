@@ -13,7 +13,7 @@
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
           <div class="example-wrapper">
-            <div class="example-col row">
+            <div class="example-col">
               <h5>Basics</h5>
               <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event)">
               </kendo-datapager>
@@ -32,7 +32,7 @@
                   <kendo-datapager-page-sizes [pageSizes]="sizes"></kendo-datapager-page-sizes>
                 </ng-template>
               </kendo-datapager>
-              <h5 class="mt-5">Slider</h5>
+              <!-- <h5 class="mt-5">Slider</h5>
               <kendo-datapager style="width: 100%;" [pageSize]="pageSize" [skip]="skip" [total]="total"
                 (pageChange)="onPageChange($event)">
                 <ng-template kendoDataPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
@@ -44,27 +44,7 @@
                   Page {{ currentPage }} of {{ totalPages }}
                   <kendo-datapager-info></kendo-datapager-info>
                 </ng-template>
-              </kendo-datapager>
-              <h5 class="mt-5">Responsive Design</h5>
-              <div class="mt-5">
-                <kendo-slider
-                  style="width: 500px;"
-                  [min]="300"
-                  [max]="1000"
-                  [smallStep]="20"
-                  [largeStep]="5"
-                  [(ngModel)]="width"
-                ></kendo-slider>
-                <span>Current width: {{ width }}px</span>
-              </div>
-              <kendo-datapager
-                [style.width.px]="width"
-                [pageSize]="pageSize"
-                [skip]="skip"
-                [total]="total"
-                (pageChange)="onPageChange($event)"
-              >
-              </kendo-datapager>
+              </kendo-datapager> -->
             </div>
           </div>
         </ng-template>

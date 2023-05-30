@@ -16,10 +16,18 @@
         <ng-template kendoTabContent>
           <div class="example-wrapper">
             <div class="example-col row">
-              <div class="content">
+              <div class="col-xs-12 col-sm-6 mb-3">
+                <h5 class="mt-5">Horizontal</h5>
                 <kendo-stepper [steps]="steps" stepType="full" [(currentStep)]="current" [linear]="false"
                   [style.width.px]="570">
                 </kendo-stepper>
+              </div>
+              <div class="col-xs-12 col-sm-6 mb-3 text-center">
+                <h5 class="mt-5">Vertical</h5>
+                <div class="d-flex justify-content-center">
+                  <kendo-stepper [style.width.px]="150" [steps]="steps" stepType="full" orientation="vertical">
+                  </kendo-stepper>
+                </div>
               </div>
             </div>
           </div>
