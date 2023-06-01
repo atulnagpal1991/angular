@@ -13,14 +13,70 @@ export class NotificationComponent {
   }
   constructor(private notificationService: NotificationService) {}
 
-  public show(): void {
+  public topRight(): void {
     this.notificationService.show({
       content: "Your data has been saved.",
       cssClass: "button-notification",
-      animation: { type: "slide", duration: 400 },
-      position: { horizontal: "center", vertical: "bottom" },
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "right", vertical: "top" },
       type: { style: "success", icon: true },
-      closable: true,
+      // closable: true,
+    });
+  }
+
+  public topLeft(): void {
+    this.notificationService.show({
+      content: "Your data has been saved.",
+      cssClass: "button-notification",
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "left", vertical: "top" },
+      type: { style: "warning", icon: true },
+      // closable: true,
+    });
+  }
+
+  public topCenter(): void {
+    this.notificationService.show({
+      content: "Your data has been saved.",
+      cssClass: "button-notification",
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "center", vertical: "top" },
+      type: { style: "info", icon: true },
+      // closable: true,
+    });
+  }
+
+  
+  public bottomRight(): void {
+    this.notificationService.show({
+      content: "Your data has been saved.",
+      cssClass: "button-notification",
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "right", vertical: "bottom" },
+      type: { style: "success", icon: true },
+      // closable: true,
+    });
+  }
+
+  public bottomLeft(): void {
+    this.notificationService.show({
+      content: "Your data has been saved.",
+      cssClass: "button-notification",
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "left", vertical: "bottom" },
+      type: { style: "warning", icon: true },
+      // closable: true,
+    });
+  }
+
+  public bottomCenter(): void {
+    this.notificationService.show({
+      content: "Your data has been saved.",
+      cssClass: "button-notification",
+      animation: { type: "slide", duration: 100 },
+      position: { horizontal: "center", vertical: "bottom" },
+      type: { style: "info", icon: true },
+      // closable: true,
     });
   }
   

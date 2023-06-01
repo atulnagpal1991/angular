@@ -22,6 +22,14 @@ export class StepperComponent {
     { label: "Step 5", icon: "file-add" },
   ];
 
+  public steps1 = [
+    { label: "Happy", emoji: "😀" },
+    { label: "Angry", emoji: "😠" },
+    { label: "Cool", emoji: "😎" },
+    { label: "Love", emoji: "😍" },
+    { label: "Fear", emoji: "😨" },
+  ];
+
 
   public stepType: StepType = "indicator";
   public stepTypes: Array<StepType> = ["indicator", "label", "full"];

@@ -16,8 +16,12 @@
                   <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"
                   ></kendo-breadcrumb>
 
-                  <h5 class="mt-5">Breadcrumbs line</h5>
+                  <h5 class="mt-5">Breadcrumbs State</h5>
                   <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
+                  
+                  <h5 class="mt-5">Breadcrumbs With Background</h5>
+                  <kendo-breadcrumb [items]="items" class="bg-color"></kendo-breadcrumb>
+                  
                 </div>
               </div>
         </ng-template>

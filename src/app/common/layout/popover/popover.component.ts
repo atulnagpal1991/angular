@@ -17,6 +17,8 @@ public wafflesRecipe = `
     We are a global UX design studio accelerating creative growth
   `;
 
+  public description = `The modern banana bread recipe began being published in cookbooks around the 1930s and its popularity was greatly helped by the introduction of baking powder on the market. Some food historians believe banana bread was a byproduct of the Great Depression as resourceful housewives did not wish to throw away overripe bananas (as they were still a costly item to purchase), others believe the modern banana bread was developed in corporate kitchens to promote flour and baking soda products.`;
+
   
   code = `
   import { Component } from '@angular/core';

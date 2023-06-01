@@ -13,26 +13,52 @@
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
           <div class="example-wrapper">
-            <div class="example-col">
-              <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary"
-                [style.marginLeft.px]="200">
-                Show Popover
-              </button>
+            <div class="example-col row">
+              <div class="col-xs-12 col-sm-6 mb-3">
+                <h5>Popover On Click</h5>
 
-              <kendo-popover #myPopover [width]="300" position="bottom">
-                <ng-template kendoPopoverTitleTemplate>
-                  <div class="popover-title">River City Corporation</div>
-                </ng-template>
+                <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary">
+                  On Click
+                </button>
 
-                <ng-template kendoPopoverBodyTemplate>
-                  <img class="picture" [src]="wafflesImg" />
-                  <div>{{ wafflesRecipe }}</div>
-                </ng-template>
+                <kendo-popover #myPopover [width]="300" position="right">
+                  <ng-template kendoPopoverTitleTemplate>
+                    <div class="popover-title">River City Corporation</div>
+                  </ng-template>
 
-                <ng-template kendoPopoverActionsTemplate>
-                  Our UX Service
-                </ng-template>
-              </kendo-popover>
+                  <ng-template kendoPopoverBodyTemplate>
+                    <img class="picture" [src]="wafflesImg" />
+                    <div>{{ wafflesRecipe }}</div>
+                  </ng-template>
+
+                  <ng-template kendoPopoverActionsTemplate>
+                    Our UX Service
+                  </ng-template>
+                </kendo-popover>
+              </div>
+              <div class="col-xs-12 col-sm-6 mb-3">
+                <h5>Popover On Hover</h5>
+                <button kendoPopoverAnchor [popover]="myPopover" kendoButton themeColor="primary" 
+                showOn="hover">
+                  On Hover
+                </button>
+
+                <kendo-popover #myPopover [width]="300" position="right">
+                  <ng-template kendoPopoverTitleTemplate>
+                    <div class="popover-title">River City Corporation</div>
+                  </ng-template>
+
+                  <ng-template kendoPopoverBodyTemplate>
+                    <img class="picture" [src]="wafflesImg" />
+                    <div>{{ wafflesRecipe }}</div>
+                  </ng-template>
+
+                  <ng-template kendoPopoverActionsTemplate>
+                    Our UX Service
+                  </ng-template>
+                </kendo-popover>
+                
+              </div>
             </div>
           </div>
         </ng-template>
