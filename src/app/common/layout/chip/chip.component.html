@@ -12,7 +12,7 @@
             <kendo-tabstrip-tab title="Preview" [selected]="true">
                 <ng-template kendoTabContent>
                     <div class="example-wrapper">
-                        <div class="example-col row">
+                        <div class="example-col">
                             <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [selected]="chip.selected"
                                 [removable]="chip.removable" [removeIcon]="chip.removeIcon" (remove)="onRemove($event)">
                             </kendo-chip>
