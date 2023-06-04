@@ -15,8 +15,8 @@
           <div class="example-wrapper">
             <div class="example-col row">
               <div class="col-6">
-                <kendo-panelbar>
-                  <kendo-panelbar-item title="My Teammates" [expanded]="true">
+                <kendo-panelbar [expandMode]="expandMode">
+                  <kendo-panelbar-item title="My Teammates"  [expanded]="false">
                     <ng-template kendoPanelBarContent>
                       <div>
                         <div class="teamMate">
