@@ -21,8 +21,23 @@
                             </div>
                             <div class="col-md-6 mb-5">
                                 <p>Circular View</p>
-                                <kendo-circularprogressbar 
-                                 [value]="value1"></kendo-circularprogressbar>
+                                <kendo-circularprogressbar
+                                [animation]="animation1"
+                                [value]="value"
+                              >
+                                <ng-template
+                                  kendoCircularProgressbarCenterTemplate
+                                  let-value="value"
+                                >
+                                  <span *ngIf="value !== 100" 
+                                    >{{ value }} %</span
+                                  >
+                                  <span
+                                    *ngIf="value === 100"
+                                    class="k-icon k-i-check"
+                                  ></span>
+                                </ng-template>
+                              </kendo-circularprogressbar>
                             </div>
                             <div class="col-md-6 mb-5">
                                 <p>Vertical View</p>
@@ -30,7 +45,7 @@
                                  orientation="vertical" [value]="value"></kendo-progressbar>
                             </div>
 
-                          <button kendoButton (click)="changeProgress()">{{ text }} progress</button>
+                          <!-- <button kendoButton (click)="changeProgress()">{{ text }} progress</button> -->
                         </div>
                     </div>
                 </ng-template>

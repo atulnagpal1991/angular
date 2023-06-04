@@ -8,12 +8,21 @@ import { ProgressBarAnimation } from "@progress/kendo-angular-progressbar";
   styleUrls: ['./progress.component.css']
 })
 export class ProgressComponent {
+
+  public animation1 = true;
+  public chunks = 5;
+  ngOnInit(): void {
+    console.log('NG ON INIT')
+    setTimeout(() => {
+      this.changeProgress()
+    }, 100)
+    
+  }
+
   public onTabSelect(e: SelectEvent): void {
     console.log(e);
   }
-
-  public value1 = 68;
-  public chunks = 5;
+ 
 
   public animation: ProgressBarAnimation = {
     duration: 2000,

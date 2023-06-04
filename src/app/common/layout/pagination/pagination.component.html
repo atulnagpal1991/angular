@@ -15,11 +15,11 @@
           <div class="example-wrapper">
             <div class="example-col">
               <h5>Basics</h5>
-              <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event)">
+              <kendo-datapager [total]="50" [pageSize]="pageSize" [skip]="skip" (pageChange)="onPageChange($event, 'basics')">
               </kendo-datapager>
               <h5 class="mt-5">Pager Settings</h5>
-              <kendo-datapager style="width: 100%;" [pageSize]="pageSize" [skip]="skip" [total]="total"
-                (pageChange)="onPageChange($event)">
+              <kendo-datapager style="width: 100%;" [pageSize]="pageSize1" [skip]="skip1" [total]="total"
+                (pageChange)="onPageChange($event, 'settings')">
                 <ng-template kendoDataPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
                   <div class="k-pager-numbers-wrap">
                     <kendo-datapager-prev-buttons></kendo-datapager-prev-buttons>

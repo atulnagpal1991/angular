@@ -14,9 +14,18 @@ export class PaginationComponent {
   public skip = 0;
   public pageSize = 10;
 
-  public onPageChange(e: PageChangeEvent): void {
-    this.skip = e.skip;
-    this.pageSize = e.take;
+  public skip1 = 0;
+  public pageSize1 = 10;
+
+  public onPageChange(e: PageChangeEvent, pager='settings'): void {
+    if(pager === 'settings') {
+      this.skip1 = e.skip;
+      this.pageSize1 = e.take;
+    } else {
+      this.skip = e.skip;
+      this.pageSize = e.take;
+    }
+    
   }
 
   public buttonCount = 2;
