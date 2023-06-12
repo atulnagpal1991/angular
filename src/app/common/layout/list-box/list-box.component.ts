@@ -15,28 +15,28 @@ export class ListBoxComponent {
   
   code = `
   <div>
-  <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-    <kendo-tabstrip-tab title="app.component.html" [selected]="true">
-      <ng-template kendoTabContent>
-        <div class="content">
-          <pre>
-                  <code>{{code}}</code>
-              </pre>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="app.component.ts">
-      <ng-template kendoTabContent>
-        <div class="content">
-          <pre>
-                  <code>{{code1}}</code>
-              </pre>
-        </div>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
-`
+    <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
+      <kendo-tabstrip-tab title="app.component.html" [selected]="true">
+        <ng-template kendoTabContent>
+          <div class="content">
+            <pre>
+                    <code>{{code}}</code>
+                </pre>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+      <kendo-tabstrip-tab title="app.component.ts">
+        <ng-template kendoTabContent>
+          <div class="content">
+            <pre>
+                    <code>{{code1}}</code>
+                </pre>
+          </div>
+        </ng-template>
+      </kendo-tabstrip-tab>
+    </kendo-tabstrip>
+  </div>
+  `
 
 
 code1 = `

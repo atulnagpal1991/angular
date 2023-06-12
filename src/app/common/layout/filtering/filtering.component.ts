@@ -50,7 +50,7 @@ export class FilteringComponent {
       </kendo-treeview>
     </div>
   </div>
-`
+  `
 
 
 code1 = `

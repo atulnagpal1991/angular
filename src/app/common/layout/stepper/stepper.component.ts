@@ -59,14 +59,14 @@ export class StepperComponent {
       <div class="col-xs-12 col-sm-6 mb-3">
         <h5>Horizontal</h5>
         <kendo-stepper [steps]="steps" stepType="full" [(currentStep)]="current" [linear]="false"
-          [style.width.px]="570">
+        [style.width.px]="570">
         </kendo-stepper>
         <br><br>
         <kendo-stepper [steps]="steps1" stepType="full" [currentStep]="2" [linear]="false"
-          [style.width.px]="570">
-          <ng-template kendoStepperIndicatorTemplate let-step>
-            <span class="emoji">{{ step.emoji }}</span>
-          </ng-template>
+        [style.width.px]="570">
+        <ng-template kendoStepperIndicatorTemplate let-step>
+          <span class="emoji">{{ step.emoji }}</span>
+        </ng-template>
         </kendo-stepper>
       </div>
       <div class="col-xs-12 col-sm-6 mb-3 text-center">
@@ -78,7 +78,7 @@ export class StepperComponent {
       </div>
     </div>
   </div>
-`
+  `
 
 
 code1 = `

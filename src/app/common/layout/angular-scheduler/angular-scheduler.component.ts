@@ -15,28 +15,23 @@ export class AngularSchedulerComponent {
   public selectedDate: Date = displayDate;
   public events: SchedulerEvent[] = sampleData;
 
-  
   code = `
-<div class="example-wrapper">
+  <div class="example-wrapper">
     <div class="example-col">
-        <kendo-scheduler [kendoSchedulerBinding]="events" [selectedDate]="selectedDate" scrollTime="08:00"
-        style="height: 600px;">
-        <kendo-scheduler-day-view> </kendo-scheduler-day-view>
-
-        <kendo-scheduler-week-view> </kendo-scheduler-week-view>
-
-        <kendo-scheduler-month-view> </kendo-scheduler-month-view>
-
-        <kendo-scheduler-timeline-view> </kendo-scheduler-timeline-view>
-
-        <kendo-scheduler-agenda-view> </kendo-scheduler-agenda-view>
-        </kendo-scheduler>
+      <kendo-scheduler [kendoSchedulerBinding]="events" [selectedDate]="selectedDate" scrollTime="08:00"
+      style="height: 600px;">
+      <kendo-scheduler-day-view> </kendo-scheduler-day-view>
+      <kendo-scheduler-week-view> </kendo-scheduler-week-view>
+      <kendo-scheduler-month-view> </kendo-scheduler-month-view>
+      <kendo-scheduler-timeline-view> </kendo-scheduler-timeline-view>
+      <kendo-scheduler-agenda-view> </kendo-scheduler-agenda-view>
+      </kendo-scheduler>
     </div>
-</div>
+  </div>
 `
 
 
-code1 = `
+  code1 = `
 import { Component } from '@angular/core';
 import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
 import { sampleData, displayDate } from './events-utc';
@@ -58,7 +53,7 @@ export class AngularSchedulerComponent {
 
 `
 
-code2 = `
+  code2 = `
 import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
 
 /* eslint-disable */

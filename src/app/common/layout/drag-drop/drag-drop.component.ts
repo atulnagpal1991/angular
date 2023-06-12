@@ -41,26 +41,26 @@ export class DragDropComponent {
   }
   
   code = `
-  <div class="example-wrapper">  
+  <div class="example-wrapper">
     <div class="example-col row">
-      <h5>Drag the Button around</h5>
-      <div class="container">
-        <div *ngFor="let dropTarget of dropTargets" kendoDropTarget (dragEnter)="handleDragEnter(dropTarget)"
-          (drop)="handleDrop(dropTarget)" (dragLeave)="handleDragLeave()" [ngClass]="{
-      'my-drop': true,
-      entered: enteredBox === dropTarget && enteredBox !== currentBox
-    }">
-          <button kendoButton kendoDragTarget *ngIf="currentBox === dropTarget" (press)="handlePress()"
-            (release)="resetText()" (dragEnd)="resetText()" themeColor="primary">
-            <span class="k-icon k-i-move k-icon-md"></span>
-            {{ btnText }}
-          </button>
-          {{ currentBox !== dropTarget ? "Drop Here" : "" }}
+        <h5>Drag the Button around</h5>
+        <div class="container">
+            <div *ngFor="let dropTarget of dropTargets" kendoDropTarget (dragEnter)="handleDragEnter(dropTarget)"
+              (drop)="handleDrop(dropTarget)" (dragLeave)="handleDragLeave()" [ngClass]="{
+              'my-drop': true,
+              entered: enteredBox === dropTarget && enteredBox !== currentBox
+              }">
+              <button kendoButton kendoDragTarget *ngIf="currentBox === dropTarget" (press)="handlePress()"
+              (release)="resetText()" (dragEnd)="resetText()" themeColor="primary">
+              <span class="k-icon k-i-move k-icon-md"></span>
+              {{ btnText }}
+              </button>
+              {{ currentBox !== dropTarget ? "Drop Here" : "" }}
+            </div>
         </div>
-      </div>
     </div>
   </div>
-`
+  `
 
 
 code1 = `

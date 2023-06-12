@@ -12,23 +12,23 @@ export class TreeListComponent {
     console.log(e);
   }
   public data: Employee[] = employees;
-  
+
   code = `
   <div class="example-wrapper">
     <div class="example-col">
-        <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
-        parentIdField="managerId">
-        <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
-        </kendo-treelist-column>
-        <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
-        <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
-        </kendo-treelist>
+      <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
+      parentIdField="managerId">
+      <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
+      </kendo-treelist-column>
+      <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
+      <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
+      </kendo-treelist>
     </div>
   </div>
-`
+  `
 
 
-code1 = `
+  code1 = `
 import { Component } from '@angular/core';
 import { Employee, employees } from "./employees";
 import { SelectEvent } from "@progress/kendo-angular-layout";
@@ -46,7 +46,7 @@ export class TreeListComponent {
 }
 `
 
-code2 = `
+  code2 = `
 
 export interface Employee {
   id: number;

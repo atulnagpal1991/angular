@@ -47,12 +47,12 @@ export class ChipComponent {
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col">
+    <div class="example-col">
       <kendo-chip *ngFor="let chip of chips" [label]="chip.label" [selected]="chip.selected"
-          [removable]="chip.removable" [removeIcon]="chip.removeIcon" (remove)="onRemove($event)">
+      [removable]="chip.removable" [removeIcon]="chip.removeIcon" (remove)="onRemove($event)">
       </kendo-chip>
+    </div>
   </div>
-</div>
   `
  
   code1 = `

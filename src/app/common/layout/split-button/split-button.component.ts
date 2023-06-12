@@ -47,32 +47,30 @@ export class SplitButtonComponent {
   
   code = `
   <div class="example-wrapper">
-  <div class="example-col row">
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Default Button</p>
-      <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" themeColor="primary">
+    <div class="example-col row">
+      <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+        <p>Default Button</p>
+        <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" themeColor="primary">
         Paste
-      </kendo-splitbutton>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Flat Button</p>
-      <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="flat"
+        </kendo-splitbutton>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+        <p>Flat Button</p>
+        <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="flat"
         themeColor="primary">
         Paste
-      </kendo-splitbutton>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-      <p>Outline Button</p>
-      <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="outline"
+        </kendo-splitbutton>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+        <p>Outline Button</p>
+        <kendo-splitbutton (buttonClick)="onPaste()" [data]="data" icon="clipboard" fillMode="outline"
         themeColor="primary">
         Paste
-      </kendo-splitbutton>
+        </kendo-splitbutton>
+      </div>
     </div>
   </div>
-</div>
-`
+  `
 
 
 code1 = `

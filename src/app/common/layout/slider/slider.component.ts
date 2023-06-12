@@ -28,48 +28,45 @@ export class SliderComponent {
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col row">
-    <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-      <div style="text-align: center;">
-        <kendo-label style="display: flex; justify-content: center;" text="Default View"></kendo-label>
-        <kendo-slider [tickPlacement]="tickPlacement" [showButtons]="showButtons" [min]="min" [max]="max"
+    <div class="example-col row">
+      <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+        <div style="text-align: center;">
+          <kendo-label style="display: flex; justify-content: center;" text="Default View"></kendo-label>
+          <kendo-slider [tickPlacement]="tickPlacement" [showButtons]="showButtons" [min]="min" [max]="max"
           [smallStep]="smallStep" [(ngModel)]="value"></kendo-slider>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-      <div style="text-align: center;">
-        <kendo-label style="display: flex; justify-content: center;" text="Disabled View"></kendo-label>
-        <kendo-slider [tickPlacement]="tickPlacement" [disabled]="true" [min]="min" [max]="max"
+      <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+        <div style="text-align: center;">
+          <kendo-label style="display: flex; justify-content: center;" text="Disabled View"></kendo-label>
+          <kendo-slider [tickPlacement]="tickPlacement" [disabled]="true" [min]="min" [max]="max"
           [smallStep]="smallStep" [(ngModel)]="value1"></kendo-slider>
+        </div>
       </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-      <div style="text-align: center;">
-        <kendo-label style="display: flex; justify-content: center;" [for]="balance"
-          text="Balance View"></kendo-label>
-
-        <kendo-slider #balance [tickPlacement]="tickPlacement" [fixedTickWidth]="10" [min]="-10" [max]="10"
+      <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+        <div style="text-align: center;">
+          <kendo-label style="display: flex; justify-content: center;" [for]="balance"
+            text="Balance View"></kendo-label>
+          <kendo-slider #balance [tickPlacement]="tickPlacement" [fixedTickWidth]="10" [min]="-10" [max]="10"
           [smallStep]="smallStep" [(ngModel)]="valueHorizontal">
           <kendo-slider-messages increment="Right" decrement="Left"></kendo-slider-messages>
-        </kendo-slider>
-        <div>{{ valueHorizontal }}</div>
+          </kendo-slider>
+          <div>{{ valueHorizontal }}</div>
+        </div>
       </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-      <div style="height: 300px; text-align: center;">
-        <kendo-label style="display: flex; justify-content: center;" [for]="equalizer" text="Vertical View">
-        </kendo-label>
-        <div class="eqSlider">
-          <kendo-slider #equalizer [tickPlacement]="tickPlacement" [vertical]="true" [showButtons]="false" [min]="min" [max]="max"
+      <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
+        <div style="height: 300px; text-align: center;">
+          <kendo-label style="display: flex; justify-content: center;" [for]="equalizer" text="Vertical View">
+          </kendo-label>
+          <div class="eqSlider">
+            <kendo-slider #equalizer [tickPlacement]="tickPlacement" [vertical]="true" [showButtons]="false" [min]="min" [max]="max"
             [smallStep]="smallStep" [largeStep]="largeStep" [(ngModel)]="valuesVertical[0]"></kendo-slider>
-          <p>{{ valuesVertical[0] }}</p>
+            <p>{{ valuesVertical[0] }}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
   `
  
   code1 = `

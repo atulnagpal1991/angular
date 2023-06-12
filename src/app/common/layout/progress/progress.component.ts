@@ -38,41 +38,40 @@ export class ProgressComponent {
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col row progressbar">
+    <div class="example-col row progressbar">
       <div class="col-12 mb-5">
-          <p>Default View</p>
-          <kendo-progressbar 
-          [animation]="animation" [value]="value"> </kendo-progressbar>
+        <p>Default View</p>
+        <kendo-progressbar 
+        [animation]="animation" [value]="value"> </kendo-progressbar>
       </div>
       <div class="col-md-6 mb-5">
-          <p>Circular View</p>
-          <kendo-circularprogressbar
-          [animation]="animation1"
-          [value]="value"
+        <p>Circular View</p>
+        <kendo-circularprogressbar
+        [animation]="animation1"
+        [value]="value"
         >
-          <ng-template
-            kendoCircularProgressbarCenterTemplate
-            let-value="value"
+        <ng-template
+          kendoCircularProgressbarCenterTemplate
+          let-value="value"
           >
-            <span *ngIf="value !== 100" 
-              >{{ value }} %</span
+          <span *ngIf="value !== 100" 
+            >{{ value }} %</span
             >
-            <span
-              *ngIf="value === 100"
-              class="k-icon k-i-check"
+          <span
+            *ngIf="value === 100"
+            class="k-icon k-i-check"
             ></span>
-          </ng-template>
+        </ng-template>
         </kendo-circularprogressbar>
       </div>
       <div class="col-md-6 mb-5">
-          <p>Vertical View</p>
-          <kendo-progressbar [animation]="animation"
-           orientation="vertical" [value]="value"></kendo-progressbar>
+        <p>Vertical View</p>
+        <kendo-progressbar [animation]="animation"
+        orientation="vertical" [value]="value"></kendo-progressbar>
       </div>
-
-    <!-- <button kendoButton (click)="changeProgress()">{{ text }} progress</button> -->
+      <!-- <button kendoButton (click)="changeProgress()">{{ text }} progress</button> -->
+    </div>
   </div>
-</div>
   `
  
   code1 = `

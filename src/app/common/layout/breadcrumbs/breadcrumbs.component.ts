@@ -55,18 +55,15 @@ export class BreadcrumbsComponent {
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col">
-    <h5>Breadcrumbs</h5>
-    <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"></kendo-breadcrumb>
-
-    <h5 class="mt-5">Breadcrumbs State</h5>
-    <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
-
-    <h5 class="mt-5">Breadcrumbs With Background</h5>
-    <kendo-breadcrumb [items]="items" class="bg-color"></kendo-breadcrumb>
-
+    <div class="example-col">
+      <h5>Breadcrumbs</h5>
+      <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"></kendo-breadcrumb>
+      <h5 class="mt-5">Breadcrumbs State</h5>
+      <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
+      <h5 class="mt-5">Breadcrumbs With Background</h5>
+      <kendo-breadcrumb [items]="items" class="bg-color"></kendo-breadcrumb>
+    </div>
   </div>
-</div>
   `
  
   code1 = `

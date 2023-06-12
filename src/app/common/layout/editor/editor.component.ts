@@ -30,16 +30,16 @@ export class EditorComponent {
 
 
 
-code = `
-<div class="example-wrapper">
-    <div class="example-col">
-        <kendo-editor [value]="value" style="height: 500px;"></kendo-editor>
-    </div>
-</div>
-`
+  code = `
+  <div class="example-wrapper">
+      <div class="example-col">
+          <kendo-editor [value]="value" style="height: 500px;"></kendo-editor>
+      </div>
+  </div>
+  `
 
 
-code1 = `
+  code1 = `
 import { Component } from '@angular/core';
 import { SelectEvent } from "@progress/kendo-angular-layout";
 

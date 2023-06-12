@@ -39,7 +39,7 @@ export class AngularChatComponent {
   <div class="example-wrapper">
     <div class="example-col">
       <kendo-chat [messages]="messages" [user]="user" (sendMessage)="sendMessage($event)"
-        [style.height.px]="250">
+      [style.height.px]="250">
       </kendo-chat>
     </div>
   </div>

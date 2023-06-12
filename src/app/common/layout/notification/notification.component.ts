@@ -11,7 +11,7 @@ export class NotificationComponent {
   public onTabSelect(e: SelectEvent): void {
     console.log(e);
   }
-  constructor(private notificationService: NotificationService) {}
+  constructor(private notificationService: NotificationService) { }
 
   public topRight(): void {
     this.notificationService.show({
@@ -46,7 +46,7 @@ export class NotificationComponent {
     });
   }
 
-  
+
   public bottomRight(): void {
     this.notificationService.show({
       content: "Your data has been saved.",
@@ -79,17 +79,17 @@ export class NotificationComponent {
       // closable: true,
     });
   }
-  
+
   code = `
   <div class="example-wrapper">
-            <div class="example-col row">
-              <div class="col"><button kendoButton (click)="topCenter()" themeColor="primary">Show Notification</button></div>
-            </div>
-          </div>
-`
+    <div class="example-col row">
+      <div class="col"><button kendoButton (click)="topCenter()" themeColor="primary">Show Notification</button></div>
+    </div>
+  </div>
+  `
 
 
-code1 = `
+  code1 = `
 import { Component } from '@angular/core';
 import { NotificationService } from "@progress/kendo-angular-notification";
 import { SelectEvent } from "@progress/kendo-angular-layout";

@@ -24,23 +24,22 @@ export class DateAndTimeComponent {
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col row">
+    <div class="example-col row">
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Default View</p>
-          <kendo-datetimepicker [incompleteDateValidation]="true" [(ngModel)]="valueNew"
-              #dateModel="ngModel" #datetimepicker></kendo-datetimepicker>
+        <p>Default View</p>
+        <kendo-datetimepicker [incompleteDateValidation]="true" [(ngModel)]="valueNew"
+        #dateModel="ngModel" #datetimepicker></kendo-datetimepicker>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Read-Only View</p>
-          <kendo-datetimepicker [readonly]="readonly" [(ngModel)]="value"> </kendo-datetimepicker>
+        <p>Read-Only View</p>
+        <kendo-datetimepicker [readonly]="readonly" [(ngModel)]="value"> </kendo-datetimepicker>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          Disabled View
-          <kendo-datetimepicker [disabled]="disabled"> </kendo-datetimepicker>
+        Disabled View
+        <kendo-datetimepicker [disabled]="disabled"> </kendo-datetimepicker>
       </div>
+    </div>
   </div>
-
-</div>
   `
  
   code1 = `

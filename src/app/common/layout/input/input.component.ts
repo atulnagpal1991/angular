@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation   } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { SelectEvent } from "@progress/kendo-angular-layout";
 
@@ -32,131 +32,125 @@ export class InputComponent {
     this.registerForm.reset();
   }
 
-  
+
   public listItems: Array<string> = ["Item 1", "Item 2", "Item 3"];
-  
+
   public data: string[] = ["foo", "bar", "baz"];
-  
+
 
   code = `
   <div class="example-wrapper">
-  <div class="example-col row">
+    <div class="example-col row">
       <h5>Input</h5>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Default View</p>
-          <kendo-floatinglabel text="Enter First Name">
-              <input kendoTextBox name="firstName" />
-          </kendo-floatinglabel>
+        <p>Default View</p>
+        <kendo-floatinglabel text="Enter First Name">
+          <input kendoTextBox name="firstName" />
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Filled View</p>
-          <kendo-floatinglabel text="Enter First Name">
-              <input kendoTextBox name="firstName" value="Jhon" />
-          </kendo-floatinglabel>
+        <p>Filled View</p>
+        <kendo-floatinglabel text="Enter First Name">
+          <input kendoTextBox name="firstName" value="Jhon" />
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Disabled View</p>
-          <kendo-floatinglabel text="Enter First Name">
-              <input kendoTextBox name="firstName" [disabled]="true" />
-          </kendo-floatinglabel>
+        <p>Disabled View</p>
+        <kendo-floatinglabel text="Enter First Name">
+          <input kendoTextBox name="firstName" [disabled]="true" />
+        </kendo-floatinglabel>
       </div>
-  </div>
-
-  <div class="example-col row icon-input">
+    </div>
+    <div class="example-col row icon-input">
       <h5>Input with icon</h5>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Default View</p>
-          <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
-              <kendo-textbox>
-                  <ng-template kendoTextBoxPrefixTemplate>
-                      <span class="k-icon k-i-email"></span>
-                      <kendo-textbox-separator></kendo-textbox-separator>
-                  </ng-template>
-              </kendo-textbox>
-          </kendo-floatinglabel>
+        <p>Default View</p>
+        <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+          <kendo-textbox>
+            <ng-template kendoTextBoxPrefixTemplate>
+              <span class="k-icon k-i-email"></span>
+              <kendo-textbox-separator></kendo-textbox-separator>
+            </ng-template>
+          </kendo-textbox>
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Filled View</p>
-          <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
-              <kendo-textbox value="john@gmail.com">
-                  <ng-template kendoTextBoxPrefixTemplate>
-                      <span class="k-icon k-i-email"></span>
-                      <kendo-textbox-separator></kendo-textbox-separator>
-                  </ng-template>
-              </kendo-textbox>
-          </kendo-floatinglabel>
+        <p>Filled View</p>
+        <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+          <kendo-textbox value="john@gmail.com">
+            <ng-template kendoTextBoxPrefixTemplate>
+              <span class="k-icon k-i-email"></span>
+              <kendo-textbox-separator></kendo-textbox-separator>
+            </ng-template>
+          </kendo-textbox>
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Disabled View</p>
-          <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
-              <kendo-textbox [disabled]="true">
-                  <ng-template kendoTextBoxPrefixTemplate>
-                      <span class="k-icon k-i-email"></span>
-                      <kendo-textbox-separator></kendo-textbox-separator>
-                  </ng-template>
-              </kendo-textbox>
-          </kendo-floatinglabel>
+        <p>Disabled View</p>
+        <kendo-floatinglabel [labelCssClass]="'custom-label-class'" text="Enter Email">
+          <kendo-textbox [disabled]="true">
+            <ng-template kendoTextBoxPrefixTemplate>
+              <span class="k-icon k-i-email"></span>
+              <kendo-textbox-separator></kendo-textbox-separator>
+            </ng-template>
+          </kendo-textbox>
+        </kendo-floatinglabel>
       </div>
-  </div>
-
-  <div class="example-col row">
+    </div>
+    <div class="example-col row">
       <h5>Autocomplete</h5>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Default View</p>
-          <kendo-autocomplete [data]="listItems" placeholder="Type here...">
-              <ng-template kendoAutoCompleteItemTemplate let-dataItem>
-                  <span>{{ dataItem }}</span>
-              </ng-template>
-          </kendo-autocomplete>
+        <p>Default View</p>
+        <kendo-autocomplete [data]="listItems" placeholder="Type here...">
+          <ng-template kendoAutoCompleteItemTemplate let-dataItem>
+            <span>{{ dataItem }}</span>
+          </ng-template>
+        </kendo-autocomplete>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Filled View</p>
-          <kendo-autocomplete [data]="listItems" placeholder="Type here..." value="input 1">
-              <ng-template kendoAutoCompleteItemTemplate let-dataItem>
-                  <span>{{ dataItem }}</span>
-              </ng-template>
-          </kendo-autocomplete>
+        <p>Filled View</p>
+        <kendo-autocomplete [data]="listItems" placeholder="Type here..." value="input 1">
+          <ng-template kendoAutoCompleteItemTemplate let-dataItem>
+            <span>{{ dataItem }}</span>
+          </ng-template>
+        </kendo-autocomplete>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Disabled View</p>
-          <kendo-autocomplete [data]="listItems" placeholder="Type here..." [disabled]="true">
-              <ng-template kendoAutoCompleteItemTemplate let-dataItem>
-                  <span>{{ dataItem }}</span>
-              </ng-template>
-          </kendo-autocomplete>
+        <p>Disabled View</p>
+        <kendo-autocomplete [data]="listItems" placeholder="Type here..." [disabled]="true">
+        <ng-template kendoAutoCompleteItemTemplate let-dataItem>
+          <span>{{ dataItem }}</span>
+        </ng-template>
+        </kendo-autocomplete>
       </div>
-  </div>
-
-
-  <div class="example-col row">
+    </div>
+    <div class="example-col row">
       <h5>Select</h5>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Default View</p>
-          <kendo-floatinglabel text="Select value">
-              <kendo-dropdownlist [data]="data">
-              </kendo-dropdownlist>
-          </kendo-floatinglabel>
+        <p>Default View</p>
+        <kendo-floatinglabel text="Select value">
+          <kendo-dropdownlist [data]="data">
+          </kendo-dropdownlist>
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Selected View</p>
-          <kendo-floatinglabel text="Select value">
-              <kendo-dropdownlist [data]="data" value="Bar">
-              </kendo-dropdownlist>
-          </kendo-floatinglabel>
+        <p>Selected View</p>
+        <kendo-floatinglabel text="Select value">
+          <kendo-dropdownlist [data]="data" value="Bar">
+          </kendo-dropdownlist>
+        </kendo-floatinglabel>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 mb-3">
-          <p>Disabled View</p>
-          <kendo-floatinglabel text="Select value">
-              <kendo-dropdownlist [data]="data" [disabled]="true">
-              </kendo-dropdownlist>
-          </kendo-floatinglabel>
+        <p>Disabled View</p>
+        <kendo-floatinglabel text="Select value">
+          <kendo-dropdownlist [data]="data" [disabled]="true">
+          </kendo-dropdownlist>
+        </kendo-floatinglabel>
       </div>
+    </div>
   </div>
-
-
-</div>
   `
- 
+
   code1 = `
   import { Component, ViewEncapsulation   } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";

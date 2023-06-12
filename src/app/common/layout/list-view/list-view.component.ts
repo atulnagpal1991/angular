@@ -15,51 +15,53 @@ export class ListViewComponent {
   public destinations: any[] = destinations;
 
   public pagerSettings: PagerSettings = {
-      previousNext: false,
-      pageSizeValues: false,
-      buttonCount: 9
+    previousNext: false,
+    pageSizeValues: false,
+    buttonCount: 9
   };
   public pageSize = 30;
 
 
-  
+
   code = `
   <div class="example-wrapper">
     <div class="example-col">
-        <kendo-listview [kendoListViewBinding]="destinations" containerClass="listview-content">
-            <ng-template kendoListViewHeaderTemplate>
-                <div class="custom-grid">
-                    <kendo-card class="destination-card" width="48%">
-                        <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png"
-                            alt="rivercitycorp" />
-                        <kendo-card-body class="destination-card-body custom-card">
-                            <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity
-                            </h4>
-                            <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and
-                                Platforms Engineered to Reduce Complexity.</h5>
-                        </kendo-card-body>
-                    </kendo-card>
-                    <kendo-card class="destination-card" width="48%">
-                        <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png"
-                            alt="rivercitycorp" />
-                        <kendo-card-body class="destination-card-body custom-card">
-                            <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
-                            <h5 kendoCardSubtitle class="subtitle">We build digital products keeping
-                                this principle in mind.</h5>
-                        </kendo-card-body>
-                    </kendo-card>
-                </div>
-            </ng-template>
-            <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
-                <app-destination-card [destination]="dataItem"></app-destination-card>
-            </ng-template>
-        </kendo-listview>
+      <kendo-listview [kendoListViewBinding]="destinations" containerClass="listview-content">
+        <ng-template kendoListViewHeaderTemplate>
+          <div class="custom-grid">
+            <kendo-card class="destination-card" width="48%">
+              <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png"
+                alt="rivercitycorp" />
+              <kendo-card-body class="destination-card-body custom-card">
+                <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity
+                </h4>
+                <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and
+                  Platforms Engineered to Reduce Complexity.
+                </h5>
+              </kendo-card-body>
+            </kendo-card>
+            <kendo-card class="destination-card" width="48%">
+              <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png"
+                alt="rivercitycorp" />
+              <kendo-card-body class="destination-card-body custom-card">
+                <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
+                <h5 kendoCardSubtitle class="subtitle">We build digital products keeping
+                  this principle in mind.
+                </h5>
+              </kendo-card-body>
+            </kendo-card>
+          </div>
+        </ng-template>
+        <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+          <app-destination-card [destination]="dataItem"></app-destination-card>
+        </ng-template>
+      </kendo-listview>
     </div>
-</div>
-`
+  </div>
+  `
 
 
-code1 = `
+  code1 = `
 import { Component } from '@angular/core';
 import { PagerSettings } from '@progress/kendo-angular-listview';
 import { destinations } from './destinations';
@@ -86,7 +88,7 @@ export class ListViewComponent {
 }
 `
 
-code2 = `
+  code2 = `
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -139,7 +141,7 @@ export class DestinationComponent {
 }
 `
 
-code3 = `
+  code3 = `
 export const destinations = [
     {
         'Title': 'Angular',

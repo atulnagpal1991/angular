@@ -44,15 +44,15 @@ export class DataGridComponent {
   
   code = `
   <div class="example-wrapper">
-      <div class="example-col">
-          <kendo-grid [data]="gridData">
-              <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
-              <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
-              <kendo-grid-column field="Category.CategoryName" title="Category">
-              </kendo-grid-column>
-              <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
-          </kendo-grid>
-      </div>
+    <div class="example-col">
+      <kendo-grid [data]="gridData">
+        <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+        <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+        <kendo-grid-column field="Category.CategoryName" title="Category">
+        </kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+      </kendo-grid>
+    </div>
   </div>
 `
 
