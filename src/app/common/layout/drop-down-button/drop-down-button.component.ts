@@ -30,77 +30,67 @@ export class DropDownButtonComponent {
 
   
   code = `
-  import { Component } from '@angular/core';
-
-@Component({
-    selector: 'my-app',
-    template: "
-        <div class="row">
+  <div class="example-wrapper">
+      <div class="example-col row">
           <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Default Button</p>
-            <p class="k-block">
-                <kendo-dropdownbutton [data]="data">
-                    User Settings
-                </kendo-dropdownbutton>
-            </p>
+              <p>Default Button</p>
+              <kendo-dropdownbutton [data]="data">
+                  User Settings
+              </kendo-dropdownbutton>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Primary Button</p>
-            <p class="k-block">
-                <kendo-dropdownbutton [data]="data" themeColor="primary">
-                    User Settings
-                </kendo-dropdownbutton>
-            </p>
+              <p>Primary Button</p>
+              <kendo-dropdownbutton [data]="data" themeColor="primary">
+                  User Settings
+              </kendo-dropdownbutton>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Outline Button</p>
-            <p class="k-block">
-                <kendo-dropdownbutton [data]="data" fillMode="outline">
-                    User Settings
-                </kendo-dropdownbutton>
-            </p>
+              <p>Outline Button</p>
+              <kendo-dropdownbutton [data]="data" fillMode="outline" themeColor="primary">
+                  User Settings
+              </kendo-dropdownbutton>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
-            <p>Flat Button</p>
-            <p class="k-block">
-                <kendo-dropdownbutton [data]="data" fillMode="flat">
-                    User Settings
-                </kendo-dropdownbutton>
-            </p>
+              <p>Flat Button</p>
+              <kendo-dropdownbutton [data]="data" [disabled]="true">
+                  User Settings
+              </kendo-dropdownbutton>
           </div>
-        </div>
-    "
-})
-export class AppComponent {
-    data = [{
-        text: 'My Profile'
-    }, {
-        text: 'Friend Requests'
-    }, {
-        text: 'Account Settings'
-    }, {
-        text: 'Support'
-    }, {
-        text: 'Log Out'
-    }];
-}
+      </div>
+  </div>
 `
 
 
 code1 = `
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Component } from '@angular/core';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
-import { ButtonsModule } from '@progress/kendo-angular-buttons';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-    bootstrap: [AppComponent],
-    declarations: [AppComponent],
-    imports: [BrowserModule, BrowserAnimationsModule, ButtonsModule],
+@Component({
+  selector: 'app-drop-down-button',
+  templateUrl: './drop-down-button.component.html',
+  styleUrls: ['./drop-down-button.component.css']
 })
-export class AppModule {}
+export class DropDownButtonComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
+  data = [
+    {
+      text: "My Profile",
+    },
+    {
+      text: "Friend Requests",
+    },
+    {
+      text: "Account Settings",
+    },
+    {
+      text: "Support",
+    },
+    {
+      text: "Log Out",
+    },
+  ];
+}
 `
 }

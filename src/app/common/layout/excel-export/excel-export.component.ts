@@ -31,78 +31,76 @@ export class ExcelExportComponent {
 
   
   code = `
-  import { Component } from '@angular/core';
-import { aggregateBy, AggregateDescriptor, AggregateResult, process } from '@progress/kendo-data-query';
-import { Product, Group } from './models';
-import { products } from './products';
+  <div class="example-wrapper">
+      <div class="example-col row">
+          <button kendoButton type="button" (click)="excelexport.save()">Export To Excel</button>
 
-@Component({
-    selector: 'my-app',
-    template: "
-        <button kendoButton type="button" (click)="excelexport.save()">Export To Excel</button>
-
-        <kendo-excelexport [data]="data" [group]="group" [collapsible]="true" fileName="Products.xlsx" #excelexport>
-            <kendo-excelexport-column field="ProductID" [locked]="true" title="Product ID" [width]="200">
-            </kendo-excelexport-column>
-            <kendo-excelexport-column field="ProductName" title="Product Name" [width]="350">
-            </kendo-excelexport-column>
-            <kendo-excelexport-column-group title="Availability" [headerCellOptions]="{ textAlign: 'center' }">
-                <kendo-excelexport-column field="UnitPrice" title="Unit Price" [width]="120"
-                    [cellOptions]="{ format: '$#,##0.00' }"
-                    [groupFooterCellOptions]="{ textAlign: 'right' }"
-                    [footerCellOptions]="{ wrap: true, textAlign: 'center' }">
-                    <ng-template kendoExcelExportGroupFooterTemplate let-aggregates>
-                        Sum: {{aggregates["UnitPrice"].sum | currency}}
-                    </ng-template>
-                    <ng-template kendoExcelExportFooterTemplate let-column="column">
-                        Total {{column.title}}: {{total["UnitPrice"].sum | currency}}
-                    </ng-template>
-                </kendo-excelexport-column>
-                <kendo-excelexport-column field="UnitsOnOrder" title="Units On Order" [width]="120">
-                </kendo-excelexport-column>
-                <kendo-excelexport-column field="UnitsInStock" title="Units In Stock" [width]="120">
-                </kendo-excelexport-column>
-            </kendo-excelexport-column-group>
-            <kendo-excelexport-column field="Discontinued" [width]="120" [hidden]="true">
-                <ng-template kendoExcelExportGroupHeaderTemplate  let-value="value">
-                   Discontinued: {{value}}
-                </ng-template>
-            </kendo-excelexport-column>
-      </kendo-excelexport>
-    "
-})
-export class AppComponent {
-    public aggregates: AggregateDescriptor[] = [{field: 'UnitPrice', aggregate: 'sum'}];
-
-    public group: Group[] = [{
-        field: 'Discontinued',
-        aggregates: this.aggregates
-    }];
-
-    public data: Product[] = process(products, {
-        group: this.group
-    }).data;
-
-    public total: AggregateResult = aggregateBy(products, this.aggregates);
-}
+          <kendo-excelexport [data]="data" [group]="group" [collapsible]="true"
+              fileName="Products.xlsx" #excelexport>
+              <kendo-excelexport-column field="ProductID" [locked]="true" title="Product ID"
+                  [width]="200">
+              </kendo-excelexport-column>
+              <kendo-excelexport-column field="ProductName" title="Product Name" [width]="350">
+              </kendo-excelexport-column>
+              <kendo-excelexport-column-group title="Availability"
+                  [headerCellOptions]="{ textAlign: 'center' }">
+                  <kendo-excelexport-column field="UnitPrice" title="Unit Price" [width]="120"
+                      [cellOptions]="{ format: '$#,##0.00' }"
+                      [groupFooterCellOptions]="{ textAlign: 'right' }"
+                      [footerCellOptions]="{ wrap: true, textAlign: 'center' }">
+                      <ng-template kendoExcelExportGroupFooterTemplate let-aggregates>
+                          Sum: {{aggregates["UnitPrice"].sum | currency}}
+                      </ng-template>
+                      <ng-template kendoExcelExportFooterTemplate let-column="column">
+                          Total {{column.title}}: {{total["UnitPrice"].sum | currency}}
+                      </ng-template>
+                  </kendo-excelexport-column>
+                  <kendo-excelexport-column field="UnitsOnOrder" title="Units On Order" [width]="120">
+                  </kendo-excelexport-column>
+                  <kendo-excelexport-column field="UnitsInStock" title="Units In Stock" [width]="120">
+                  </kendo-excelexport-column>
+              </kendo-excelexport-column-group>
+              <kendo-excelexport-column field="Discontinued" [width]="120" [hidden]="true">
+                  <ng-template kendoExcelExportGroupHeaderTemplate let-value="value">
+                      Discontinued: {{value}}
+                  </ng-template>
+              </kendo-excelexport-column>
+          </kendo-excelexport>
+      </div>
+  </div>
 `
 
 
 code1 = `
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
-import { ButtonsModule } from '@progress/kendo-angular-buttons';
-import { AppComponent } from './app.component';
+import { Component } from '@angular/core';
+import { aggregateBy, AggregateDescriptor, AggregateResult, process } from '@progress/kendo-data-query';
+import { Product, Group } from './models';
+import { products } from './products';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
-@NgModule({
-  imports:      [ BrowserModule, ExcelExportModule, ButtonsModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+@Component({
+  selector: 'app-excel-export',
+  templateUrl: './excel-export.component.html',
+  styleUrls: ['./excel-export.component.css']
 })
+export class ExcelExportComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
+  public aggregates: AggregateDescriptor[] = [{field: 'UnitPrice', aggregate: 'sum'}];
 
-export class AppModule { }
+  public group: Group[] = [{
+      field: 'Discontinued',
+      aggregates: this.aggregates
+  }];
 
+  public data: Product[] = process(products, {
+      group: this.group
+  }).data;
+
+  public total: AggregateResult = aggregateBy(products, this.aggregates);
+
+}
 `
 
 code2 = `

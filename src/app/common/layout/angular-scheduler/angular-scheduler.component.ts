@@ -17,48 +17,44 @@ export class AngularSchedulerComponent {
 
   
   code = `
-  import { Component } from '@angular/core';
-import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
-import { sampleData, displayDate } from './events-utc';
+<div class="example-wrapper">
+    <div class="example-col">
+        <kendo-scheduler [kendoSchedulerBinding]="events" [selectedDate]="selectedDate" scrollTime="08:00"
+        style="height: 600px;">
+        <kendo-scheduler-day-view> </kendo-scheduler-day-view>
 
-@Component({
-    selector: 'my-app',
-    template: "
-        <kendo-scheduler [kendoSchedulerBinding]="events" [selectedDate]="selectedDate" scrollTime="08:00" style="height: 600px;">
-            <kendo-scheduler-day-view> </kendo-scheduler-day-view>
+        <kendo-scheduler-week-view> </kendo-scheduler-week-view>
 
-            <kendo-scheduler-week-view> </kendo-scheduler-week-view>
+        <kendo-scheduler-month-view> </kendo-scheduler-month-view>
 
-            <kendo-scheduler-month-view> </kendo-scheduler-month-view>
+        <kendo-scheduler-timeline-view> </kendo-scheduler-timeline-view>
 
-            <kendo-scheduler-timeline-view> </kendo-scheduler-timeline-view>
-
-            <kendo-scheduler-agenda-view> </kendo-scheduler-agenda-view>
+        <kendo-scheduler-agenda-view> </kendo-scheduler-agenda-view>
         </kendo-scheduler>
-    "
-})
-export class AppComponent {
-    public selectedDate: Date = displayDate;
-    public events: SchedulerEvent[] = sampleData;
-}
+    </div>
+</div>
 `
 
 
 code1 = `
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SchedulerModule } from '@progress/kendo-angular-scheduler';
+import { Component } from '@angular/core';
+import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
+import { sampleData, displayDate } from './events-utc';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
-import { AppComponent } from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, BrowserAnimationsModule, SchedulerModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+@Component({
+  selector: 'app-angular-scheduler',
+  templateUrl: './angular-scheduler.component.html',
+  styleUrls: ['./angular-scheduler.component.css']
 })
+export class AngularSchedulerComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
+  public selectedDate: Date = displayDate;
+  public events: SchedulerEvent[] = sampleData;
 
-export class AppModule { }
+}
 
 `
 

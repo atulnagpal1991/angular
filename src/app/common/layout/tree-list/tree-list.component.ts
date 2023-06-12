@@ -14,49 +14,36 @@ export class TreeListComponent {
   public data: Employee[] = employees;
   
   code = `
-  import { Component } from '@angular/core';
-import { Employee, employees } from './employees';
-
-@Component({
-    selector: 'my-app',
-    template: "
-        <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable
-                        idField="id" parentIdField="managerId">
-            <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
-            </kendo-treelist-column>
-            <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
-            <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
+  <div class="example-wrapper">
+    <div class="example-col">
+        <kendo-treelist [kendoTreeListFlatBinding]="data" [height]="410" kendoTreeListExpandable idField="id"
+        parentIdField="managerId">
+        <kendo-treelist-column [expandable]="true" field="name" title="Name" [width]="250">
+        </kendo-treelist-column>
+        <kendo-treelist-column field="title" title="Title" [width]="180"></kendo-treelist-column>
+        <kendo-treelist-column field="phone" title="Phone" [width]="180"></kendo-treelist-column>
         </kendo-treelist>
-    "
-})
-export class AppComponent {
-    public data: Employee[] = employees;
-}
+    </div>
+  </div>
 `
 
 
 code1 = `
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TreeListModule } from '@progress/kendo-angular-treelist';
-import { AppComponent } from './app.component';
+import { Component } from '@angular/core';
+import { Employee, employees } from "./employees";
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
-@NgModule({
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        TreeListModule
-    ],
-    declarations: [
-        AppComponent
-    ],
-    bootstrap: [
-        AppComponent
-    ]
+@Component({
+  selector: 'app-tree-list',
+  templateUrl: './tree-list.component.html',
+  styleUrls: ['./tree-list.component.css']
 })
-
-export class AppModule { }
+export class TreeListComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
+  public data: Employee[] = employees;
+}
 `
 
 code2 = `

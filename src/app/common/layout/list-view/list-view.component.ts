@@ -24,94 +24,66 @@ export class ListViewComponent {
 
   
   code = `
-  import { Component, ViewEncapsulation } from '@angular/core';
-import { PagerSettings } from '@progress/kendo-angular-listview';
-import { destinations } from './destinations';
-
-@Component({
-    encapsulation: ViewEncapsulation.None,
-    selector: 'my-app',
-    template: "
-        <kendo-listview
-            [kendoListViewBinding]="destinations"
-            [pageable]="pagerSettings"
-            [pageSize]="pageSize"
-            containerClass="listview-content"
-        >
-            <ng-template
-                kendoListViewItemTemplate
-                let-dataItem="dataItem"
-                let-isLast="isLast"
-            >
-                <destination-card [destination]="dataItem"></destination-card>
+  <div class="example-wrapper">
+    <div class="example-col">
+        <kendo-listview [kendoListViewBinding]="destinations" containerClass="listview-content">
+            <ng-template kendoListViewHeaderTemplate>
+                <div class="custom-grid">
+                    <kendo-card class="destination-card" width="48%">
+                        <img kendoCardMedia src="https://www.rivercitycorp.in/images/2.png"
+                            alt="rivercitycorp" />
+                        <kendo-card-body class="destination-card-body custom-card">
+                            <h4 kendoCardTitle class="title">Creating Clarity Reducing Complexity
+                            </h4>
+                            <h5 kendoCardSubtitle class="subtitle">Custom Digital Products and
+                                Platforms Engineered to Reduce Complexity.</h5>
+                        </kendo-card-body>
+                    </kendo-card>
+                    <kendo-card class="destination-card" width="48%">
+                        <img kendoCardMedia src="https://www.rivercitycorp.in/images/6.png"
+                            alt="rivercitycorp" />
+                        <kendo-card-body class="destination-card-body custom-card">
+                            <h4 kendoCardTitle class="title">The Amalgamation of CX and UX</h4>
+                            <h5 kendoCardSubtitle class="subtitle">We build digital products keeping
+                                this principle in mind.</h5>
+                        </kendo-card-body>
+                    </kendo-card>
+                </div>
             </ng-template>
-            <ng-template kendoListViewFooterTemplate>
-                <div class="footer-note">Source: wwww.european.destinations</div>
+            <ng-template kendoListViewItemTemplate let-dataItem="dataItem" let-isLast="isLast">
+                <app-destination-card [destination]="dataItem"></app-destination-card>
             </ng-template>
         </kendo-listview>
-    ",
-    styles: ["
-        .k-listview-header,
-        .k-listview-content {
-            padding: 20px 0;
-            justify-content: center;
-        }
-
-        .k-listview-footer {
-            border-width: 0;
-        }
-
-        .listview-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 180px);
-            gap: 15px 30px;
-        }
-
-        .footer-note {
-            text-align: right;
-            font-style: italic;
-            font-size: 11px;
-            padding-right: 4px;
-        }
-    "]
-})
-export class AppComponent {
-    public destinations: any[] = destinations;
-
-    public pagerSettings: PagerSettings = {
-        previousNext: false,
-        pageSizeValues: false,
-        buttonCount: 9
-    };
-    public pageSize = 6;
-}
+    </div>
+</div>
 `
 
 
 code1 = `
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@progress/kendo-angular-layout';
-import { ListViewModule } from '@progress/kendo-angular-listview';
+import { Component } from '@angular/core';
+import { PagerSettings } from '@progress/kendo-angular-listview';
+import { destinations } from './destinations';
+import { SelectEvent } from "@progress/kendo-angular-layout";
 
-import { AppComponent } from './app.component';
-import { DestinationComponent } from './destination.component';
-
-@NgModule({
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        LayoutModule,
-        ListViewModule
-    ],
-    declarations: [
-        AppComponent,
-        DestinationComponent
-    ],
-    bootstrap: [AppComponent]
+@Component({
+  selector: 'app-list-view',
+  templateUrl: './list-view.component.html',
+  styleUrls: ['./list-view.component.css']
 })
-export class AppModule { }
+export class ListViewComponent {
+  public onTabSelect(e: SelectEvent): void {
+    console.log(e);
+  }
+  public destinations: any[] = destinations;
+
+  public pagerSettings: PagerSettings = {
+      previousNext: false,
+      pageSizeValues: false,
+      buttonCount: 9
+  };
+  public pageSize = 30;
+
+}
 `
 
 code2 = `

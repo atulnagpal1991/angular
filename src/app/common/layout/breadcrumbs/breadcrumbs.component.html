@@ -1,29 +1,29 @@
 <div class="description-parent">
-    <div class="description">
-    <h6 class="sub-heading">The Angular Breadcrumb component allows you to navigate within a folder structure or web page and provides an easy way to navigate backwards by one or multiple steps.</h6>
+  <div class="description">
+    <h6 class="sub-heading">The Angular Breadcrumb component allows you to navigate within a folder structure or web
+      page and provides an easy way to navigate backwards by one or multiple steps.</h6>
     <p>The following example demonstrates the Angular Breadcrumb in action.</p>
   </div>
- </div>
-  
-  <div class="wrapper-parent">
-    <div class="wrapper">
+</div>
+
+<div class="wrapper-parent">
+  <div class="wrapper">
     <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
       <kendo-tabstrip-tab title="Preview" [selected]="true">
         <ng-template kendoTabContent>
-            <div class="example-wrapper">  
-              <div class="example-col">
-                <h5>Breadcrumbs</h5>
-                  <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"
-                  ></kendo-breadcrumb>
+          <div class="example-wrapper">
+            <div class="example-col">
+              <h5>Breadcrumbs</h5>
+              <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"></kendo-breadcrumb>
 
-                  <h5 class="mt-5">Breadcrumbs State</h5>
-                  <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
-                  
-                  <h5 class="mt-5">Breadcrumbs With Background</h5>
-                  <kendo-breadcrumb [items]="items" class="bg-color"></kendo-breadcrumb>
-                  
-                </div>
-              </div>
+              <h5 class="mt-5">Breadcrumbs State</h5>
+              <kendo-breadcrumb [items]="items" separatorIcon="line"></kendo-breadcrumb>
+
+              <h5 class="mt-5">Breadcrumbs With Background</h5>
+              <kendo-breadcrumb [items]="items" class="bg-color"></kendo-breadcrumb>
+
+            </div>
+          </div>
         </ng-template>
       </kendo-tabstrip-tab>
       <kendo-tabstrip-tab title="View Source">
@@ -54,7 +54,4 @@
       </kendo-tabstrip-tab>
     </kendo-tabstrip>
   </div>
-  </div>
-
-
-
+</div>
