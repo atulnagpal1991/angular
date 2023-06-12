@@ -53,5 +53,13 @@ export class BreadcrumbsComponent {
     this.items = [...defaultItems];
   }
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
+
 
 }

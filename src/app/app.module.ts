@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@progress/kendo-angular-layout';
@@ -117,11 +116,11 @@ import { ReactiveFormsModule } from "@angular/forms";
     CheckboxAndRadioComponent,
   ],
   imports: [
-     NavigationModule,
-     ProgressBarModule,
-     IndicatorsModule,
-     DropDownListModule,
-     ReactiveFormsModule ,
+    NavigationModule,
+    ProgressBarModule,
+    IndicatorsModule,
+    DropDownListModule,
+    ReactiveFormsModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,

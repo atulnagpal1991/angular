@@ -172,20 +172,6 @@
                   [removeIcon]="chip.removeIcon" [iconClass]="chip.iconClass" (remove)="onRemove($event)"></kendo-chip>
               </kendo-chip-list>
             </div>
-            <!-- <div class="example-col">
-              <kendo-floatingactionbutton
-                icon="plus"
-                text="Add New"
-                title="Add New"
-                [align]="{ horizontal: 'start', vertical: 'bottom' }"
-                (click)="onFabClick()"
-              >
-              </kendo-floatingactionbutton>
-            </div>
-            <div class="example-col">
-              <kendo-floatingactionbutton icon="share" [dialItems]="fabItems">
-              </kendo-floatingactionbutton>
-            </div> -->
           </div>
         </ng-template>
       </kendo-tabstrip-tab>
@@ -193,7 +179,7 @@
         <ng-template kendoTabContent>
           <div>
             <kendo-tabstrip class="w-100" (tabSelect)="onTabSelect($event)">
-              <kendo-tabstrip-tab title="app.component.ts" [selected]="true">
+              <kendo-tabstrip-tab title="app.component.html" [selected]="true">
                 <ng-template kendoTabContent>
                   <div class="content">
                     <pre>
@@ -202,7 +188,7 @@
                   </div>
                 </ng-template>
               </kendo-tabstrip-tab>
-              <kendo-tabstrip-tab title="app.module.ts">
+              <kendo-tabstrip-tab title="app.component.ts">
                 <ng-template kendoTabContent>
                   <div class="content">
                     <pre>

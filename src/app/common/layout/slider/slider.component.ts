@@ -26,4 +26,12 @@ export class SliderComponent {
 
   public showButtons = false;
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
+
 }

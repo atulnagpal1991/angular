@@ -15,4 +15,11 @@ export class BadgeComponent {
 
   public badgeAlign: BadgeAlign = { vertical: "bottom", horizontal: "end" };
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

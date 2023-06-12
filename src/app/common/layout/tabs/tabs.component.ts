@@ -11,4 +11,11 @@ export class TabsComponent {
     console.log(e);
   }
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

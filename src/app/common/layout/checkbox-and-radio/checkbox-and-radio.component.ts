@@ -15,4 +15,12 @@ export class CheckboxAndRadioComponent {
  
   public isDisabled = true;
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
+
 }

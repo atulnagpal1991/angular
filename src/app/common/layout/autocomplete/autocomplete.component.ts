@@ -11,4 +11,11 @@ export class AutocompleteComponent {
     console.log(e);
   }
   public listItems: Array<string> = ["Item 1", "Item 2", "Item 3"];
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

@@ -45,5 +45,12 @@ export class ChipComponent {
     this.chips.splice(index, 1);
   }
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 
 }

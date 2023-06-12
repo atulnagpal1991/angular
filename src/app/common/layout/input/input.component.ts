@@ -38,4 +38,12 @@ export class InputComponent {
   public data: string[] = ["foo", "bar", "baz"];
   
 
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
+
 }

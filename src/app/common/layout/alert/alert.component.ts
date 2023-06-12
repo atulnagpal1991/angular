@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./alert.component.css']
 })
 export class AlertComponent {
-
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

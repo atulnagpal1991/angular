@@ -14,4 +14,12 @@ export class SwitchComponent {
   }
   public checked = true;
   public disabled = true;
+
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

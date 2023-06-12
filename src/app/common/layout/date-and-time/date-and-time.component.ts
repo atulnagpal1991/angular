@@ -21,4 +21,12 @@ export class DateAndTimeComponent {
   public disabledDates = (date: Date): boolean => {
     return date.getDate() % 2 === 0;
   };
+
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

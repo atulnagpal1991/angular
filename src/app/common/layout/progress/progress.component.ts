@@ -35,4 +35,12 @@ export class ProgressComponent {
   public changeProgress(): void {
     this.value = this.value === 0 ? 68 : 0;
   }
+
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }

@@ -12,4 +12,12 @@ export class SelectComponent {
     console.log(e);
   }
   public data: string[] = ["foo", "bar", "baz"];
+
+  code = `
+ 
+  `
+ 
+  code1 = `
+  
+  `
 }
