@@ -812,3 +812,28 @@ kendo-slider.k-slider {
   color: white;
   background-color: #f75814;
 }
+
+
+
+@media (max-width: 991px) {
+   
+  .full-menu h3 {
+    font-size: 30px;
+  }
+
+  .full-menu h3 .sub-menu .line {
+   display: none;
+  }
+
+  .full-menu h3 .sub-menu {
+    display: block;
+    position: initial;
+    transform: initial;
+    margin: 0 40px 20px;
+  }
+
+  .full-menu h3 .sub-menu a {
+    margin-bottom: 20px;
+  }
+
+}
